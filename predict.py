@@ -178,11 +178,14 @@ def predict(pred_config):
 
     slot_label_map = {i: label for i, label in enumerate(label_lst)}
     preds_list = [[] for _ in range(preds.shape[0])] # [[]*batch 수] 
+    print(f'preds: {preds}')
+    slot_label_map = {i: label for i, label in enumerate(label_lst)}
 
     for i in range(preds.shape[0]):
         for j in range(preds.shape[1]):
             if all_slot_label_mask[i, j] != pad_token_label_id:
                 preds_list[i].append(slot_label_map[preds[i][j]])
+    print(f'preds_list: {preds_list}')
 
     ################# per token
     # Write to output file

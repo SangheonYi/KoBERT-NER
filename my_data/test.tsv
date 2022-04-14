@@ -107,7 +107,7 @@
 [CLS] 부산 해운대 ##구 우동 145 ##8 2 ##층 [SEP]	-100 AD_CITY-B AD_CITY-I AD_CITY-I AD_ADDRESS-B AD_ADDRESS-I AD_ADDRESS-I AD_DETAIL-B AD_DETAIL-I -100
 [CLS] 마지막 ##은 스팸 ##메 ##일 ##함 ##에 ##서 찾아낸 34 ##살 ##의 ind ##ia ##남 ##자 . [SEP]	-100 O O O O O O O O O SS_AGE-B SS_AGE-I O O O O O O -100
 [CLS] 마지막 4 ##자리 ##는 25 ##96 ##이 ##에 ##요 . [SEP]	-100 O O O O ID_PHONE-B ID_PHONE-I O O O O -100
-[CLS] 성서 ##무지 ##개 ##타운 102 ##동 ##이 ##요 . [SEP]	-100 AD_DETAIL-B AD_DETAIL-I AD_DETAIL-I AD_DETAIL-I AD_DETAIL-I AD_DETAIL-I AD_DETAIL-I AD_DETAIL-I AD_DETAIL-I -100
+[CLS] 성서 ##무지 ##개 ##타운 102 ##동 ##이 ##요 . [SEP]	-100 AD_DETAIL-B AD_DETAIL-I AD_DETAIL-I AD_DETAIL-I AD_DETAIL-I AD_DETAIL-I O O O -100
 [CLS] 메트 ##라이 ##프 ##생명 ##보험 확인 ##되 ##십니다 . [SEP]	-100 SS_BRAND-B SS_BRAND-I SS_BRAND-I SS_BRAND-I SS_BRAND-I O O O O -100
 [CLS] 79 ##년 ##생 43 ##일 ##거 ##야 [SEP]	-100 SS_AGE-B SS_AGE-I SS_AGE-I SS_AGE-B O O O -100
 [CLS] 해당 지점 전화 ##번 ##호 ##는 72 ##39 - 06 ##96 ##입니다 . [SEP]	-100 O O O O O O ID_PHONE-B ID_PHONE-I ID_PHONE-I ID_PHONE-I ID_PHONE-I O O -100
@@ -137,7 +137,7 @@
 [CLS] 안녕 ##하 ##세요 [SEP]	-100 O O O -100
 [CLS] 그래 27 ##세 ##면 좋 ##네 ##좋 ##아 [SEP]	-100 O SS_AGE-B SS_AGE-I O O O O O -100
 [CLS] 신한 ##카드 ##구요 , 1200 34 ##31 231 ##4 31 ##44 ##입니다 . [SEP]	-100 SS_BRAND-B SS_BRAND-I O O ID_CARD-B ID_CARD-I ID_CARD-I ID_CARD-I ID_CARD-I ID_CARD-I ID_CARD-I O O -100
-[CLS] 지에 ##스 ##홈 ##쇼 ##핑 김정 ##한 ##입니다 . [SEP]	-100 SS_BRAND-B SS_BRAND-I SS_BRAND-I SS_BRAND-I SS_BRAND-I SS_NAME-B SS_NAME-I SS_NAME-I SS_NAME-I -100
+[CLS] 지에 ##스 ##홈 ##쇼 ##핑 김정 ##한 ##입니다 . [SEP]	-100 SS_BRAND-B SS_BRAND-I SS_BRAND-I SS_BRAND-I SS_BRAND-I SS_NAME-B SS_NAME-I O O -100
 [CLS] 본인 ##의 생년 ##월일 ##이 어떻게 되 ##십니까 ? [SEP]	-100 O O O O O O O O O -100
 [CLS] 임 ##호우 키 179 골격 ##근 ##량 33 . 6 입니다 ㅋㅋㅋ ##ㅋㅋㅋ ##ㅋㅋㅋ ##ㅋㅋㅋ ##ㅋㅋㅋ ##ㅋㅋㅋ ##ㅋㅋㅋ [SEP]	-100 SS_NAME-B SS_NAME-I O SS_LENGTH-B O O O SS_WEIGHT-B SS_WEIGHT-I SS_WEIGHT-I O O O O O O O O -100
 [CLS] 서울 ##예 ##대 18 ##학 ##번 싱 ##송 ##공 ##연 ♥ ##울 ##림 ##♥ [SEP]	-100 SS_BRAND-B SS_BRAND-I SS_BRAND-I O O O O O O O O O O O -100
@@ -732,7 +732,7 @@
 [CLS] 상담 ##사 강수 ##은이 ##었 ##습 ##니다 . [SEP]	-100 O O SS_NAME-B SS_NAME-I O O O O -100
 [CLS] 01 ##7 44 ##34 03 ##50 ##요 . [SEP]	-100 ID_PHONE-B ID_PHONE-I ID_PHONE-I ID_PHONE-I ID_PHONE-I ID_PHONE-I O O -100
 [CLS] 김 ##서 ##연 , 010 31 ##18 97 ##32 . [SEP]	-100 SS_NAME-B SS_NAME-I SS_NAME-I O ID_PHONE-B ID_PHONE-I ID_PHONE-I ID_PHONE-I ID_PHONE-I O -100
-[CLS] 감사 ##합니다 . [SEP]	-100 SS_NAME-B SS_NAME-I SS_NAME-I -100
+[CLS] 감사 ##합니다 . [SEP]	-100 O O O -100
 [CLS] 성 ##함 ##과 생년 ##월일 말씀 ##해 ##주 ##시 ##겠 ##어요 ? [SEP]	-100 O O O O O O O O O O O O -100
 [CLS] 고객 ##님 성 ##함 ##과 주민 ##번 ##호 말씀 ##해 ##주 ##시 ##겠 ##습 ##니까 ? [SEP]	-100 O O O O O O O O O O O O O O O O -100
 [CLS] 회수 ##지 ##는 수원시 장안 ##구 이하 주소 확인 부탁 ##드 ##립니다 . [SEP]	-100 O O O AD_CITY-B AD_CITY-I AD_CITY-I O O O O O O O -100
@@ -900,7 +900,7 @@
 [CLS] 본인 ##의 생년 ##월일 ##이 무엇 ##입 ##니까 ? [SEP]	-100 O O O O O O O O O -100
 [CLS] 26 ##28 ##80 ##2 입니다 . [SEP]	-100 ID_INUM-B ID_INUM-I ID_INUM-I ID_INUM-I O O -100
 [CLS] 아빠 9 / 13 ##생 ##일 ##인 ##데 음력 ##이 ##거 ##든 [SEP]	-100 O SS_BIRTH-B SS_BIRTH-I SS_BIRTH-I O O O O O O O O -100
-[CLS] 현대 ##홈 ##쇼 ##핑 김효 ##원 ##입니다 . [SEP]	-100 SS_BRAND-B SS_BRAND-I SS_BRAND-I SS_BRAND-I SS_NAME-B SS_NAME-I SS_NAME-I SS_NAME-I -100
+[CLS] 현대 ##홈 ##쇼 ##핑 김효 ##원 ##입니다 . [SEP]	-100 SS_BRAND-B SS_BRAND-I SS_BRAND-I SS_BRAND-I SS_NAME-B SS_NAME-I O O -100
 [CLS] 경남은행 통장 분실 ##한 것 같 ##아 ##요 . [SEP]	-100 SS_BRAND-B O O O O O O O O -100
 [CLS] 서울 ##특별 ##시 중구 충무로 ##1 ##가 24 - 14 서양 ##빌 ##딩 ##4 ##층 [SEP]	-100 AD_CITY-B AD_CITY-I AD_CITY-I AD_CITY-I AD_ADDRESS-B AD_ADDRESS-I AD_ADDRESS-I AD_ADDRESS-I AD_ADDRESS-I AD_ADDRESS-I AD_DETAIL-B AD_DETAIL-I AD_DETAIL-I AD_DETAIL-I AD_DETAIL-I -100
 [CLS] 강 ##다 ##원 , 01 ##9 76 ##71 01 ##94 . [SEP]	-100 SS_NAME-B SS_NAME-I SS_NAME-I O ID_PHONE-B ID_PHONE-I ID_PHONE-I ID_PHONE-I ID_PHONE-I ID_PHONE-I O -100
@@ -961,7 +961,7 @@
 [CLS] 저 ##는 20 ##세이 ##상 자궁 ##경 ##부 ##암 짝 ##수 ##년 ##도 출생 ##자 ##라 검진 ##이 가능 ##하 ##더라 ##구요 ~ [SEP]	-100 O O O O O O O O O O O O O O O O O O O O O O O -100
 [CLS] 카드 분실 , 도난 시 BC ##카드 홈페이지 또는 카드 발급 ##사 ##를 통해 신고 ##접 ##수 하 ##실 수 있 ##습 ##니다 . [SEP]	-100 O O O O O O O O O O O O O O O O O O O O O O O O -100
 [CLS] 국민 카드 ##구요 . [SEP]	-100 SS_BRAND-B SS_BRAND-I O O -100
-[CLS] 배송 받 ##으 ##신 주소 ##가 서울시 영등포구 양평 ##동 ##5 ##가 맞 ##습 ##니까 ? [SEP]	-100 O O O O AD_CITY-B AD_CITY-I AD_ADDRESS-B AD_ADDRESS-I AD_ADDRESS-I AD_ADDRESS-I AD_ADDRESS-I AD_ADDRESS-I O O O O -100
+[CLS] 배송 받 ##으 ##신 주소 ##가 서울시 영등포구 양평 ##동 ##5 ##가 맞 ##습 ##니까 ? [SEP]	-100 O O O O O O AD_CITY-B AD_CITY-I AD_ADDRESS-B AD_ADDRESS-I AD_ADDRESS-I AD_ADDRESS-I O O O O -100
 [CLS] 경기 파주시 광 ##탄 ##면 신 ##산 ##리 [SEP]	-100 AD_CITY-B AD_CITY-I AD_ADDRESS-B AD_ADDRESS-I AD_ADDRESS-I AD_ADDRESS-I AD_ADDRESS-I AD_ADDRESS-I -100
 [CLS] 1500 ##동 ##15 ##87 ##호 ##입니다 . [SEP]	-100 AD_DETAIL-B AD_DETAIL-I AD_DETAIL-I AD_DETAIL-I AD_DETAIL-I O O -100
 [CLS] Mark F ##ost ##er 1994 ##년 ##생 ##이 ##니 22 ##세 . [SEP]	-100 SS_NAME-B SS_NAME-I SS_NAME-I SS_NAME-I SS_AGE-B SS_AGE-I SS_AGE-I O O SS_AGE-B SS_AGE-I O -100
@@ -1303,7 +1303,7 @@
 [CLS] 내 ##나이 19 ##살 . [SEP]	-100 O O SS_AGE-B SS_AGE-I O -100
 [CLS] 수거 ##는 고객 ##님 ##께 ##서 배송 받 ##으 ##셨 ##던 화성시 효자 ##3 ##동 760 으로 진행 ##을 해 ##드 ##릴 ##까요 ? [SEP]	-100 O O O O O O O O O O O AD_CITY-B AD_ADDRESS-B AD_ADDRESS-I AD_ADDRESS-I AD_ADDRESS-I O O O O O O O O -100
 [CLS] 가장 기억 ##에 남 ##았 ##던 마 ##킹 ##은 ` ` 강민호 네 ##살 축하 ##해 ` ` 였 ##다 . [SEP]	-100 O O O O O O O O O O O SS_AGE-B SS_AGE-B SS_AGE-I O O O O O O O -100
-[CLS] 농협 ##이 ##고 62 ##35 ##89 38 72 ##90 ##76 ##이 ##요 . [SEP]	-100 SS_BRAND-B SS_BRAND-I SS_BRAND-I ID_ACCOUNT-B ID_ACCOUNT-I ID_ACCOUNT-I ID_ACCOUNT-I ID_ACCOUNT-I ID_ACCOUNT-I ID_ACCOUNT-I O O O -100
+[CLS] 농협 ##이 ##고 62 ##35 ##89 38 72 ##90 ##76 ##이 ##요 . [SEP]	-100 SS_BRAND-B O O ID_ACCOUNT-B ID_ACCOUNT-I ID_ACCOUNT-I ID_ACCOUNT-I ID_ACCOUNT-I ID_ACCOUNT-I ID_ACCOUNT-I O O O -100
 [CLS] 서울 ##특별 ##시 용산구 동자 ##동 43 - 207 [SEP]	-100 AD_CITY-B AD_CITY-I AD_CITY-I AD_CITY-I AD_ADDRESS-B AD_ADDRESS-I AD_ADDRESS-I AD_ADDRESS-I AD_ADDRESS-I -100
 [CLS] 여보 ##세요 . 제주 ##은행 이 ##죠 ? [SEP]	-100 O O O SS_BRAND-B SS_BRAND-I O O O -100
 [CLS] 01 ##8 05 ##0 ##5 226 ##8 . [SEP]	-100 ID_PHONE-B ID_PHONE-I ID_PHONE-I ID_PHONE-I ID_PHONE-I ID_PHONE-I ID_PHONE-I O -100

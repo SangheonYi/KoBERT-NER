@@ -1,6 +1,13 @@
+[이:SS_NAME-B] [##택:SS_NAME-I] [##길:SS_NAME-I] ( [65:SS_AGE-B] [##세:SS_AGE-I] ) 주민 ##과 ##장 [2017:ID_INUM-B] [.:ID_INUM-I] [5:ID_INUM-I] [.:ID_INUM-I] [12:ID_INUM-I] . [김:SS_NAME-B] [##군:SS_NAME-I] [##호:SS_NAME-I] ( [32:SS_AGE-B] )
+주무관 [김재:SS_NAME-B] [##화:SS_NAME-I] 지방 ##행정 ##사 ##무 [지진:SS_NAME-B] [##태:SS_NAME-I] 행정 ##사 ##무 ##관 [이:SS_NAME-B] [##택:SS_NAME-I] [##길:SS_NAME-I] ( [65:SS_AGE-B] [##세:SS_AGE-I] ) 주민 ##과 ##장 [2017:ID_INUM-B] [.:ID_INUM-I] [5:ID_INUM-I] [.:ID_INUM-I] [12:ID_INUM-I] . [김:SS_NAME-B] [##군:SS_NAME-I] [##호:SS_NAME-I] ( [32:SS_AGE-B] )
+협조 ##자
 시행 주민 ##과 - [132:ID_PHONE-I] [##9:ID_PHONE-I]
-[우:AD_CITY-B] [031:AD_ADDRESS-I] [##71:AD_ADDRESS-I] [서울:AD_CITY-B] [##특별:AD_CITY-I] [##시:AD_CITY-I] [종로구:AD_CITY-I] [세:AD_ADDRESS-B] [##증:AD_ADDRESS-I] [##대로:AD_ADDRESS-I] [209:AD_ADDRESS-I] ( [세:AD_ADDRESS-I] [##증:AD_ADDRESS-I] [##로:AD_ADDRESS-I] )
-팩스 ##번 ##호 [02:ID_PHONE-B] [-:ID_PHONE-I] [2100:ID_PHONE-I] [-:ID_PHONE-I] [42:ID_PHONE-I] [##97:ID_PHONE-I] / [ab:SS_BRAND-B] [##le:ID_PHONE-I] [##g:ID_PHONE-I] [##uy:ID_PHONE-I] [##46:ID_PHONE-I] @ m ##o ##i . go . kr / 대국민 공개
+[우:AD_ADDRESS-B] [031:ID_PHONE-B] [##71:AD_ADDRESS-I] [서울:AD_CITY-B] [##특별:AD_CITY-I] [##시:AD_CITY-I] [종로구:AD_CITY-I] [세:AD_ADDRESS-B] [##증:AD_ADDRESS-I] [##대로:AD_ADDRESS-I] [209:AD_ADDRESS-I] ( [세:AD_ADDRESS-B] [##증:AD_ADDRESS-I] [##로:AD_ADDRESS-I] )
+접수 http : / / www . m ##o ##i . go . kr
+전화 ##번 ##호 [02:ID_PHONE-B] [-:ID_PHONE-I] [2100:ID_PHONE-I] [-:ID_PHONE-I] [38:ID_PHONE-I] [##46:ID_PHONE-I]
+팩스 ##번 ##호 [02:ID_PHONE-B] [-:ID_PHONE-I] [2100:ID_PHONE-I] [-:ID_PHONE-I] [42:ID_PHONE-I] [##97:ID_PHONE-I] / ab ##le ##g ##uy [##46:ID_PHONE-I] @ m ##o ##i . go . kr / 대국민 공개
 ※ 영수증 ##이 급히 필요 ##하 ##신 분 ##은 [농협:SS_BRAND-B] [50:ID_ACCOUNT-B] [##50:ID_ACCOUNT-I] [##55:ID_ACCOUNT-I] [-:ID_ACCOUNT-I] [51:ID_ACCOUNT-I] [-:ID_ACCOUNT-I] [03:ID_ACCOUNT-I] [##90:ID_ACCOUNT-I] [##32:ID_ACCOUNT-I] ( 예금 ##주 : [푸른:SS_BRAND-B] [##꿈:SS_BRAND-I] [##고:SS_BRAND-I] ) 계좌 ##로 입금 ##해 주시 ##고 학교 ##에 ##서 확인 ##할 수 있 ##도록 학년 ##반 , 학생 ##이 ##름 ##으로
-( [농협:SS_BRAND-B] [35:ID_ACCOUNT-I] [##5:ID_ACCOUNT-I] [-:ID_ACCOUNT-I] [000:ID_ACCOUNT-I] [##4:ID_ACCOUNT-I] [-:ID_ACCOUNT-I] [71:ID_ACCOUNT-I] [##23:ID_ACCOUNT-I] [-:ID_ACCOUNT-I] [53:ID_ACCOUNT-I] 예금 ##주 : [가평:SS_BRAND-B] [##중:SS_BRAND-I] [##학교:SS_BRAND-I] [3:ID_ACCOUNT-I] [-:ID_ACCOUNT-I] [1:ID_ACCOUNT-I] 홍길동 ##으로 입금 )
+납부 후 행정 ##실 ( ☎ [##0:ID_PHONE-B] [##63:ID_PHONE-I] [-:ID_PHONE-I] [32:ID_PHONE-I] [##3:ID_PHONE-I] [-:ID_PHONE-I] [225:ID_PHONE-I] [##8:ID_PHONE-I] ) 으로 연락 주시 ##면 입금 ##확 ##인 후 영수증 ##을 발행 ##해 드립니다 .
+나 . 납부 ##방 ##법 : 스쿨 ##뱅 ##킹 계좌 또는 학교 ##계 ##좌 입금
+( [농협:SS_BRAND-B] [35:ID_ACCOUNT-B] [##5:ID_ACCOUNT-I] [-:ID_ACCOUNT-I] [000:ID_ACCOUNT-I] [##4:ID_ACCOUNT-I] [-:ID_ACCOUNT-I] [71:ID_ACCOUNT-I] [##23:ID_ACCOUNT-I] [-:ID_ACCOUNT-I] [53:ID_ACCOUNT-I] 예금 ##주 : [가평:AD_DETAIL-B] [##중:AD_DETAIL-I] [##학교:AD_DETAIL-I] [3:ID_ACCOUNT-B] [-:ID_ACCOUNT-I] [1:ID_ACCOUNT-I] 홍길동 ##으로 입금 )
 • 기타 궁금 ##한 사항 ##은 교육 ##행정 ##식 ( ☎ [##58:ID_PHONE-B] [##0:ID_PHONE-I] [-:ID_PHONE-I] [300:ID_PHONE-I] [##6:ID_PHONE-I] ) 로 문의 ##하시 ##길 바랍니다 .

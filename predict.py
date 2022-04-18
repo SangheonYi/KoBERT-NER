@@ -211,7 +211,7 @@ def predict(pred_config):
 
     # for pred in preds:
     for pred in torch.softmax(input=torch.tensor(preds), dim=2).numpy():
-        print_mat(pred, -1, 28)
+        print_mat(pred, -1, 40)
     # print(sm.sum())
 
     preds = np.argmax(preds, axis=2)

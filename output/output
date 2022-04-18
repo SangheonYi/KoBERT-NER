@@ -1,13 +1,6 @@
-[이택길(65세):SS_NAME-B] 주민과장 2017. 5. 12. [김군호(32):SS_NAME-B]
-[주무관:SS_NAME-B] 김재화 지방행정사무 지진태 행정사무관 [이택길(65세):SS_NAME-B] 주민과장 2017. 5. 12. [김군호(32):SS_NAME-B]
-협조자
-시행 주민과-1329
-우 03171 서울특별시 종로구 세증대로 209 (세증로)
-접수 http://www.moi.go.kr
-전화번호 02-2100-3846
-팩스번호 02-2100-4297 /ableguy46@moi.go.kr / 대국민 공개
-※영수증이 [급히:SS_NAME-B] [필요하신:SS_NAME-B] 분은 농협 505055-51-039032 [(예금주::SS_NAME-B] [푸른꿈고):SS_NAME-B] 계좌로 입금해 주시고 학교에서 확인할 수 있도록 학년반, 학생이름으로 납부 바랍니다.
-납부 후 행정실(☎063-323-2258)으로 연락 주시면 입금확인 후 영수증을 발행해 드립니다.
-나. 납부방법 : 스쿨뱅킹 계좌 또는 학교계좌 입금
-(농협 355-0004-7123-53 예금주:가평중학교 3-1 홍길동으로 입금)
-• [기타:SS_NAME-B] 궁금한 사항은 [교육행정식(☎580-3006)로:SS_NAME-B] 문의하시길 바랍니다.
+시행 주민 ##과 - [132:ID_PHONE-I] [##9:ID_PHONE-I]
+[우:AD_CITY-B] [031:AD_ADDRESS-I] [##71:AD_ADDRESS-I] [서울:AD_CITY-B] [##특별:AD_CITY-I] [##시:AD_CITY-I] [종로구:AD_CITY-I] [세:AD_ADDRESS-B] [##증:AD_ADDRESS-I] [##대로:AD_ADDRESS-I] [209:AD_ADDRESS-I] ( [세:AD_ADDRESS-I] [##증:AD_ADDRESS-I] [##로:AD_ADDRESS-I] )
+팩스 ##번 ##호 [02:ID_PHONE-B] [-:ID_PHONE-I] [2100:ID_PHONE-I] [-:ID_PHONE-I] [42:ID_PHONE-I] [##97:ID_PHONE-I] / [ab:SS_BRAND-B] [##le:ID_PHONE-I] [##g:ID_PHONE-I] [##uy:ID_PHONE-I] [##46:ID_PHONE-I] @ m ##o ##i . go . kr / 대국민 공개
+※ 영수증 ##이 급히 필요 ##하 ##신 분 ##은 [농협:SS_BRAND-B] [50:ID_ACCOUNT-B] [##50:ID_ACCOUNT-I] [##55:ID_ACCOUNT-I] [-:ID_ACCOUNT-I] [51:ID_ACCOUNT-I] [-:ID_ACCOUNT-I] [03:ID_ACCOUNT-I] [##90:ID_ACCOUNT-I] [##32:ID_ACCOUNT-I] ( 예금 ##주 : [푸른:SS_BRAND-B] [##꿈:SS_BRAND-I] [##고:SS_BRAND-I] ) 계좌 ##로 입금 ##해 주시 ##고 학교 ##에 ##서 확인 ##할 수 있 ##도록 학년 ##반 , 학생 ##이 ##름 ##으로
+( [농협:SS_BRAND-B] [35:ID_ACCOUNT-I] [##5:ID_ACCOUNT-I] [-:ID_ACCOUNT-I] [000:ID_ACCOUNT-I] [##4:ID_ACCOUNT-I] [-:ID_ACCOUNT-I] [71:ID_ACCOUNT-I] [##23:ID_ACCOUNT-I] [-:ID_ACCOUNT-I] [53:ID_ACCOUNT-I] 예금 ##주 : [가평:SS_BRAND-B] [##중:SS_BRAND-I] [##학교:SS_BRAND-I] [3:ID_ACCOUNT-I] [-:ID_ACCOUNT-I] [1:ID_ACCOUNT-I] 홍길동 ##으로 입금 )
+• 기타 궁금 ##한 사항 ##은 교육 ##행정 ##식 ( ☎ [##58:ID_PHONE-B] [##0:ID_PHONE-I] [-:ID_PHONE-I] [300:ID_PHONE-I] [##6:ID_PHONE-I] ) 로 문의 ##하시 ##길 바랍니다 .

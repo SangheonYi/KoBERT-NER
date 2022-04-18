@@ -12,6 +12,41 @@ from utils import init_logger, load_tokenizer, get_labels
 
 logger = logging.getLogger(__name__)
 
+label_list = ['SS_AGE-B',
+'SS_AGE-I',
+'SS_WEIGHT-B',
+'SS_WEIGHT-I',
+'SS_LENGTH-B',
+'SS_LENGTH-I',
+'SS_BIRTH-B',
+'SS_BIRTH-I',
+'SS_NAME-B',
+'SS_NAME-I',
+'SS_BRAND-B',
+'SS_BRAND-I',
+'AD_CITY-B',
+'AD_CITY-I',
+'AD_ADDRESS-B',
+'AD_ADDRESS-I',
+'AD_DETAIL-B',
+'AD_DETAIL-I',
+'ID_PHONE-B',
+'ID_PHONE-I',
+'ID_INUM-B',
+'ID_INUM-I',
+'ID_ACCOUNT-B',
+'ID_ACCOUNT-I',
+'ID_CARD-B',
+'ID_CARD-I',
+'O',
+'UNK',]
+def print_mat(preds, start=0, end=10):
+    for i, pred in enumerate(preds):
+        if start < i < end:
+            tmp = [[label_list[i], e] for i, e in enumerate(pred)]
+            tmp.sort(key=lambda x: x[1],reverse=True)
+            print(len(pred), tmp)
+    print('👩')
 
 def get_device(pred_config):
     return "cuda" if torch.cuda.is_available() and not pred_config.no_cuda else "cpu"
@@ -174,18 +209,22 @@ def predict(pred_config):
                 preds = np.append(preds, logits.detach().cpu().numpy(), axis=0)
                 all_slot_label_mask = np.append(all_slot_label_mask, batch[3].detach().cpu().numpy(), axis=0)
 
+    # for pred in preds:
+    for pred in torch.softmax(input=torch.tensor(preds), dim=2).numpy():
+        print_mat(pred, -1, 28)
+    # print(sm.sum())
+
     preds = np.argmax(preds, axis=2)
 
     slot_label_map = {i: label for i, label in enumerate(label_lst)}
     preds_list = [[] for _ in range(preds.shape[0])] # [[]*batch 수] 
-    print(f'preds: {preds}')
+    
     slot_label_map = {i: label for i, label in enumerate(label_lst)}
 
     for i in range(preds.shape[0]):
         for j in range(preds.shape[1]):
             if all_slot_label_mask[i, j] != pad_token_label_id:
                 preds_list[i].append(slot_label_map[preds[i][j]])
-    print(f'preds_list: {preds_list}')
 
     ################# per token
     # Write to output file

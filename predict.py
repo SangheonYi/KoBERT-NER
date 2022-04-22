@@ -43,12 +43,14 @@ label_list = ['SS_AGE-B',
 'O',
 'UNK',]
 
-def print_mat(preds, start=0, end=10):
-    for i, pred in enumerate(preds):
+def print_mat(tokens, preds, start=0, end=10):
+    for i, token_pred in enumerate(zip(tokens, preds)):
+        token, pred = token_pred
         if start < i < end:
-            tmp = [[label_list[i], e] for i, e in enumerate(pred)]
+            tmp = [[label_list[i], round(e * 100, 2)] for i, e in enumerate(pred)]
             tmp.sort(key=lambda x: x[1],reverse=True)
-            print(len(pred), tmp)
+            # print(token)
+            print(tmp[:4])
 
 def get_device(pred_config):
     return "cuda" if torch.cuda.is_available() and not pred_config.no_cuda else "cpu"
@@ -78,11 +80,11 @@ def read_input_file(pred_config):
     lines = []
     with open(pred_config.input_file, "r", encoding="utf-8") as f:
         for line in f:
-            sentences = split_sentences(line)
-            for sentence in sentences:
-                stripped = sentence.strip()
-                words = stripped.split()
-                lines.append(words)
+            # sentences = split_sentences(line)
+            # for sentence in sentences:
+            stripped = line.strip()
+            words = stripped.split()
+            lines.append(words)
 
     return lines
 
@@ -215,12 +217,10 @@ def predict(pred_config):
 
     # for pred in preds:
     i = 0
-    for pred in torch.softmax(input=torch.tensor(preds), dim=2).numpy():
-        print('👩', i + 1)
-        print_mat(pred, -1, 50)
+    for pred, tokens in zip(torch.softmax(input=torch.tensor(preds), dim=2).numpy(), all_input_tokens):
+        print('👩', i + 1, tokens)
+        print_mat(tokens, pred, -1, 50)
         i += 1
-
-    # print(sm.sum())
 
     preds = np.argmax(preds, axis=2)
 

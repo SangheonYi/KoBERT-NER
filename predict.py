@@ -10,6 +10,8 @@ from transformers import AutoModelForTokenClassification
 
 from utils import init_logger, load_tokenizer, get_labels
 
+from kss import split_sentences
+
 logger = logging.getLogger(__name__)
 
 label_list = ['SS_AGE-B',
@@ -40,13 +42,13 @@ label_list = ['SS_AGE-B',
 'ID_CARD-I',
 'O',
 'UNK',]
+
 def print_mat(preds, start=0, end=10):
     for i, pred in enumerate(preds):
         if start < i < end:
             tmp = [[label_list[i], e] for i, e in enumerate(pred)]
             tmp.sort(key=lambda x: x[1],reverse=True)
             print(len(pred), tmp)
-    print('👩')
 
 def get_device(pred_config):
     return "cuda" if torch.cuda.is_available() and not pred_config.no_cuda else "cpu"
@@ -76,9 +78,11 @@ def read_input_file(pred_config):
     lines = []
     with open(pred_config.input_file, "r", encoding="utf-8") as f:
         for line in f:
-            line = line.strip()
-            words = line.split()
-            lines.append(words)
+            sentences = split_sentences(line)
+            for sentence in sentences:
+                stripped = sentence.strip()
+                words = stripped.split()
+                lines.append(words)
 
     return lines
 
@@ -210,8 +214,12 @@ def predict(pred_config):
                 all_slot_label_mask = np.append(all_slot_label_mask, batch[3].detach().cpu().numpy(), axis=0)
 
     # for pred in preds:
+    i = 0
     for pred in torch.softmax(input=torch.tensor(preds), dim=2).numpy():
-        print_mat(pred, -1, 40)
+        print('👩', i + 1)
+        print_mat(pred, -1, 50)
+        i += 1
+
     # print(sm.sum())
 
     preds = np.argmax(preds, axis=2)

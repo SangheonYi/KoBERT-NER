@@ -7,6 +7,7 @@ import numpy as np
 import torch
 from torch.utils.data import TensorDataset, DataLoader, SequentialSampler
 from transformers import AutoModelForTokenClassification
+from output_analysis import answer_diff
 
 from utils import init_logger, load_tokenizer, get_labels
 
@@ -14,43 +15,38 @@ from kss import split_sentences
 
 logger = logging.getLogger(__name__)
 
-label_list = ['SS_AGE-B',
-'SS_AGE-I',
-'SS_WEIGHT-B',
-'SS_WEIGHT-I',
-'SS_LENGTH-B',
-'SS_LENGTH-I',
-'SS_BIRTH-B',
-'SS_BIRTH-I',
+label_list = [
+'UNK',
+'O',
 'SS_NAME-B',
 'SS_NAME-I',
-'SS_BRAND-B',
-'SS_BRAND-I',
-'AD_CITY-B',
-'AD_CITY-I',
+'SS_WEIGHT-B',
+'SS_WEIGHT-I',
+'SS_AGE-B',
+'SS_AGE-I',
+'AD_METRO-B',
+'AD_METRO-I',
 'AD_ADDRESS-B',
 'AD_ADDRESS-I',
+'AD_CITY-B',
+'AD_CITY-I',
 'AD_DETAIL-B',
 'AD_DETAIL-I',
 'ID_PHONE-B',
 'ID_PHONE-I',
-'ID_INUM-B',
-'ID_INUM-I',
-'ID_ACCOUNT-B',
-'ID_ACCOUNT-I',
 'ID_CARD-B',
 'ID_CARD-I',
-'O',
-'UNK',]
-
-def print_mat(tokens, preds, start=0, end=10):
-    for i, token_pred in enumerate(zip(tokens, preds)):
-        token, pred = token_pred
-        if start < i < end:
-            tmp = [[label_list[i], round(e * 100, 2)] for i, e in enumerate(pred)]
-            tmp.sort(key=lambda x: x[1],reverse=True)
-            # print(token)
-            print(tmp[:4])
+'ID_ACCOUNT-B',
+'ID_ACCOUNT-I',
+'ID_INUM-B',
+'ID_INUM-I',
+'SS_LENGTH-B',
+'SS_LENGTH-I',
+'SS_BIRTH-B',
+'SS_BIRTH-I',
+'SS_BRAND-B',
+'SS_BRAND-I',
+]
 
 def get_device(pred_config):
     return "cuda" if torch.cuda.is_available() and not pred_config.no_cuda else "cpu"
@@ -217,9 +213,18 @@ def predict(pred_config):
 
     # for pred in preds:
     i = 0
-    for pred, tokens in zip(torch.softmax(input=torch.tensor(preds), dim=2).numpy(), all_input_tokens):
-        print('👩', i + 1, tokens)
-        print_mat(tokens, pred, -1, 50)
+    prob_matrix = []
+    with open('res/logit_prob.py', 'w', newline='', encoding='UTF-8') as prob_file:
+        for sentence_pred, tokens in zip(torch.softmax(input=torch.tensor(preds), dim=2).numpy(), all_input_tokens):
+            prob_file.write(f"👩{tokens}\n")
+            token_probs = []
+            for i, token_pred in enumerate(sentence_pred):
+                if 0 < i < len(tokens):
+                    tmp = [[label_list[i], round(e * 100, 2)] for i, e in enumerate(token_pred)]
+                    tmp.sort(key=lambda x: x[1],reverse=True)
+                    prob_file.write(f"{tmp[:4]}\n")
+                    token_probs.append(tmp[:4])
+            prob_matrix.append(token_probs)
         i += 1
 
     preds = np.argmax(preds, axis=2)
@@ -237,6 +242,7 @@ def predict(pred_config):
     ################# per token
     # Write to output file
     with open(pred_config.output_file, "w", encoding="utf-8") as f:
+        output_tsv_form = []
         for words, preds in zip(all_input_tokens, preds_list):
             line = ""
             for word, pred in zip(words, preds):
@@ -244,9 +250,10 @@ def predict(pred_config):
                     line = line + word + " "
                 else:
                     line = line + "[{}:{}] ".format(word, pred)
-
+            output_tsv_form.append(f"{' '.join(words[:-1])}\t{' '.join(preds)}")
             f.write("{}\n".format(line.strip()))
-
+        answer_diff(output_tsv_form, prob_matrix, "ALL")
+  
     logger.info("Prediction Done!")
 
 

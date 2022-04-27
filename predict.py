@@ -254,7 +254,7 @@ def predict(pred_config):
             f.write("{}\n".format(line.strip()))
         for tsv_line in output_tsv_form:
             f.write(f"{tsv_line}\n")
-        # answer_diff(output_tsv_form, prob_matrix, "ALL")
+        answer_diff(output_tsv_form, prob_matrix)
   
     logger.info("Prediction Done!")
 

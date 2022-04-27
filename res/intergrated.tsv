@@ -4265,7 +4265,8 @@
 [CLS] 155 ##c ##m / 49 ##k ##g 적혀 ##있 ##는데 [SEP]	-100 SS_LENGTH-B SS_LENGTH-I SS_LENGTH-I O SS_WEIGHT-B SS_WEIGHT-I SS_WEIGHT-I O O O -100
 [CLS] 나 집 ##에 ##서 재 ##니까 76 ##k ##g ##나 ##오 ##는데 ? . . [SEP]	-100 O O O O O O SS_WEIGHT-B SS_WEIGHT-I SS_WEIGHT-I O O O O O O -100
 [CLS] 주말 ##지 ##나 ##고 58 ##k ##g ##으로 돌아가 ##면 안 ##되 ##니까 그러 ##는 ##거 ##다 [SEP]	-100 O O O O SS_WEIGHT-B SS_WEIGHT-I SS_WEIGHT-I O O O O O O O O O O -100
-[CLS] 체중 46 . 7 ##k ##g - > 47 . 3 ##k ##g ( + 0 . 6 ##k ##g ) 골격 ##근 ##량 18 . 9 ##k ##g - > 19 . 5 ##k ##g ( + 0 . 6 ##k ##g ) 체지방 ##률 23 . [SEP]	-100 O SS_WEIGHT-B SS_WEIGHT-I SS_WEIGHT-I SS_WEIGHT-I SS_WEIGHT-I O O SS_WEIGHT-B SS_WEIGHT-I SS_WEIGHT-I SS_WEIGHT-I SS_WEIGHT-I O O O O O O O O O O O SS_WEIGHT-B SS_WEIGHT-I SS_WEIGHT-I SS_WEIGHT-I SS_WEIGHT-I O O SS_WEIGHT-B SS_WEIGHT-I SS_WEIGHT-I SS_WEIGHT-I SS_WEIGHT-I O O O O O O O O O O SS_WEIGHT-B O -100[CLS] 아 , 나 살 ##빠 ##짐 서진 ##쑤 [SEP]	-100 O O O O O O SS_NAME-B O -100
+[CLS] 체중 46 . 7 ##k ##g - > 47 . 3 ##k ##g ( + 0 . 6 ##k ##g ) 골격 ##근 ##량 18 . 9 ##k ##g - > 19 . 5 ##k ##g ( + 0 . 6 ##k ##g ) 체지방 ##률 23 . [SEP]	-100 O SS_WEIGHT-B SS_WEIGHT-I SS_WEIGHT-I SS_WEIGHT-I SS_WEIGHT-I O O SS_WEIGHT-B SS_WEIGHT-I SS_WEIGHT-I SS_WEIGHT-I SS_WEIGHT-I O O O O O O O O O O O SS_WEIGHT-B SS_WEIGHT-I SS_WEIGHT-I SS_WEIGHT-I SS_WEIGHT-I O O SS_WEIGHT-B SS_WEIGHT-I SS_WEIGHT-I SS_WEIGHT-I SS_WEIGHT-I O O O O O O O O O O SS_WEIGHT-B O -100
+[CLS] 아 , 나 살 ##빠 ##짐 서진 ##쑤 [SEP]	-100 O O O O O O SS_NAME-B O -100
 [CLS] 지금 46 ##k ##g ##이 ##야 [SEP]	-100 O SS_WEIGHT-B SS_WEIGHT-I SS_WEIGHT-I O O -100
 [CLS] 나 3 ##k ##g ##로 빠졌 ##어 70 ##이 ##야 [SEP]	-100 O O O O O O O SS_WEIGHT-B O O -100
 [CLS] 원래 58 ##k ##g ##이 ##었 ##대 [SEP]	-100 O SS_WEIGHT-B SS_WEIGHT-I SS_WEIGHT-I O O O -100

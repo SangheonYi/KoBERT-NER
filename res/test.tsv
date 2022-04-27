@@ -294,7 +294,7 @@
 [CLS] 신한 ##카드 ##이 ##구요 [SEP]	-100 SS_BRAND-B SS_BRAND-I O O -100
 [CLS] 6 ##월 ##9 ##일이 ##요 [SEP]	-100 SS_BIRTH-B SS_BIRTH-I SS_BIRTH-I SS_BIRTH-I O -100
 [CLS] 광주 ##광역 ##시 동구 서 ##석 ##로 23 - 9 [SEP]	-100 AD_METRO-B AD_METRO-I AD_METRO-I AD_CITY-B AD_ADDRESS-B AD_ADDRESS-I AD_ADDRESS-I AD_ADDRESS-I AD_ADDRESS-I AD_ADDRESS-I -100
-[CLS] 178 / 60 ##인 ##데 크 ##겠 ##죠 ? . . [SEP]	-100 SS_LENGTH-B O SS_WEIGHT-I O O O O O O O O -100
+[CLS] 178 / 60 ##인 ##데 크 ##겠 ##죠 ? . . [SEP]	-100 SS_LENGTH-B O SS_WEIGHT-B O O O O O O O O -100
 [CLS] 성 ##함 ##과 주민 ##번 ##호 ##앞 ##자리 말씀 ##해 ##주 ##시 ##겠 ##어요 ? [SEP]	-100 O O O O O O O O O O O O O O O -100
 [CLS] 구 ##반 ##포 ##역 3 ##번 출구 ##에 ##서 O ##m 정도 직진 하시 ##면 구 ##반 ##포 ##지 ##점 ##이 있 ##습 ##니다 . [SEP]	-100 AD_DETAIL-B AD_DETAIL-I AD_DETAIL-I AD_DETAIL-I AD_DETAIL-I AD_DETAIL-I AD_DETAIL-I O O O O O O O O AD_DETAIL-B AD_DETAIL-I AD_DETAIL-I AD_DETAIL-I AD_DETAIL-I O O O O O -100
 [CLS] 전역 ##하면 다시 살 빠질 ##지 . . ㅋㅋ 슬 ##랙 ##스 ##도 다 [UNK] … [SEP]	-100 O O O O O O O O O O O O O O O O -100
@@ -377,7 +377,7 @@
 [CLS] 무엇 ##을 도와 ##드 ##릴 ##까요 고객 ##님 ? [SEP]	-100 O O O O O O O O O -100
 [CLS] 무엇 ##을 도와 ##드 ##릴 ##까요 고객 ##님 ? [SEP]	-100 O O O O O O O O O -100
 [CLS] 권 ##휴 ##민 , 23 ##세 , 김여 ##니 엄마 _ ♥ [SEP]	-100 SS_NAME-B SS_NAME-I SS_NAME-I O SS_AGE-B SS_AGE-I O SS_NAME-B SS_NAME-I O O O -100
-[CLS] 김성 ##은 ##은 키 171 ##c ##m ##에 몸무게 49 . 1 ##k ##g , 체지방 6 . 4 ##k ##g . [SEP]	-100 SS_NAME-B SS_NAME-I O O SS_LENGTH-B SS_LENGTH-I SS_LENGTH-I O O SS_WEIGHT-B SS_WEIGHT-I SS_WEIGHT-I SS_WEIGHT-I SS_WEIGHT-I O O O O O O O O -100
+[CLS] 김성 ##은 ##은 키 171 ##c ##m ##에 몸무게 49 . 1 ##k ##g , 체지방 6 . 4 ##k ##g . [SEP]	-100 SS_NAME-B SS_NAME-I O O SS_LENGTH-B SS_LENGTH-I SS_LENGTH-I O O SS_WEIGHT-B SS_WEIGHT-I SS_WEIGHT-I SS_WEIGHT-I SS_WEIGHT-I O O SS_WEIGHT-B SS_WEIGHT-I SS_WEIGHT-I SS_WEIGHT-I SS_WEIGHT-I O -100
 [CLS] 네 저 ##는 김 ##하 ##정 ##이 ##었 ##습 ##니다 . [SEP]	-100 O O O O O O O O O O O -100
 [CLS] 올해 97 ##세 어르신 . [SEP]	-100 O SS_AGE-B SS_AGE-I O O -100
 [CLS] 88 ##4 - 37 ##94 ##입니다 [SEP]	-100 ID_PHONE-B ID_PHONE-I ID_PHONE-I ID_PHONE-I ID_PHONE-I O -100
@@ -646,7 +646,7 @@
 [CLS] 카드 ##번 ##호 ##는 88 ##90 - 48 ##32 - 52 ##36 - 59 ##65 비밀 ##번 ##호 ##는 89 ##20 ##입니다 . [SEP]	-100 O O O O ID_CARD-B ID_CARD-I ID_CARD-I ID_CARD-I ID_CARD-I ID_CARD-I ID_CARD-I ID_CARD-I ID_CARD-I ID_CARD-I ID_CARD-I O O O O O O O O -100
 [CLS] 84 ##5 ##호 . [SEP]	-100 AD_DETAIL-B AD_DETAIL-I AD_DETAIL-I O -100
 [CLS] 400 ##22 ##0 ##1 ##입니다 . [SEP]	-100 ID_INUM-B ID_INUM-I ID_INUM-I ID_INUM-I O O -100
-[CLS] 인 ##바 ##디 검사 결과 ##에 따르 ##면 소유 ##의 체중 ##은 62 . 4 ##k ##g . 체지방 ##량 ##은 19 . 1 ##k ##g ##으로 표준 이상 ##이 ##고 . 골격 ##근 ##량 ##은 23 . 6 ##k ##g ##으로 표준 수치 ##였 ##다 . [SEP]	-100 O O O O O O O O SS_NAME-B O O O SS_WEIGHT-B SS_WEIGHT-I SS_WEIGHT-I SS_WEIGHT-I SS_WEIGHT-I O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O -100
+[CLS] 인 ##바 ##디 검사 결과 ##에 따르 ##면 소유 ##의 체중 ##은 62 . 4 ##k ##g . 체지방 ##량 ##은 19 . 1 ##k ##g ##으로 표준 이상 ##이 ##고 . 골격 ##근 ##량 ##은 23 . 6 ##k ##g ##으로 표준 수치 ##였 ##다 . [SEP]	-100 O O O O O O O O SS_NAME-B O O O SS_WEIGHT-B SS_WEIGHT-I SS_WEIGHT-I SS_WEIGHT-I SS_WEIGHT-I O O O O SS_WEIGHT-B SS_WEIGHT-I SS_WEIGHT-I SS_WEIGHT-I SS_WEIGHT-I O O O O O O O O O O SS_WEIGHT-B SS_WEIGHT-I SS_WEIGHT-I SS_WEIGHT-I SS_WEIGHT-I O O O O O O -100
 [CLS] 지은이 ##랑 같이 구경 ##하 ##자 ##며 룰 ##루 ##랄 ##라 [SEP]	-100 SS_NAME-B O O O O O O O O O O -100
 [CLS] 저희 카카오 ##뱅 ##크 ##을 통한 계좌 ##가 맞 ##나 ##요 ? [SEP]	-100 O SS_BRAND-B SS_BRAND-I SS_BRAND-I O O O O O O O O -100
 [CLS] 2016 ##년 03 ##월 01 ##입니다 [SEP]	-100 ID_INUM-B ID_INUM-I ID_INUM-I ID_INUM-I ID_INUM-I O -100
@@ -1241,7 +1241,7 @@
 [CLS] 최고 84 제일 많이 ##뺏 ##을 ##때 70 현재 73 [SEP]	-100 O SS_WEIGHT-B O O O O O SS_WEIGHT-B O SS_WEIGHT-B -100
 [CLS] 케이 ##뱅 ##크 통장 없 ##어진 것 같 ##습 ##니다 . [SEP]	-100 SS_BRAND-B SS_BRAND-I SS_BRAND-I O O O O O O O O -100
 [CLS] 158 ##이 ##잔 ##어 성 ##미야 190 ##이 ##면 32 ##c ##m 차이 [SEP]	-100 SS_LENGTH-B O O O SS_NAME-B SS_NAME-I SS_LENGTH-B O O O O O O -100
-[CLS] 지방 ##이 15 ##K ##G ##이 ##니 조금 ##만 줄여 ##보 ##도록 하 ##죠 . [SEP]	-100 O O O O SS_WEIGHT-I O O O O O O O O O O -100
+[CLS] 지방 ##이 15 ##K ##G ##이 ##니 조금 ##만 줄여 ##보 ##도록 하 ##죠 . [SEP]	-100 O O SS_WEIGHT-B SS_WEIGHT-I SS_WEIGHT-I O O O O O O O O O O -100
 [CLS] 우리 4 ##살 꼬 ##맹이 ##님 ##도 . . 아주 잘 ##하 ##심 [SEP]	-100 O SS_AGE-B SS_AGE-I O O O O O O O O O O -100
 [CLS] 네 , 카드 ##명 ##은 신한 카드 입니다 . [SEP]	-100 O O O O O SS_BRAND-B SS_BRAND-I O O -100
 [CLS] 오늘 황교안 기자 ##회 ##견 ##을 보고 느낌 ##점 . [SEP]	-100 O SS_NAME-B O O O O O O O O -100

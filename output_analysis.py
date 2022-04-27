@@ -40,17 +40,19 @@ def answer_diff(output_tsv_form, prob_matrix, mode=WRONG):
         for output_line, solution_line in zip(output_lines, solution_lines):
             i += 1
             probs = prob_matrix[i - 1]
-            print(f"{OKBLUE}{i}th✨{ENDC}")
             is_wrong, print_line, probs = check_answer(output_line, solution_line, probs)
             if mode == WRONG and is_wrong:
                 cnt += 1
+                print(f"{OKBLUE}{i}th✨{ENDC}")
                 print(f"predited:{print_line[0]}")
                 print(f"answer:\t{print_line[1]}")
             elif mode != WRONG:
                 probs = prob_matrix[i - 1]
+                print(f"{OKBLUE}{i}th✨{ENDC}")
                 print(f"predited:{print_line[0]}")
                 print(f"answer:\t{print_line[1]}")
-            for detected in probs:
+            for prob_i, detected in enumerate(probs):
                 print(f"{HEADER}{detected}{ENDC}")
-            print('')
+                if prob_i == len(probs) - 1:
+                    print('')
         print(f"wrong line count: {cnt}")

@@ -2076,7 +2076,7 @@
 [CLS] 다음 ##으로 ##는 잘 못 이체 하신 계좌 ##번 ##호 ##가 어떻게 되 ##어 있 ##는지 말씀 ##해 주실 수 있 ##으 ##십니까 ? [SEP]	-100 O O O O O O O O O O O O O O O O O O O O O O O O -100
 [CLS] 잠시 ##만 ##요 다시 찾아볼 ##께요 . [SEP]	-100 O O O O O O O -100
 [CLS] 찾 ##았 ##습 ##니다 . [SEP]	-100 O O O O O -100
-[CLS] 83 ##1 ##입니다 . [SEP]	-100 O O O O -100
+[CLS] 83 ##1 ##입니다 . [SEP]	-100 ID_ACCOUNT-B ID_ACCOUNT-I O O -100
 [CLS] 다음 , 상대방 계좌 ##의 계좌 ##번 ##호 ##가 어떻게 되 ##는지 말씀 ##해 주실 수 있 ##으 ##신 ##지 ##요 ? [SEP]	-100 O O O O O O O O O O O O O O O O O O O O O O -100
 [CLS] 준비 ##하 ##고 있 ##었 ##습 ##니다 . [SEP]	-100 O O O O O O O O -100
 [CLS] 47 ##37 ##78 ##번 입니다 . [SEP]	-100 ID_ACCOUNT-B ID_ACCOUNT-I ID_ACCOUNT-I O O O -100

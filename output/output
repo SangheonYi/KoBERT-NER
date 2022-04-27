@@ -1,11 +1,11 @@
-[이:SS_NAME-B] [##택:SS_NAME-I] [##길:SS_NAME-I] ( [65:SS_AGE-B] [##세:SS_AGE-I] ) 주민 ##과 ##장 2017 [.:ID_INUM-I] [5:ID_INUM-I] [.:ID_INUM-I] [12:ID_INUM-I] . [김:SS_NAME-B] [##군:SS_NAME-I] [##호:SS_NAME-I] ( [32:SS_AGE-B] )
-주무관 [김재:SS_NAME-B] [##화:SS_NAME-I] 지방 ##행정 ##사 ##무 [지진:SS_NAME-B] [##태:SS_NAME-I] 행정 ##사 ##무 ##관 [이:SS_NAME-B] [##택:SS_NAME-I] [##길:SS_NAME-I] ( [65:SS_AGE-B] [##세:SS_AGE-I] ) 주민 ##과 ##장 2017 [.:ID_INUM-I] [5:ID_INUM-I] [.:ID_INUM-I] [12:ID_INUM-I] . [김:SS_NAME-B] [##군:SS_NAME-I] [##호:SS_NAME-I] ( [32:SS_AGE-B] )
+[이:SS_NAME-B] [##택:SS_NAME-I] [##길:SS_NAME-I] ( [65:SS_AGE-B] [##세:SS_AGE-I] ) 주민 ##과 ##장 2017 . 5 . 12 . [김:SS_NAME-B] [##군:SS_NAME-I] [##호:SS_NAME-I] ( [32:SS_AGE-B] )
+주무관 [김재:SS_NAME-B] [##화:SS_NAME-I] 지방 ##행정 ##사 ##무 [지진:SS_NAME-B] [##태:SS_NAME-I] 행정 ##사 ##무 ##관 [이:SS_NAME-B] [##택:SS_NAME-I] [##길:SS_NAME-I] ( [65:SS_AGE-B] [##세:SS_AGE-I] ) 주민 ##과 ##장 2017 . 5 . 12 . [김:SS_NAME-B] [##군:SS_NAME-I] [##호:SS_NAME-I] ( [32:SS_AGE-B] )
 협조 ##자
-시행 주민 ##과 - [132:ID_PHONE-B] [##9:ID_PHONE-I]
+시행 주민 ##과 - [132:ID_PHONE-I] [##9:ID_PHONE-I]
 우 [031:ID_PHONE-B] [##71:ID_PHONE-I] [서울:AD_METRO-B] [##특별:AD_METRO-I] [##시:AD_METRO-I] [종로구:AD_CITY-B] [세:AD_ADDRESS-B] [##증:AD_ADDRESS-I] [##대로:AD_ADDRESS-I] [209:AD_ADDRESS-I] ( [세:AD_ADDRESS-I] [##증:AD_ADDRESS-I] [##로:AD_ADDRESS-I] )
-접수 http : / / www . m [##o:SS_NAME-I] [##i:SS_NAME-I] . go . kr
+접수 http : / / www . m ##o ##i . go . kr
 전화 ##번 ##호 [02:ID_PHONE-B] [-:ID_PHONE-I] [2100:ID_PHONE-I] [-:ID_PHONE-I] [38:ID_PHONE-I] [##46:ID_PHONE-I]
-팩스 ##번 ##호 [02:ID_PHONE-B] [-:ID_PHONE-I] [2100:ID_PHONE-I] [-:ID_PHONE-I] [42:ID_PHONE-I] [##97:ID_PHONE-I] / ab ##le ##g ##uy ##46 @ m ##o ##i . go . kr / 대국민 공개
+팩스 ##번 ##호 [02:ID_PHONE-B] [-:ID_PHONE-I] [2100:ID_PHONE-I] [-:ID_PHONE-I] [42:ID_PHONE-I] [##97:ID_PHONE-I] / ab ##le ##g [##uy:ID_PHONE-I] [##46:ID_PHONE-I] @ m ##o ##i . go . kr / 대국민 공개
 ※ 영수증 ##이 급히 필요 ##하 ##신 분 ##은 [농협:SS_BRAND-B] [50:ID_ACCOUNT-B] [##50:ID_ACCOUNT-I] [##55:ID_ACCOUNT-I] [-:ID_ACCOUNT-I] [51:ID_ACCOUNT-I] [-:ID_ACCOUNT-I] [03:ID_ACCOUNT-I] [##90:ID_ACCOUNT-I] [##32:ID_ACCOUNT-I] ( 예금 ##주 : [푸른:SS_BRAND-B] [##꿈:SS_BRAND-I] [##고:SS_BRAND-I] ) 계좌 ##로 입금 ##해 주시 ##고 학교 ##에 ##서 확인 ##할 수 있 ##도록 학년 ##반 , 학생 ##이 ##름 ##으로
 납부 후 행정 ##실 ( ☎ [##0:ID_PHONE-B] [##63:ID_PHONE-I] [-:ID_PHONE-I] [32:ID_PHONE-I] [##3:ID_PHONE-I] [-:ID_PHONE-I] [225:ID_PHONE-I] [##8:ID_PHONE-I] ) 으로 연락 주시 ##면 입금 ##확 ##인 후 영수증 ##을 발행 ##해 드립니다 .
 나 . 납부 ##방 ##법 : 스쿨 ##뱅 ##킹 계좌 또는 학교 ##계 ##좌 입금
@@ -13,7 +13,7 @@
 • 기타 궁금 ##한 사항 ##은 교육 ##행정 ##식 ( ☎ [##58:ID_PHONE-B] [##0:ID_PHONE-I] [-:ID_PHONE-I] [300:ID_PHONE-I] [##6:ID_PHONE-I] ) 로 문의 ##하시 ##길 바랍니다 .
 [최정:SS_NAME-B] [##숙:SS_NAME-I] [국민:SS_BRAND-B] [88:ID_INUM-B] [##57:ID_INUM-I] [##0:ID_INUM-I] [##10:ID_INUM-I] [##000:ID_INUM-I] [##75:ID_INUM-I] [##20:ID_INUM-I]
 [이성:SS_NAME-B] [##환:SS_NAME-I] [국민:SS_BRAND-B] [92:ID_INUM-B] [##16:ID_INUM-I] [##0:ID_INUM-I] [##20:ID_INUM-I] [##12:ID_INUM-I] [##89:ID_INUM-I] [##72:ID_INUM-I] [##1:ID_INUM-I]
-[김영:SS_NAME-B] [##숙:SS_NAME-I] [하나:ID_INUM-B] [29:ID_ACCOUNT-B] [##3:ID_ACCOUNT-I] [-:ID_ACCOUNT-I] [91:ID_ACCOUNT-I] [##0:ID_ACCOUNT-I] [##2:ID_ACCOUNT-I] [-:ID_ACCOUNT-I] [37:ID_ACCOUNT-I] [##80:ID_ACCOUNT-I] [##7:ID_ACCOUNT-I]
+[김영:SS_NAME-B] [##숙:SS_NAME-I] [하나:SS_BRAND-B] [29:ID_PHONE-B] [##3:ID_ACCOUNT-I] [-:ID_ACCOUNT-I] [91:ID_ACCOUNT-I] [##0:ID_ACCOUNT-I] [##2:ID_ACCOUNT-I] [-:ID_ACCOUNT-I] [37:ID_ACCOUNT-I] [##80:ID_ACCOUNT-I] [##7:ID_ACCOUNT-I]
 나 애기 짱 ##허 ##니 [UNK]
 나 애기 짱 ##허 ##니 [일곱:SS_AGE-B] [##살:SS_AGE-I]
 나 애기 짱 ##허 ##니 [일곱:SS_AGE-B]
@@ -22,15 +22,15 @@
 나 애기 짱 ##헌 일곱 ##짤
 나 애기 [짱:SS_NAME-B] [##헌:SS_NAME-I] ##이 일곱 ##짤
 일곱 ##짤 짱 ##헌 ##니 배고 ##빠
-[짱:SS_NAME-B] [##헌:SS_NAME-I] ##니 [배고:SS_NAME-B] ##빠
-[짱:SS_NAME-B] [##헌:SS_NAME-I] ##니 배고파
+[짱:SS_NAME-B] [##헌:SS_NAME-I] [##니:SS_NAME-I] 배고 ##빠
+[짱:SS_NAME-B] [##헌:SS_NAME-I] [##니:SS_NAME-I] 배고파
 [짱:SS_NAME-B] [##허:SS_NAME-I] [##니:SS_NAME-I] ##는 배고 ##빠
-짱 ##허 [##니:SS_NAME-I] [헝:SS_NAME-B] [##그리:SS_NAME-I]
-너 [102:SS_LENGTH-B] ##였 ##다가 [190:SS_LENGTH-B] ##된 ##거 ##야 ?
-너 [102:SS_WEIGHT-B] [##키:SS_WEIGHT-I] [##로:SS_WEIGHT-I] ##였 ##다가 [190:SS_LENGTH-B] ##된 ##거 ##야 ?
+짱 ##허 ##니 헝 ##그리
+너 [102:SS_WEIGHT-B] ##였 ##다가 [190:SS_LENGTH-B] ##된 ##거 ##야 ?
+너 [102:SS_WEIGHT-B] [##키:SS_WEIGHT-I] [##로:SS_WEIGHT-I] ##였 ##다가 [190:SS_WEIGHT-B] ##된 ##거 ##야 ?
 너 [102:SS_WEIGHT-B] [##키:SS_WEIGHT-I] [##로:SS_WEIGHT-I] ##였 ##다가 [190:SS_WEIGHT-B] [##키:SS_WEIGHT-I] [##로:SS_WEIGHT-I] ##된 ##거 ##야 ?
 너 [102:SS_LENGTH-B] [##센:SS_LENGTH-I] [##치:SS_LENGTH-I] ##였 ##다가 [190:SS_LENGTH-B] ##된 ##거 ##야 ?
-너 키 [##10:SS_LENGTH-B] [##2:SS_WEIGHT-I] ##였 ##다가 [190:SS_LENGTH-B] ##된 ##거 ##야 ?
+너 키 ##10 [##2:SS_WEIGHT-I] ##였 ##다가 [190:SS_LENGTH-B] ##된 ##거 ##야 ?
 ㄴ
 [02:ID_PHONE-B] [38:ID_PHONE-I] [##72:ID_PHONE-I] [52:ID_PHONE-I] [##7:ID_PHONE-I]
 [01:ID_PHONE-B] [##2:ID_PHONE-I] [38:ID_PHONE-I] [##7:ID_PHONE-I] [52:ID_PHONE-I] [##7:ID_PHONE-I]
@@ -38,16 +38,19 @@
 [01:ID_PHONE-B] [##12:ID_PHONE-I] [38:ID_PHONE-I] [##7:ID_PHONE-I] [52:ID_PHONE-I] [##71:ID_PHONE-I]
 ㄴ
 [02:ID_PHONE-B] [33:ID_PHONE-I] [##87:ID_PHONE-I] [##에:ID_PHONE-I] [5:ID_PHONE-I] [##하나:ID_PHONE-I] [##78:ID_PHONE-I]
-[010:ID_PHONE-B] [##에:ID_PHONE-I] [92:ID_PHONE-I] [##92:ID_PHONE-I] 뒷 ##자리 ##는 [228:ID_PHONE-B] [##3:ID_PHONE-I]
 [010:ID_PHONE-B] [9:ID_PHONE-I] [##둘:ID_PHONE-I] [##둘:ID_PHONE-I] [##둘:ID_PHONE-I] [228:ID_PHONE-I] [##3:ID_PHONE-I]
-[010:ID_PHONE-B] [1:ID_PHONE-I] [##둘:ID_PHONE-I] [##셋:ID_PHONE-I] [##넷:ID_PHONE-I] [56:ID_PHONE-I] [##78:ID_PHONE-I]
+[010:ID_PHONE-B] [1:ID_PHONE-I] [##둘:ID_PHONE-I] [##셋:SS_BRAND-I] [##넷:SS_BRAND-I] [56:ID_PHONE-I] [##78:ID_PHONE-I]
 [010:ID_PHONE-B] [하나:ID_PHONE-I] [##23:ID_PHONE-I] [##4:ID_PHONE-I] [56:ID_PHONE-I] [##78:ID_PHONE-I]
 ㄴ
-[02:ID_PHONE-B] [33:ID_PHONE-I] [##87:ID_PHONE-I] ##에 5 ##일 [##78:ID_PHONE-I]
-[010:ID_PHONE-B] [##에:ID_PHONE-I] [92:ID_PHONE-I] [##92:ID_PHONE-I] 뒷 ##자리 ##는 [228:ID_PHONE-B] [##3:ID_PHONE-I]
+[02:ID_PHONE-B] [33:ID_PHONE-I] [##87:ID_PHONE-I] [##에:ID_PHONE-I] [5:ID_PHONE-I] [##일:ID_PHONE-I] [##78:ID_PHONE-I]
 [010:ID_PHONE-B] [9:ID_PHONE-I] [##이:ID_PHONE-I] [##이:ID_PHONE-I] [##이:ID_PHONE-I] [228:ID_PHONE-I] [##3:ID_PHONE-I]
-[010:ID_PHONE-B] [1:ID_PHONE-I] [##이:ID_PHONE-I] [##삼:ID_PHONE-I] [##사:ID_PHONE-I] [56:ID_PHONE-I] [##78:ID_PHONE-I]
+[010:ID_PHONE-B] [1:ID_PHONE-I] [##이:ID_PHONE-I] [##삼:SS_BRAND-I] [##사:SS_BRAND-I] [56:ID_PHONE-I] [##78:ID_PHONE-I]
 [010:ID_PHONE-B] [일:ID_PHONE-I] [##23:ID_PHONE-I] [##4:ID_PHONE-I] [56:ID_PHONE-I] [##78:ID_PHONE-I]
+[공:SS_NAME-B] [##일:SS_NAME-I] [##공:SS_NAME-I] [33:ID_PHONE-B] [##87:ID_PHONE-I] [51:ID_PHONE-I] [##78:ID_PHONE-I]
+[공:SS_NAME-B] [##일:SS_NAME-I] [##공:SS_NAME-I] [삼:ID_ACCOUNT-B] [##삼:ID_ACCOUNT-I] [##팔:ID_ACCOUNT-I] [##칠:ID_ACCOUNT-I] [오일:ID_ACCOUNT-I] [##칠:ID_ACCOUNT-I] [##팔:ID_ACCOUNT-I]
+[영일:SS_NAME-B] [##영:SS_NAME-I] [33:ID_PHONE-B] [##87:ID_PHONE-I] [51:ID_PHONE-I] [##78:ID_PHONE-I]
+[영일:SS_NAME-B] [##영:SS_NAME-I] [삼:ID_ACCOUNT-B] [##삼:ID_ACCOUNT-I] [##팔:ID_ACCOUNT-I] [##칠:ID_ACCOUNT-I] [오일:ID_ACCOUNT-I] [##칠:ID_ACCOUNT-I] [##팔:ID_ACCOUNT-I]
+[010:ID_PHONE-B] [##에:ID_PHONE-I] [92:ID_PHONE-I] [##92:ID_PHONE-I] 뒷 ##자리 ##는 [이이:SS_NAME-B] [##팔:SS_NAME-I] [##삼:SS_NAME-I]
 ㄴ
 [010:ID_PHONE-B] [3:ID_PHONE-I] [227:ID_PHONE-I] [88:ID_PHONE-I] [##33:ID_PHONE-I]
 [010:ID_PHONE-B] [3:ID_PHONE-I] [227:ID_PHONE-I] [88:ID_PHONE-I] [##3:ID_PHONE-I] [3:ID_PHONE-I]
@@ -57,124 +60,89 @@
 [053:ID_ACCOUNT-B] [32:ID_ACCOUNT-I] [27:ID_ACCOUNT-I] [88:ID_ACCOUNT-I] [33:ID_ACCOUNT-I]
 ㄴ
 [02:ID_ACCOUNT-B] [##3:ID_ACCOUNT-I] 잠시 ##만 ##요 [32:ID_ACCOUNT-B] [##에:ID_ACCOUNT-I] [27:ID_ACCOUNT-I] [어:ID_ACCOUNT-I] [88:ID_ACCOUNT-I] [33:ID_ACCOUNT-I]
-[010:ID_PHONE-B] [32:ID_PHONE-I] [##에:ID_PHONE-I] [27:ID_PHONE-I] 그 뒤 ##에 ##가 [88:ID_PHONE-B] [33:ID_PHONE-I]
-[02:ID_ACCOUNT-B] [##3:ID_PHONE-I] [9:ID_PHONE-I] [4:ID_PHONE-I] 번 [234:ID_ACCOUNT-I] [##5:ID_PHONE-I]
+[010:ID_PHONE-B] [##에:ID_PHONE-I] [92:ID_PHONE-I] [##92:ID_PHONE-I] 뒷 ##자리 ##는 [228:ID_PHONE-B] [##3:ID_PHONE-I]
+[010:ID_PHONE-B] [##에:ID_PHONE-I] [92:ID_PHONE-I] [##92:ID_PHONE-I] 뒷 ##자리 ##는 [둘:ID_PHONE-B] [##둘:ID_PHONE-I] [##83:ID_PHONE-I]
+[010:ID_PHONE-B] [32:ID_PHONE-I] [##에:ID_PHONE-I] [27:ID_PHONE-I] 그 뒤 ##에 ##가 [88:ID_ACCOUNT-I] [33:ID_ACCOUNT-I]
+[02:ID_ACCOUNT-B] [##3:ID_ACCOUNT-I] [9:ID_ACCOUNT-I] [4:ID_ACCOUNT-I] [번:ID_ACCOUNT-I] [234:ID_ACCOUNT-I] [##5:ID_ACCOUNT-I]
 [053:ID_PHONE-B] [9:ID_PHONE-I] 네 번 [223:ID_PHONE-B] [##4:ID_PHONE-I]
 [8:SS_WEIGHT-B] 아니 ##고 [3:SS_WEIGHT-B] ##이 ##요 .
-[8:SS_WEIGHT-B] 아니 ##고 [3:SS_WEIGHT-B] ##이 ##요 . 32 [##27:ID_PHONE-I]
+[8:SS_WEIGHT-B] 아니 ##고 [3:SS_WEIGHT-B] ##이 ##요 . 32 ##27
 ㄴ
-0 ##둘 ##3 잠시 ##만 ##요 [3:ID_ACCOUNT-B] [##하나:ID_PHONE-I] [27:ID_PHONE-I] 어 [88:SS_WEIGHT-B] 마지막 두 자리 ##가 삼 두 개요
+[0:ID_PHONE-B] [##둘:ID_PHONE-I] ##3 잠시 ##만 ##요 3 ##하나 27 어 [88:SS_WEIGHT-B] 마지막 두 자리 ##가 삼 두 개요
 [010:ID_PHONE-B] [32:ID_PHONE-I] [##27:ID_PHONE-I] [3:ID_PHONE-I] ##다 ##음 ##에 2 ##가 두 번이 ##고 칠 그 뒤 ##가 [88:ID_PHONE-B] [##33:ID_PHONE-I]
 ㄴ
-
-저 ##는 2 ##년 ##전 ##인 중 ##3 ##겨울 ##방 ##학 ##부터 고등학교 입학 전 ##까 ##지 5 ##개 ##월 간 12 ##키 ##로 ##를 감량 ##했 ##어요 ! 중간 ##에 4 ##키 ##로 요 ##요 , , 그리고 현재 고 ##2 , 두 ##달 전부 ##터 9
-[62:SS_LENGTH-B] ##정 ##도 일 ##때 얼굴 . . 답 없 ##져
-[12:SS_WEIGHT-B] [##키:SS_WEIGHT-I] [##로:SS_WEIGHT-I] 감량 때 ##는 딱히 식단 조절 없이 저녁 ##만 안 ##먹 ##고 , 군 ##것 ##질 아예 끊 ##었 ##었 ##어요 !
-몸무게 ##를 재보 ##니 [62:SS_WEIGHT-B] [##키:SS_WEIGHT-I] [##로:SS_WEIGHT-I] ##가 되 ##어 ##있 ##더라 ##구요 . . . . . .
-그러 ##다가 이번 7 ##월 ##부터 8 ##월 여름 ##방 ##학 ##까 ##지 ##는 몸 ##을 혹사 시키 ##면 ##서 다이어트 했어요 . . 솔직히 단기간 ##에 뺄 ##려 ##던 생각 ##은 전혀 없 ##었 ##는데 방학 ##되 ##고 나니 탄수화물 ##을 아예 끊 ##고 싶 ##어 ##서
-지금 ##은 [163:SS_LENGTH-B] ##에 [53:SS_WEIGHT-B] - 54 ##왔 ##다 ##갔 ##다 ##하 ##는 중이 ##에 ##요
-[48:SS_WEIGHT-B] [##키:SS_WEIGHT-I] [##로:SS_WEIGHT-I] 찍 ##어 ##보 ##려 ##구요 ! 그때 또 글 ##쓸 ##게요 여러분 읽 ##어 ##주 ##셔 ##서 감사 ##합니다 ❤ ##️
-[6:SS_BIRTH-B] [##월:SS_BIRTH-I] [13:SS_BIRTH-I] [##일:SS_BIRTH-I]
-[9:SS_BIRTH-B] [##월:SS_BIRTH-I] [9:SS_BIRTH-I] [##일:SS_BIRTH-I]
-살 ##가슴 이 ##었 ##나 ##봐 ##요 저 . . 다이어트 하루 ##전 ##에 [80:SS_LENGTH-B] [##C:SS_WEIGHT-I] ##로 속옷 ##을 다시 맞췄 ##는데 지금 ##은 a ##를 향해 가 ##는 b ##입니다 골 ##이 사라졌 ##어요 이건 어쩔 수 없 ##는 ##거 ##니 . . . . . 여러분
-[9:SS_BIRTH-B] [/:SS_BIRTH-I] [23:SS_BIRTH-I] [##일:SS_BIRTH-I] 기준 가장 최근 사진 ##들
-여러분 저 거의 2 ##키 [##로:SS_WEIGHT-I] ##가 쪘 ##어요 . . . 요즘 나 ##태 ##해 졌 ##답니다
-
-올해 1 ##월 ##부터 대략 5 ##월 ##까 ##지 대략 5 ##달 동안 다이어트 ##로 10 ##k ##g 감량 ##하 ##였 ##고 , 지금 ##까 ##지 유지 ##어 ##트로 아직 ##까 ##지 몸무게 유지 중이 ##다 .
-일단 계기 ##는 몸무게 숫자 ##에 충격 ##받 ##아 ##서 바로 시작 ##했 ##고 , 이렇게 ##까 ##지 할 생각 ##은 아니 ##었 ##는데 , 하 ##다 보 ##니 10 ##k ##g 빠졌 ##다 .
-7 ##k [##g:SS_WEIGHT-I] 감량
-두 달 지나 ##니 3 ##k ##g 더 빠져서 총 7 ##킬 ##로 감량
-3 ##k ##g 추가 감량
-이렇게 해서 10 ##킬 [##로:SS_WEIGHT-I] 감량 .
-1 ##월 ##부터 시작 ##해서 5 ##월 ##까 ##지 유지 ##어 ##터 ##로 하 ##다가 지금 ##은 식단 구애 ##받 ##지 않 ##고 먹 ##을 때 마구 먹 ##고 있 ##다 .
-[ 공지 ] 간헐 ##적 단식 1 ##일 ##1 ##식 다이어트 후기 A to Z ( [64:SS_WEIGHT-B] [ 공지 ] → [ 공지 ] [47:SS_WEIGHT-B] [##k:SS_WEIGHT-I] [##g:SS_WEIGHT-I] )
-체중 감량 성공 ##한 [연:SS_NAME-B] [##쁘:SS_NAME-I] ##입니다 . ( * ^ ^ * )
-1 ##일 1 ##식 다이어트 ( = 같 ##은 표현 ##으로 간헐 ##적 단식 23 : 1 )
-[64:SS_WEIGHT-B] [##k:SS_WEIGHT-I] [##g:SS_WEIGHT-I] ##에 ##서 [47:SS_WEIGHT-B] [##k:SS_WEIGHT-I] [##g:SS_WEIGHT-I] ##로 총 17 ##k ##g ##를 감량 ##했 ##고
-살 ##면 ##서 인생 최저 몸무게 [46:SS_WEIGHT-B] [##k:SS_WEIGHT-I] [##g:SS_WEIGHT-I] ##까 ##지도 찍 ##었 ##고
-보다 ##시피 [5:SS_AGE-B] [##개:SS_AGE-I] [##월:SS_AGE-I] 넘 ##게 멀쩡 ##하 ##게
-[47:SS_WEIGHT-B] [##k:SS_WEIGHT-I] [##g:SS_WEIGHT-I] ##대 유지 ##중 ##에 ##요 .
-[UNK] : 대학교 4 ##학 ##년 [60:SS_WEIGHT-B] [##k:SS_WEIGHT-I] [##g:SS_WEIGHT-I] ##대
-후 : 현재 ( [30:SS_AGE-B] [##살:SS_AGE-I] ##입니다 . . 곧 [31:SS_AGE-B] [##살:SS_AGE-I] . . 주 ##륵 . . ) [47:SS_WEIGHT-B] [##k:SS_WEIGHT-I] [##g:SS_WEIGHT-I]
-아직 젊 ##은 ##데 튼 ##살 엄청 생겨서 울 ##기 ##도 ##하 ##고
-
-총 15 ##k ##g 감량 ( [64:SS_WEIGHT-B] - > [49:SS_WEIGHT-B] [##k:SS_WEIGHT-I] [##g:SS_WEIGHT-I] )
-총 10 ##k ##g 감량 ( [58:SS_WEIGHT-B] - > [47:SS_WEIGHT-B] [##k:SS_WEIGHT-I] [##g:SS_WEIGHT-I] )
-총 17 ##k ##g 감량 ( [64:SS_WEIGHT-B] - > [47:SS_WEIGHT-B] [##k:SS_WEIGHT-I] [##g:SS_WEIGHT-I] )
-그 사이 ##에 ##는 50 ~ 52 ##k ##g 유지 ##했 ##는데
-결국 2018 ##년 5 ##월 [57:SS_WEIGHT-B] [.:SS_WEIGHT-I] [8:SS_WEIGHT-I] [##k:SS_WEIGHT-I] [##g:SS_WEIGHT-I] ##까 ##지 찍 ##게 ##되 ##었 ##는데
-[UNK] [57:SS_WEIGHT-B] [.:SS_WEIGHT-I] [8:SS_WEIGHT-I] [##k:SS_WEIGHT-I] [##g:SS_WEIGHT-I] - > [47:SS_WEIGHT-B] [##k:SS_WEIGHT-I] [##g:SS_WEIGHT-I] ##된 현재 ( 총 11 ##개 ##월 소요 )
-[UNK] - > [49:SS_WEIGHT-B] [##k:SS_WEIGHT-I] [##g:SS_WEIGHT-I] 뺀 사진 ( 총 8 ##개 ##월 소요 )
-전 : 2014 ##년 ##도 [60:SS_WEIGHT-B] [##k:SS_WEIGHT-I] [##g:SS_WEIGHT-I] ##대
-후 : 2019 ##년 ##도 [47:SS_WEIGHT-B] [##k:SS_WEIGHT-I] [##g:SS_WEIGHT-I] ~ 46 ##k ##g ##대
-[52:SS_WEIGHT-B] [##k:SS_WEIGHT-I] [##g:SS_WEIGHT-I] ##까 ##지만 해도
-다리 보 ##면 [50:SS_WEIGHT-B] [##k:SS_WEIGHT-I] [##g:SS_WEIGHT-I] 후반 ##대로 봤 ##었 ##어요 .
-17 ##k ##g ##가 빠지 ##면 ##요 . . . 다리 ##도 그냥 빠져 ##요 .
-[치킨:SS_NAME-B] ##이 하루 식사 ##의 전부 !
-치킨 최고 . . ! ! ! ! ! !
-ex ) [초콜릿:SS_NAME-B] 등등 이 먹 ##고 싶 ##다면
-저 예전 ##에 [애슐리:SS_BRAND-B] 오후 ##1 ##시 ##에 가 ##서
-이젠 [애슐리:SS_BRAND-B] ##가 ##면
-주 ##륵 . . .
-
-7 . [유지:SS_NAME-I] ##는 어떻게 ?
-2 . 탄 ##단지 골고루 먹 ##으면 ##서 영양제 챙겨 ##먹 ##기
-- 예전 ##에 ##는 [초콜릿:SS_NAME-B] ##이
-매일 재 ##서 0 . 1 ##k ##g ~ 0 . 5 ##k ##g ##에
-만 [22:SS_AGE-B] [##세:SS_AGE-I] 미만 ##의 성장기 ##라면 시작 ##도 하지 ##말 ##지어 ##다 .
-이미 마른 ##비 ##만 ##이 ##었 ##어요 .
-[연:SS_NAME-B] [##쁘:SS_NAME-I] ##는 여러 시행착오 ##를 거쳐
-유도 ##리 ##있 ##게 식사 ##량 ##을 조절 ##하면 성공 ##할 ##거 ##라 믿 ##습 ##니다 .
-최고 몸무게 [58:SS_WEIGHT-B] [##k:SS_WEIGHT-I] [##g:SS_WEIGHT-I] - > [53:SS_WEIGHT-B] [##k:SS_WEIGHT-I] [##g:SS_WEIGHT-I] - > [49:SS_WEIGHT-B] [##k:SS_WEIGHT-I] [##g:SS_WEIGHT-I] - > [55:SS_WEIGHT-B] [##k:SS_WEIGHT-I] [##g:SS_WEIGHT-I] - > 그리고 현재 [47:SS_WEIGHT-B] [##k:SS_WEIGHT-I] [##g:SS_WEIGHT-I] ##입니다 !
-1 ) 최고 몸무게 57 ~ 8 ##k ##g
-키 [162:SS_LENGTH-B] ##에 몸무게 [47:SS_WEIGHT-B] ~ 8 ##k ##g , 고등학교 ~ 대학교 1 ##학 ##년 때 ##였 ##습 ##니다
-2 ) [55:SS_WEIGHT-B] ~ 3 ##k ##g
-그렇게 방학 ##을 보내 ##고 나니 살 ##이 3 ##k ##g ##정 ##도 빠져서 [55:SS_WEIGHT-B] [##k:SS_WEIGHT-I] [##g:SS_WEIGHT-I] ##정 ##도 ##가 되 ##었 ##습 ##니다
-겨우 2 ##키 ##로 정도 빠져서 [53:SS_WEIGHT-B] [##k:SS_WEIGHT-I] [##g:SS_WEIGHT-I] ##를 왔 ##다 ##갔 ##다 했 ##습 ##니다
-3 ) 대 ##망 ##의 [49:SS_WEIGHT-B] [##k:SS_WEIGHT-I] [##g:SS_WEIGHT-I]
-저 ##도 모르 ##게 몸무게 ##가 빠졌 ##고 그 당시 최저 몸무게 ##엔 [49:SS_WEIGHT-B] [##k:SS_WEIGHT-I] [##g:SS_WEIGHT-I] ##을 달성 ##했 ##습 ##니다
-점심 때 아무리 맛있 ##는 걸 먹 ##어도 [49:SS_WEIGHT-B] [##키:SS_WEIGHT-I] [##로:SS_WEIGHT-I] ##가 유지 ##가 되 ##더라 ##구요
-4 ) 국토 ##대장 ##정 다녀 ##와서 [53:SS_WEIGHT-B] ~ [55:SS_WEIGHT-B] ##k ##g ##로 찜 ㅠㅠ
-저 ##도 살 빠질 줄 알 ##았 ##는데 [5:SS_WEIGHT-B] [##키:SS_WEIGHT-I] [##로:SS_WEIGHT-I] 찌 ##고 왔 ##습 ##니다
-다이어트 하 ##는 [조원:SS_NAME-B] 오빠 ##의 초코 ##파이 ##까 ##지 뺏 ##아먹 ##었 ##음 . . . ㅋㅋㅋ
-그 뒤 ##로 ##는 또 [53:SS_WEIGHT-B] [##k:SS_WEIGHT-I] [##g:SS_WEIGHT-I] ##을 유지 ##했 ##습 ##니다
-5 ) 그리고 요즘 [47:SS_WEIGHT-B] [##k:SS_WEIGHT-I] [##g:SS_WEIGHT-I] 최저 몸무게 달성 ! !
-다이어트 ##용 시리얼 ##바 같 ##은 건 안 ##사고 그냥 [코스트코:SS_BRAND-B] ##에 ##서 대용량 시리얼 ##바 ,
-[코스트코:SS_BRAND-B] 대량 두유 샀 ##습 ##니다 ㅋㅋ
-아몬드 ##브리 ##즈 ##도 옛날 ##에 많이 먹 ##어 ##봤 ##는데
-저 ##는 키 [181:SS_LENGTH-B] [##c:SS_LENGTH-I] [##m:SS_LENGTH-I] ##에 특별히 운동 ##을 하지 않 ##고 일상 ##적 ##인 생활 하 ##면 [70:SS_WEIGHT-B] [##k:SS_WEIGHT-I] [##g:SS_WEIGHT-I] 후반 ##에 ##서 [80:SS_WEIGHT-B] [##k:SS_WEIGHT-I] [##g:SS_WEIGHT-I] 초반 ##을 유지 ##하 ##는 밸런스 ##를 가지 ##고 있 ##어요 . 제 인생 ##에 살 ##이 많이 [UNK] 적
-이후 ##에 다시 운동 안 하고 술 많이 먹 ##다 보 ##니 2017 ##년 ##도 ##에 [89:SS_WEIGHT-B] [##k:SS_WEIGHT-I] [##g:SS_WEIGHT-I] ##까 ##지 찌 ##게 되 ##는데 2018 ##년 ##도 ##에 같 ##은 방법 ##으로 다시 10 ##키 ##로 ##를 감량 ##해서 [79:SS_WEIGHT-B] [##k:SS_WEIGHT-I] [##g:SS_WEIGHT-I] ##의 몸무게 ##를 만들 ##었
-( 예 ##를 들 ##면 한창 먹 ##을 당시 [버거:SS_BRAND-B] [##킹:SS_BRAND-I] ##에 가면 더블 치즈 와 ##퍼 ##세 ##트 + 감 ##튀 1 ##개 추가 + 주니어 ##와 ##퍼 추가 ##를 해서 먹 ##었 ##었 ##는데 다이어트 ##하면 ##서는 더블 치즈 와 ##퍼 ##세 ##트 ##만 먹 ##거나
-이렇게 식단 조절 ##과 운동 ##을 통해서 2014 ##년 ##도 ##에 ##는 대략 1 ##주 ##일 ##에 1 ##k ##g ##씩 해서 15 ##키 ##로 감량 , 2018 ##년 ##도 ##에 ##는 같 ##은 방식 ##으로 10 ##키 ##로 감량 ##에 성공 ##했 ##어요 . 제 ##가 살
-
-[20:SS_AGE-B] [##살:SS_AGE-I] 넘어서 키 ##큰 사례
-[2005:ID_INUM-B] [.:ID_INUM-I] [10:ID_INUM-I] [.:ID_INUM-I] [29:ID_INUM-I] . 00 : 15
-2 ##년 ##간 ##의 성장 . . . . 눈물 ##난다 [168:SS_LENGTH-B] - - > [174:SS_LENGTH-B] ##정 ##도 [20:SS_AGE-B] [##살이:SS_AGE-I] ##후 ##에 ##키 ##가 ##안 ##큰 ##다는 ##건 개구 ##라 ##임 ##을 몸소 ##입 ##증
-본 ##좌 ##의 소개 ##를 하자 ##면 [84:ID_INUM-B] [##년:ID_INUM-I] [12:ID_INUM-I] [##월:ID_INUM-I] ##에 태어나 [22:SS_AGE-B] [##세:SS_AGE-I] ##의 공대 ##를 다니 ##고 ##있 ##는 한 학도 ##인 ##데 ##요
-키 [180:SS_LENGTH-B] ##되 ##는 ##친 ##구 약 1 ##년 ##반 ##만 ##에 만났 ##는데 만나 ##자 ##마자 " 어 ? " 니 키 ##컸 ##다 ! " 라는 말 ##부터 ##하 ##더 ##군 ##요
-여름 ##즈음 군대 ##신 ##검 [168:SS_LENGTH-B] [.:SS_LENGTH-I] [0:SS_LENGTH-I] - - > [173:SS_LENGTH-B] [.:SS_LENGTH-I] [5:SS_LENGTH-I] [##c:SS_LENGTH-I] [##m:SS_LENGTH-I] ( 울 ##형 ##님 ( [35:SS_AGE-B] [##세:SS_AGE-I] ) 한의 ##원 ##키 ##재 ##는 전자 ##도 ##구 ##로 ##직 ##접 ##잰 ##결 ##과 ) 스펀 ##지 ##에 ##서 팔 ##굽 ##혀 ##펴 ##기
-후 키 ##커 ##야 ##겠다 ##고 생각 ##한 ##계 ##기 ##가 있 ##는데 ##요 작년 ##에 고 ##3 ##때 저 ##랑 ##공 ##부 ##를 피 ##눈 ##물 ##나 ##도록 ##같이 열심히 ##하 ##던 ##친 ##구 ##놈 ##이 하나 ##있 ##읍 ##죠 . . . . . . 키
-이 ##넘 ##은 [서강대:SS_BRAND-B] ##란 ##곳 ##을 갔 ##는데 흠 . . . . 연락 ##두 ##절 ##에 만날 ##기 ##회 ##도 거의 ##없 ##어 ##서 무려 10 ##개 ##월 ##정 ##도 ##나 지나 ##서야 조우 ##했 ##습 ##니다 . . . 근데 이 ##넘 ##이 키 ##가
-이 친구 ##는 농구 ##를 줄기차 ##게 ##했 ##고 그이 ##외 ##에 ##는 [UNK] , , 이 ##넘 ##집 ##안 ##은 원래 작 ##은 ##데 , , , , 부모 ##님 ##도 다 [160:SS_LENGTH-B] ##대 초반 ##정 ##도 ##되 ##시 ##는데 누님 ##도 작 ##은 ##데 . .
-저희 ##아 ##빠 ##는 키 ##가 젊 ##은 ##시 ##절 [178:SS_LENGTH-B] ##정 ##도 되 ##었 ##으나 허리 ##도 엄청 ##안 ##좋 ##아지 ##시고 수 ##척 ##해 ##지 ##셔 ##서 지금 ##은 키 ##가 줄어든 ##것 ##같 ##아 ##요 [175:SS_LENGTH-B] ##정 ##도 , , , , , 형 ##님
-1 . 키 = 유전 ? 아니 ##다 . . . 아직 ##젊 ##다 난 [12:SS_AGE-B] [##월:SS_AGE-I] [##생:SS_AGE-I] ##이다 3 ##월 ##생 ##보 ##다 9 ##개 ##월 ##을 덜 ##살 ##았 ##다 . . . 난 더 큰 ##다 수많 ##은 사람 ##들이 미친 ##듯 많 ##다 .
-2 . 성장 ##판 ##닫 ##히 ##면 뼈 ##의 ##성장 ##이 ##안 ##되 키 ##가 ##안 ##큰 ##다 = = > 개소 ##리 ##다 ! ! 의학 ##적 ##으로 증명 ##안 ##됫 ##다 수많 ##은 co ##unt ##er ex ##amp ##le 즉 반 ##례 ! ! 들 ##은
-운동 ##하면 뼈 ##길 ##어지 ##겠 ##지 . . 운동 ##하면 근육 ##도 생김새 ##달라 ##지 ##잖아 . . . . ㅆ ##ㅂ ##ㅆ ##ㅂ 좀 ##늘 ##어난 ##다 그래 ##그래 굽 ##은 ##허 ##리 ##를 펴 ##자 , , , 난 아직 ##젊 ##다 . . .
-키 ##에 병 ##적 ##으로 집착 ##했 ##습 ##니다 . . . . . . . 거의 학업 ##이 뒷전 ##으로 미뤄 ##지 ##고 남 ##들 ##은 절 운동 ##남 . 스트레칭 ##남 ##으로 불렀 ##습 ##니다 . .
-음 ##음 . . . . . 곱 ##은 ##허 ##리 ##를 펴 ##자 ##고 갖은 ##카 ##페 ##에 가입 ##을 해서 허리 ##펴 ##는 ##요 ##법 허리 ##를 ##펴 ##서 2 ##c ##m ##가 컸 ##다는 사람 ##들 ##도 ##있 ##고 [20:SS_AGE-B] [##세:SS_AGE-I] ##후 ##에 키 ##가
-이시 ##점 ##부터 술 ##을 ##멀 ##리 ##하 ##게 ##되 ##고 ##되 ##고 우유 ##랑 멸치 ##를 애용 ##하 ##고 , , , 허리 ##를 펴 ##는 ##운동 ##을 수십 ##번 ##씩 ##해 ##주 ##고 스트레칭 땅 ##짚 ##기 , , 종아리 ##발 ##목 어깨 ##허 ##리 ##다리
-새벽 5 ##시 ##30 ##분 ##경 ##일 ##어나 공원 ##을 한 ##바퀴 ##돌 ##고 자전거 ##에 ##걸 ##려 ##있 ##는 줄 ##넘기 ##를 풀어 ##서 500 ##회 ##를 가 ##뿐 ##하 ##게 해준 ##후 ##에 7 ##시 ##에 집 ##으로 와서 씻 ##고 10 ##시 ##부터 약 1
-수면 ##은 정확히 밤 10 ##시 아니 더 ##빠 ##르 ##게 ##는 9 ##시 ##30 ##분
-친구 ##들이 10 ##시 ##이 ##후 ##에 만나 ##서 술 ##먹 ##자 . . . . 하 ##면 " 안 ##되 ! ! "
-수면 ##을 하 ##면 ##서 키 ##크 ##는 ##신 ##께 " 님 ##아 [0:SS_WEIGHT-B] [.:SS_WEIGHT-I] [00:SS_WEIGHT-I] [##5:SS_WEIGHT-I] ##c ##m ##만 크 ##게 ##해 ##주 ##시 ##옵 ##소 ##서 " 라고 생각 ##하면 ##서 인터넷 ##에 ##서 뒤진 ##좋 ##다는 ##자 ##세 ##로 잤 ##죠
-걸 ##을 ##때 발끝 ##에 힘 ##을 ##주 ##고 종아리 ##를 [UNK] 뚝뚝 ##소리 ##가 나 ##도록 . . . 후후 나날 ##은 계속 ##됩 ##니다
-약 2 ##년 ##간 ##의 세월 ##을 보내 ##고 . . . 프로젝트 ##시 ##행 1 ##년 ##정 ##도 ##에 ##는 키 ##가 [170:SS_LENGTH-B] ##정 ##도로 성장 ##했 ##습 ##니다 . . . . 흠 . . 이때 ##까 ##지 ##는 그냥 단순히 허리 ##운동 ##잘 ##하 ##고
-지금 ##은 거의 몸 ##의 ##구조 ##도 완전 ##바 ##뀌 ##었 ##습 ##니다 . . . . . 하체 ##에 뭉쳐 ##있 ##던 지방 ##들 ##을 운동 ##으로 떨쳐 ##내 ##어 ##서 . .
-거의 뼈 ##를 ##감 ##싸 ##고 ##있 ##던 살 ##들 ##을 분리 ##시 ##켰 ##죠 ( 뼈 ##와 ##살 ##의 ##분 ##리 . . . . ) 하체 ##비 ##만 ##적 구조 ##를 ##가지 ##고 ##있 ##었 ##는데 지금 ##은 하체 ##한 ##테 먹이 ##를 좀 줘야 ##할
-매일 어깨 ##를 의자 ##등 ##받이 ##에 붙이 ##고 60 ~ 120 ##도 ##정 ##도로 컴 ##터 ##와 공부 ##등 ##을 하 ##던 ##저 ##는 90 ##도 ##직 ##각 ##의 정자 ##세 ##를 유지 ##하면 ##서 공부 ##와 et ##c . . . . . 했 ##어 ##욤
-제 ##가 애용 ##하 ##던 ##카 ##페 키 ##성장 ##프로 ##젝트 ##에도 글 ##을 ##올 ##릴 ##생 ##각 ##입니다
-후후 . . . . . 딱 2 ##년 ##인 ##것 ##같 ##은 ##데 . . . . .
-군대 ##를 갑니다 이제 [12:SS_BIRTH-B] [##월:SS_BIRTH-I] [25:SS_BIRTH-I] [##일:SS_BIRTH-I] ##크리 ##스 ##마스 ##를 보내 ##고 입대 ##할 ##것 ##같 ##네 ##요 . . . . . 군대 ##를 가면 규칙 ##적 ##으로 운동 ##할 ##수 ##있 ##으니 ##깐 수면 ##도 잘 ##되 ##고 1 ##c ##m ##만 더 ##컸
-요즘 애 ##색 ##희 ##들이 먹 ##고 ##살 ##기 ##좋 ##아지 ##니 ##깐 무식 ##하 ##게 크 ##더 ##군 ##요 . . . . . - - ;
-아무튼 . . . . [20:SS_AGE-B] [##살이:SS_AGE-I] ##후 ##에 성장 ##을 한 한 청년 ##이 ##고 체험 ##수기 ##를 씁니다 . . . 님 ##들 ##도 반드시 효과 ##가 있 ##으 ##시 ##리 ##라 확신 ##합니다 ! ! ! 부디 힘내 ##세요 . . . . . .
-ㄴ ##본 ##인 ##의 중 ##3 ##시 ##절 ##의 키 ##가 [160:SS_LENGTH-B] ##이 ##었 ##어요 . . 고 ##1 ##때 [164:SS_LENGTH-B] 고 ##3 ##때 [167:SS_LENGTH-B] [20:SS_AGE-B] [##세:SS_AGE-I] [168:SS_LENGTH-B] [21:SS_AGE-B] [##세:SS_AGE-I] [170:SS_LENGTH-B] [22:SS_AGE-B] [##세:SS_AGE-I] [173:SS_LENGTH-B] 이야 정말 한 6 ##년 ##동안 꾸준히 ##컷 ##구 ##만
+[010:ID_PHONE-B] [##11:ID_INUM-I] [##11:ID_INUM-I] [-:ID_INUM-I] [222:ID_PHONE-I] [##2:ID_PHONE-I]
+이 ##택 ##길 ( 65 ##세 ) 주민 ##과 ##장 2017 . 5 . 12 . 김 ##군 ##호 ( 32 )	SS_NAME-B SS_NAME-I SS_NAME-I O SS_AGE-B SS_AGE-I O O O O O O O O O O SS_NAME-B SS_NAME-I SS_NAME-I O SS_AGE-B O
+주무관 김재 ##화 지방 ##행정 ##사 ##무 지진 ##태 행정 ##사 ##무 ##관 이 ##택 ##길 ( 65 ##세 ) 주민 ##과 ##장 2017 . 5 . 12 . 김 ##군 ##호 ( 32 )	O SS_NAME-B SS_NAME-I O O O O SS_NAME-B SS_NAME-I O O O O SS_NAME-B SS_NAME-I SS_NAME-I O SS_AGE-B SS_AGE-I O O O O O O O O O O SS_NAME-B SS_NAME-I SS_NAME-I O SS_AGE-B O
+협조 ##자	O O
+시행 주민 ##과 - 132 ##9	O O O O ID_PHONE-I ID_PHONE-I
+우 031 ##71 서울 ##특별 ##시 종로구 세 ##증 ##대로 209 ( 세 ##증 ##로 )	O ID_PHONE-B ID_PHONE-I AD_METRO-B AD_METRO-I AD_METRO-I AD_CITY-B AD_ADDRESS-B AD_ADDRESS-I AD_ADDRESS-I AD_ADDRESS-I O AD_ADDRESS-I AD_ADDRESS-I AD_ADDRESS-I O
+접수 http : / / www . m ##o ##i . go . kr	O O O O O O O O O O O O O O
+전화 ##번 ##호 02 - 2100 - 38 ##46	O O O ID_PHONE-B ID_PHONE-I ID_PHONE-I ID_PHONE-I ID_PHONE-I ID_PHONE-I
+팩스 ##번 ##호 02 - 2100 - 42 ##97 / ab ##le ##g ##uy ##46 @ m ##o ##i . go . kr / 대국민 공개	O O O ID_PHONE-B ID_PHONE-I ID_PHONE-I ID_PHONE-I ID_PHONE-I ID_PHONE-I O O O O ID_PHONE-I ID_PHONE-I O O O O O O O O O O O
+※ 영수증 ##이 급히 필요 ##하 ##신 분 ##은 농협 50 ##50 ##55 - 51 - 03 ##90 ##32 ( 예금 ##주 : 푸른 ##꿈 ##고 ) 계좌 ##로 입금 ##해 주시 ##고 학교 ##에 ##서 확인 ##할 수 있 ##도록 학년 ##반 , 학생 ##이 ##름 ##으로 납부 바랍니다	O O O O O O O O O SS_BRAND-B ID_ACCOUNT-B ID_ACCOUNT-I ID_ACCOUNT-I ID_ACCOUNT-I ID_ACCOUNT-I ID_ACCOUNT-I ID_ACCOUNT-I ID_ACCOUNT-I ID_ACCOUNT-I O O O O SS_BRAND-B SS_BRAND-I SS_BRAND-I O O O O O O O O O O O O O O O O O O O O O O
+납부 후 행정 ##실 ( ☎ ##0 ##63 - 32 ##3 - 225 ##8 ) 으로 연락 주시 ##면 입금 ##확 ##인 후 영수증 ##을 발행 ##해 드립니다 .	O O O O O O ID_PHONE-B ID_PHONE-I ID_PHONE-I ID_PHONE-I ID_PHONE-I ID_PHONE-I ID_PHONE-I ID_PHONE-I O O O O O O O O O O O O O O O
+나 . 납부 ##방 ##법 : 스쿨 ##뱅 ##킹 계좌 또는 학교 ##계 ##좌 입금	O O O O O O O O O O O O O O O
+( 농협 35 ##5 - 000 ##4 - 71 ##23 - 53 예금 ##주 : 가평 ##중 ##학교 3 - 1 홍길동 ##으로 입금 )	O SS_BRAND-B ID_ACCOUNT-B ID_ACCOUNT-I ID_ACCOUNT-I ID_ACCOUNT-I ID_ACCOUNT-I ID_ACCOUNT-I ID_ACCOUNT-I ID_ACCOUNT-I ID_ACCOUNT-I ID_ACCOUNT-I O O O SS_BRAND-B SS_BRAND-I SS_BRAND-I ID_ACCOUNT-B ID_ACCOUNT-I ID_ACCOUNT-I O O O O
+• 기타 궁금 ##한 사항 ##은 교육 ##행정 ##식 ( ☎ ##58 ##0 - 300 ##6 ) 로 문의 ##하시 ##길 바랍니다 .	O O O O O O O O O O O ID_PHONE-B ID_PHONE-I ID_PHONE-I ID_PHONE-I ID_PHONE-I O O O O O O O
+최정 ##숙 국민 88 ##57 ##0 ##10 ##000 ##75 ##20	SS_NAME-B SS_NAME-I SS_BRAND-B ID_INUM-B ID_INUM-I ID_INUM-I ID_INUM-I ID_INUM-I ID_INUM-I ID_INUM-I
+이성 ##환 국민 92 ##16 ##0 ##20 ##12 ##89 ##72 ##1	SS_NAME-B SS_NAME-I SS_BRAND-B ID_INUM-B ID_INUM-I ID_INUM-I ID_INUM-I ID_INUM-I ID_INUM-I ID_INUM-I ID_INUM-I
+김영 ##숙 하나 29 ##3 - 91 ##0 ##2 - 37 ##80 ##7	SS_NAME-B SS_NAME-I SS_BRAND-B ID_PHONE-B ID_ACCOUNT-I ID_ACCOUNT-I ID_ACCOUNT-I ID_ACCOUNT-I ID_ACCOUNT-I ID_ACCOUNT-I ID_ACCOUNT-I ID_ACCOUNT-I ID_ACCOUNT-I
+나 애기 짱 ##허 ##니 [UNK]	O O O O O O
+나 애기 짱 ##허 ##니 일곱 ##살	O O O O O SS_AGE-B SS_AGE-I
+나 애기 짱 ##허 ##니 일곱	O O O O O SS_AGE-B
+나 애기 짱 ##허 ##니 정신 ##연 ##령 일곱	O O O O O O O O O
+나 애기 짱 ##허 ##니 정신 ##연 ##령 열 ##일 ##곱	O O O O O O O O SS_AGE-B SS_AGE-I SS_AGE-I
+나 애기 짱 ##헌 일곱 ##짤	O O O O O O
+나 애기 짱 ##헌 ##이 일곱 ##짤	O O SS_NAME-B SS_NAME-I O O O
+일곱 ##짤 짱 ##헌 ##니 배고 ##빠	O O O O O O O
+짱 ##헌 ##니 배고 ##빠	SS_NAME-B SS_NAME-I SS_NAME-I O O
+짱 ##헌 ##니 배고파	SS_NAME-B SS_NAME-I SS_NAME-I O
+짱 ##허 ##니 ##는 배고 ##빠	SS_NAME-B SS_NAME-I SS_NAME-I O O O
+짱 ##허 ##니 헝 ##그리	O O O O O
+너 102 ##였 ##다가 190 ##된 ##거 ##야 ?	O SS_WEIGHT-B O O SS_LENGTH-B O O O O
+너 102 ##키 ##로 ##였 ##다가 190 ##된 ##거 ##야 ?	O SS_WEIGHT-B SS_WEIGHT-I SS_WEIGHT-I O O SS_WEIGHT-B O O O O
+너 102 ##키 ##로 ##였 ##다가 190 ##키 ##로 ##된 ##거 ##야 ?	O SS_WEIGHT-B SS_WEIGHT-I SS_WEIGHT-I O O SS_WEIGHT-B SS_WEIGHT-I SS_WEIGHT-I O O O O
+너 102 ##센 ##치 ##였 ##다가 190 ##된 ##거 ##야 ?	O SS_LENGTH-B SS_LENGTH-I SS_LENGTH-I O O SS_LENGTH-B O O O O
+너 키 ##10 ##2 ##였 ##다가 190 ##된 ##거 ##야 ?	O O O SS_WEIGHT-I O O SS_LENGTH-B O O O O
+ㄴ	O
+02 38 ##72 52 ##7	ID_PHONE-B ID_PHONE-I ID_PHONE-I ID_PHONE-I ID_PHONE-I
+01 ##2 38 ##7 52 ##7	ID_PHONE-B ID_PHONE-I ID_PHONE-I ID_PHONE-I ID_PHONE-I ID_PHONE-I
+01 ##2 38 ##7 52 ##71	ID_PHONE-B ID_PHONE-I ID_PHONE-I ID_PHONE-I ID_PHONE-I ID_PHONE-I
+01 ##12 38 ##7 52 ##71	ID_PHONE-B ID_PHONE-I ID_PHONE-I ID_PHONE-I ID_PHONE-I ID_PHONE-I
+ㄴ	O
+02 33 ##87 ##에 5 ##하나 ##78	ID_PHONE-B ID_PHONE-I ID_PHONE-I ID_PHONE-I ID_PHONE-I ID_PHONE-I ID_PHONE-I
+010 9 ##둘 ##둘 ##둘 228 ##3	ID_PHONE-B ID_PHONE-I ID_PHONE-I ID_PHONE-I ID_PHONE-I ID_PHONE-I ID_PHONE-I
+010 1 ##둘 ##셋 ##넷 56 ##78	ID_PHONE-B ID_PHONE-I ID_PHONE-I SS_BRAND-I SS_BRAND-I ID_PHONE-I ID_PHONE-I
+010 하나 ##23 ##4 56 ##78	ID_PHONE-B ID_PHONE-I ID_PHONE-I ID_PHONE-I ID_PHONE-I ID_PHONE-I
+ㄴ	O
+02 33 ##87 ##에 5 ##일 ##78	ID_PHONE-B ID_PHONE-I ID_PHONE-I ID_PHONE-I ID_PHONE-I ID_PHONE-I ID_PHONE-I
+010 9 ##이 ##이 ##이 228 ##3	ID_PHONE-B ID_PHONE-I ID_PHONE-I ID_PHONE-I ID_PHONE-I ID_PHONE-I ID_PHONE-I
+010 1 ##이 ##삼 ##사 56 ##78	ID_PHONE-B ID_PHONE-I ID_PHONE-I SS_BRAND-I SS_BRAND-I ID_PHONE-I ID_PHONE-I
+010 일 ##23 ##4 56 ##78	ID_PHONE-B ID_PHONE-I ID_PHONE-I ID_PHONE-I ID_PHONE-I ID_PHONE-I
+공 ##일 ##공 33 ##87 51 ##78	SS_NAME-B SS_NAME-I SS_NAME-I ID_PHONE-B ID_PHONE-I ID_PHONE-I ID_PHONE-I
+공 ##일 ##공 삼 ##삼 ##팔 ##칠 오일 ##칠 ##팔	SS_NAME-B SS_NAME-I SS_NAME-I ID_ACCOUNT-B ID_ACCOUNT-I ID_ACCOUNT-I ID_ACCOUNT-I ID_ACCOUNT-I ID_ACCOUNT-I ID_ACCOUNT-I
+영일 ##영 33 ##87 51 ##78	SS_NAME-B SS_NAME-I ID_PHONE-B ID_PHONE-I ID_PHONE-I ID_PHONE-I
+영일 ##영 삼 ##삼 ##팔 ##칠 오일 ##칠 ##팔	SS_NAME-B SS_NAME-I ID_ACCOUNT-B ID_ACCOUNT-I ID_ACCOUNT-I ID_ACCOUNT-I ID_ACCOUNT-I ID_ACCOUNT-I ID_ACCOUNT-I
+010 ##에 92 ##92 뒷 ##자리 ##는 이이 ##팔 ##삼	ID_PHONE-B ID_PHONE-I ID_PHONE-I ID_PHONE-I O O O SS_NAME-B SS_NAME-I SS_NAME-I
+ㄴ	O
+010 3 227 88 ##33	ID_PHONE-B ID_PHONE-I ID_PHONE-I ID_PHONE-I ID_PHONE-I
+010 3 227 88 ##3 3	ID_PHONE-B ID_PHONE-I ID_PHONE-I ID_PHONE-I ID_PHONE-I ID_PHONE-I
+010 32 ##27 88 ##3 3	ID_PHONE-B ID_PHONE-I ID_PHONE-I ID_PHONE-I ID_PHONE-I ID_PHONE-I
+010 32 27 88 33	ID_PHONE-B ID_PHONE-I ID_PHONE-I ID_PHONE-I ID_PHONE-I
+02 32 27 88 33	ID_ACCOUNT-B ID_ACCOUNT-I ID_ACCOUNT-I ID_ACCOUNT-I ID_ACCOUNT-I
+053 32 27 88 33	ID_ACCOUNT-B ID_ACCOUNT-I ID_ACCOUNT-I ID_ACCOUNT-I ID_ACCOUNT-I
+ㄴ	O
+02 ##3 잠시 ##만 ##요 32 ##에 27 어 88 33	ID_ACCOUNT-B ID_ACCOUNT-I O O O ID_ACCOUNT-B ID_ACCOUNT-I ID_ACCOUNT-I ID_ACCOUNT-I ID_ACCOUNT-I ID_ACCOUNT-I
+010 ##에 92 ##92 뒷 ##자리 ##는 228 ##3	ID_PHONE-B ID_PHONE-I ID_PHONE-I ID_PHONE-I O O O ID_PHONE-B ID_PHONE-I
+010 ##에 92 ##92 뒷 ##자리 ##는 둘 ##둘 ##83	ID_PHONE-B ID_PHONE-I ID_PHONE-I ID_PHONE-I O O O ID_PHONE-B ID_PHONE-I ID_PHONE-I
+010 32 ##에 27 그 뒤 ##에 ##가 88 33	ID_PHONE-B ID_PHONE-I ID_PHONE-I ID_PHONE-I O O O O ID_ACCOUNT-I ID_ACCOUNT-I
+02 ##3 9 4 번 234 ##5	ID_ACCOUNT-B ID_ACCOUNT-I ID_ACCOUNT-I ID_ACCOUNT-I ID_ACCOUNT-I ID_ACCOUNT-I ID_ACCOUNT-I
+053 9 네 번 223 ##4	ID_PHONE-B ID_PHONE-I O O ID_PHONE-B ID_PHONE-I
+8 아니 ##고 3 ##이 ##요 .	SS_WEIGHT-B O O SS_WEIGHT-B O O O
+8 아니 ##고 3 ##이 ##요 . 32 ##27	SS_WEIGHT-B O O SS_WEIGHT-B O O O O O
+ㄴ	O
+0 ##둘 ##3 잠시 ##만 ##요 3 ##하나 27 어 88 마지막 두 자리 ##가 삼 두 개요	ID_PHONE-B ID_PHONE-I O O O O O O O O SS_WEIGHT-B O O O O O O O
+010 32 ##27 3 ##다 ##음 ##에 2 ##가 두 번이 ##고 칠 그 뒤 ##가 88 ##33	ID_PHONE-B ID_PHONE-I ID_PHONE-I ID_PHONE-I O O O O O O O O O O O O ID_PHONE-B ID_PHONE-I
+ㄴ	O
+010 ##11 ##11 - 222 ##2	ID_PHONE-B ID_INUM-I ID_INUM-I ID_INUM-I ID_PHONE-I ID_PHONE-I

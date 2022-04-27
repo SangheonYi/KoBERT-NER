@@ -194,7 +194,7 @@
 [CLS] 고객 ##님 [SEP]	-100 O O -100
 [CLS] ( 053 ##2 ) 83 ##61 ##0 ##98 ##0 [SEP]	-100 O ID_PHONE-B ID_PHONE-I ID_PHONE-I ID_PHONE-I ID_PHONE-I ID_PHONE-I ID_PHONE-I ID_PHONE-I -100
 [CLS] 서예 ##지 , 010 34 ##12 93 ##84 . [SEP]	-100 SS_NAME-B SS_NAME-I O ID_PHONE-B ID_PHONE-I ID_PHONE-I ID_PHONE-I ID_PHONE-I O -100
-[CLS] 금정 ##역 회식 장소 ##로 추천 ##하 ##는 유가 ##네 ##양 ##꼬 ##치 ##에 다녀왔 ##어요 ^ ^ [SEP]	-100 AD_DETAIL-B AD_DETAIL-I O O O O O O AD_ADDRESS-I AD_ADDRESS-I AD_ADDRESS-I AD_ADDRESS-I AD_ADDRESS-I O O O O O -100
+[CLS] 금정 ##역 회식 장소 ##로 추천 ##하 ##는 유가 ##네 ##양 ##꼬 ##치 ##에 다녀왔 ##어요 ^ ^ [SEP]	-100 AD_DETAIL-B AD_DETAIL-I O O O O O O AD_DETAIL-I AD_DETAIL-I AD_DETAIL-I AD_DETAIL-I AD_DETAIL-I O O O O O -100
 [CLS] 내 나이 ##21 . . 엄청난 위기 ##에 처했 ##음 [SEP]	-100 O O SS_AGE-B O O O O O O O -100
 [CLS] 이체 ##하 ##신 계좌 ##번 ##호 ##와 예금 ##주 ##명 ##도 알려 ##주 ##실 수 있 ##나 ##요 ? [SEP]	-100 O O O O O O O O O O O O O O O O O O O -100
 [CLS] 13 ##세 ##입니다 . [SEP]	-100 SS_AGE-B SS_AGE-I O O -100
@@ -630,7 +630,7 @@
 [CLS] 네 국민 은행 112 ##1 02 ##32 243 ##0 141 ##0 ##요 [SEP]	-100 O SS_BRAND-B SS_BRAND-I ID_CARD-B ID_CARD-I ID_CARD-I ID_CARD-I ID_CARD-I ID_CARD-I ID_CARD-I ID_CARD-I O -100
 [CLS] 구 ##반 ##포 ##역 ##이 ##요 . [SEP]	-100 AD_DETAIL-B AD_DETAIL-I AD_DETAIL-I AD_DETAIL-I O O O -100
 [CLS] 지에 ##스 ##홈 ##쇼 ##핑 최 ##이 ##세 ##입니다 . [SEP]	-100 SS_BRAND-B SS_BRAND-I SS_BRAND-I SS_BRAND-I SS_BRAND-I SS_NAME-B SS_NAME-I SS_NAME-I O O -100
-[CLS] 함안 ##군 가야 ##읍 북 ##실 ##길 ##요 . [SEP]	-100 O O AD_ADDRESS-B AD_ADDRESS-I AD_ADDRESS-I AD_ADDRESS-I AD_ADDRESS-I O O -100
+[CLS] 함안 ##군 가야 ##읍 북 ##실 ##길 ##요 . [SEP]	-100 AD_CITY-B AD_CITY-I AD_ADDRESS-B AD_ADDRESS-I AD_ADDRESS-I AD_ADDRESS-I AD_ADDRESS-I O O -100
 [CLS] 네 롯데 ##홈 ##쇼 ##핑 진보 ##연 ##입니다 . [SEP]	-100 O SS_BRAND-B SS_BRAND-I SS_BRAND-I SS_BRAND-I SS_NAME-B SS_NAME-I O O -100
 [CLS] 성 ##함 ##과 주민 ##번 ##호 앞 ##자리 확인 ##해 주시 ##겠 ##어요 ? [SEP]	-100 O O O O O O O O O O O O O O -100
 [CLS] 67 ##년 10 ##월 26 ##일 입니다 . [SEP]	-100 ID_INUM-B ID_INUM-I ID_INUM-I ID_INUM-I ID_INUM-I ID_INUM-I O O -100
@@ -732,7 +732,7 @@
 [CLS] 씨 ##제이 ##오 ##쇼 ##핑 ##입니다 . [SEP]	-100 SS_BRAND-B SS_BRAND-I SS_BRAND-I SS_BRAND-I SS_BRAND-I O O -100
 [CLS] 부산은행 보안 ##카드 분실 ##하 ##였 ##는데 ##요 . [SEP]	-100 SS_BRAND-B O O O O O O O O -100
 [CLS] 신 ##연 ##하 , 010 810 ##2 72 ##19 ##요 . [SEP]	-100 SS_NAME-B SS_NAME-I SS_NAME-I O ID_PHONE-B ID_PHONE-I ID_PHONE-I ID_PHONE-I ID_PHONE-I O O -100
-[CLS] 서울 ##특별 ##시 종로구 종로 26 ##6 동대문 ##종 ##합 ##시장 [SEP]	-100 AD_METRO-B AD_METRO-I AD_METRO-I AD_CITY-B AD_ADDRESS-I AD_ADDRESS-I AD_ADDRESS-I AD_DETAIL-B AD_DETAIL-I AD_DETAIL-I AD_DETAIL-I -100
+[CLS] 서울 ##특별 ##시 종로구 종로 26 ##6 동대문 ##종 ##합 ##시장 [SEP]	-100 AD_METRO-B AD_METRO-I AD_METRO-I AD_CITY-B AD_ADDRESS-B AD_ADDRESS-I AD_ADDRESS-I AD_DETAIL-B AD_DETAIL-I AD_DETAIL-I AD_DETAIL-I -100
 [CLS] 87 ##1 09 ##31 ##22 56 37 ##9 . [SEP]	-100 ID_ACCOUNT-B ID_ACCOUNT-I ID_ACCOUNT-I ID_ACCOUNT-I ID_ACCOUNT-I ID_ACCOUNT-I ID_ACCOUNT-I ID_ACCOUNT-I O -100
 [CLS] ‘ 은유 작가 ##의 글쓰기 고민 상담소 ’ [SEP]	-100 O SS_NAME-I O O O O O O -100
 [CLS] 안녕 ##하 ##십니까 ? [SEP]	-100 O O O O -100
@@ -4565,7 +4565,7 @@
 [CLS] 고객 ##님 ##께 ##서 잘못 이체 하신 계좌 ##의 계좌 번호 ##가 어떻게 되 ##는지 말씀 ##해 주실 수 있 ##으 ##십니까 ? [SEP]	-100 O O O O O O O O O O O O O O O O O O O O O O O -100
 [CLS] 본 은행 ##인 ##신 ##한 ##은행 ##의 계좌 ##가 맞 ##나 ##요 ? [SEP]	-100 O O O SS_BRAND-B SS_BRAND-I SS_BRAND-I O O O O O O O -100
 [CLS] 본 우리 ##은행 ##의 계좌 ##가 맞 ##습 ##니까 ? [SEP]	-100 O SS_BRAND-B SS_BRAND-I O O O O O O O -100
-[CLS] 서울시 ##가 21 ##일 ( 금 ) 부터 오 ##는 23 ( 일 ) 까지 4 ##일 ##간 상암동 DM ##C ##에 위치 ##한 KG ##IT 4 ##층 시네마 ##홀 ##에 ##서 [SEP]	-100 AD_METRO-B O O O O O O O O O O O O O O O O O AD_DETAIL-B AD_DETAIL-I AD_DETAIL-I O O O AD_DETAIL-I AD_DETAIL-I AD_DETAIL-I AD_DETAIL-I AD_DETAIL-I AD_DETAIL-I O O -100
+[CLS] 서울시 ##가 21 ##일 ( 금 ) 부터 오 ##는 23 ( 일 ) 까지 4 ##일 ##간 상암동 DM ##C ##에 위치 ##한 KG ##IT 4 ##층 시네마 ##홀 ##에 ##서 [SEP]	-100 AD_METRO-B O O O O O O O O O O O O O O O O O AD_ADDRESS-B AD_DETAIL-B AD_DETAIL-I O O O AD_DETAIL-I AD_DETAIL-I AD_DETAIL-I AD_DETAIL-I AD_DETAIL-I AD_DETAIL-I O O -100
 [CLS] 2002 ##년 08 ##월 15 ##입니다 . [SEP]	-100 ID_INUM-B ID_INUM-I ID_INUM-I ID_INUM-I ID_INUM-I O O -100
 [CLS] 네 , 감사 ##합니다 . [SEP]	-100 O O O O O -100
 [CLS] 휴대 ##전 ##화 마지막 번호 ##는 90 ##22 ##이 ##에 ##요 . [SEP]	-100 O O O O O O ID_PHONE-B ID_PHONE-I O O O O -100
@@ -6710,7 +6710,7 @@
 [CLS] 지에 ##스 ##홈 ##쇼 ##핑 ##입니다 . [SEP]	-100 SS_BRAND-B SS_BRAND-I SS_BRAND-I SS_BRAND-I SS_BRAND-I O O -100
 [CLS] 서울시 서대문구 파장 ##동 신천 ##대로 65 ##번 ##길 이하 주소 말씀 부탁 ##드 ##립니다 . [SEP]	-100 AD_METRO-B AD_CITY-B AD_ADDRESS-B AD_ADDRESS-I AD_ADDRESS-I AD_ADDRESS-I AD_ADDRESS-I AD_ADDRESS-I AD_ADDRESS-I O O O O O O O -100
 [CLS] 네 , 제주특별자치도 서귀포시 색 ##달 ##로 ##18 ##9 ##번 ##길 삼성 ##푸 ##른 ##아 ##파 ##트 몇 동 몇 호 ##이 ##십니까 ? [SEP]	-100 O O AD_METRO-B AD_CITY-B AD_ADDRESS-B AD_ADDRESS-I AD_ADDRESS-I AD_ADDRESS-I AD_ADDRESS-I AD_ADDRESS-I AD_ADDRESS-I AD_DETAIL-B AD_DETAIL-I AD_DETAIL-I AD_DETAIL-I AD_DETAIL-I AD_DETAIL-I O O O O O O O -100
-[CLS] 광안리 메인 카페 ##거리 ##에 ##서 조금 올라가 ##면 정원 ##해 ##물 ##탕 맞은편 ##에 “ So ##S ##o ##카 ##페 ” 가 있 ##다 ! [SEP]	-100 AD_DETAIL-B AD_DETAIL-I AD_DETAIL-I AD_DETAIL-I O O O O O AD_DETAIL-I AD_DETAIL-I AD_DETAIL-I AD_DETAIL-I O O O AD_DETAIL-I AD_DETAIL-I AD_DETAIL-I AD_DETAIL-I AD_DETAIL-I O O O O O -100
+[CLS] 광안리 메인 카페 ##거리 ##에 ##서 조금 올라가 ##면 정원 ##해 ##물 ##탕 맞은편 ##에 “ So ##S ##o ##카 ##페 ” 가 있 ##다 ! [SEP]	-100 AD_ADDRESS-B AD_DETAIL-B AD_DETAIL-I AD_DETAIL-I O O O O O AD_DETAIL-I AD_DETAIL-I AD_DETAIL-I AD_DETAIL-I O O O AD_DETAIL-I AD_DETAIL-I AD_DETAIL-I AD_DETAIL-I AD_DETAIL-I O O O O O -100
 [CLS] 01 ##9 - 56 ##87 - 220 ##6 입니다 . [SEP]	-100 ID_PHONE-B ID_PHONE-I ID_PHONE-I ID_PHONE-I ID_PHONE-I ID_PHONE-I ID_PHONE-I ID_PHONE-I O O -100
 [CLS] 저 ##는 25 ##인 ##데 [SEP]	-100 O O SS_AGE-B O O -100
 [CLS] 롯데카드 ##요 [SEP]	-100 SS_BRAND-B O -100

@@ -216,7 +216,7 @@ def predict(pred_config):
     prob_matrix = []
     with open('res/logit_prob.py', 'w', newline='', encoding='UTF-8') as prob_file:
         for sentence_pred, tokens in zip(torch.softmax(input=torch.tensor(preds), dim=2).numpy(), all_input_tokens):
-            prob_file.write(f"👩{tokens}\n")
+            prob_file.write(f"👩{' '.join(tokens)}\n")
             token_probs = []
             for i, token_pred in enumerate(sentence_pred):
                 if 0 < i < len(tokens):
@@ -252,7 +252,9 @@ def predict(pred_config):
                     line = line + "[{}:{}] ".format(word, pred)
             output_tsv_form.append(f"{' '.join(words[:-1])}\t{' '.join(preds)}")
             f.write("{}\n".format(line.strip()))
-        answer_diff(output_tsv_form, prob_matrix, "ALL")
+        for tsv_line in output_tsv_form:
+            f.write(f"{tsv_line}\n")
+        # answer_diff(output_tsv_form, prob_matrix, "ALL")
   
     logger.info("Prediction Done!")
 

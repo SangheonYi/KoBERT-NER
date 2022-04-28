@@ -19,10 +19,15 @@ def check_answer(output_line, solution_line, probs):
     solution_tokens, solution_labels = split_tsv(solution_line)
     detected_probs = []
     for i, output_label  in enumerate(output_labels):
-        if output_label != solution_labels[i]:
+        if i >= len(solution_labels):
             output_tokens[i] = f"{WARNING}{output_tokens[i]}{ENDC}"
-            solution_tokens[i] = f"{WARNING}{solution_tokens[i]}{ENDC}"
             output_labels[i] = f"{FAIL}{output_labels[i]}{ENDC}"
+            detected_probs.append(probs[i])
+            is_wrong = True
+        elif output_label != solution_labels[i]:
+            output_tokens[i] = f"{WARNING}{output_tokens[i]}{ENDC}"
+            output_labels[i] = f"{FAIL}{output_labels[i]}{ENDC}"
+            solution_tokens[i] = f"{WARNING}{solution_tokens[i]}{ENDC}"
             solution_labels[i] = f"{OKGREEN}{solution_labels[i]}{ENDC}"
             detected_probs.append(probs[i])
             is_wrong = True

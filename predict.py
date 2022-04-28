@@ -7,7 +7,7 @@ import numpy as np
 import torch
 from torch.utils.data import TensorDataset, DataLoader, SequentialSampler
 from transformers import AutoModelForTokenClassification
-from output_analysis import answer_diff
+from output_analysis import ALL, answer_diff
 
 from utils import init_logger, load_tokenizer, get_labels
 

@@ -127,6 +127,8 @@ venv.bak/
 .vscode/
 .idea/
 model/
+model_split/
+model_all/
 
 .DS_Store
 

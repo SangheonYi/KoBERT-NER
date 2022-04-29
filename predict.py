@@ -15,39 +15,6 @@ from kss import split_sentences
 
 logger = logging.getLogger(__name__)
 
-label_list = [
-'UNK',
-'O',
-'SS_NAME-B',
-'SS_NAME-I',
-'SS_WEIGHT-B',
-'SS_WEIGHT-I',
-'SS_AGE-B',
-'SS_AGE-I',
-'AD_METRO-B',
-'AD_METRO-I',
-'AD_ADDRESS-B',
-'AD_ADDRESS-I',
-'AD_CITY-B',
-'AD_CITY-I',
-'AD_DETAIL-B',
-'AD_DETAIL-I',
-'ID_PHONE-B',
-'ID_PHONE-I',
-'ID_CARD-B',
-'ID_CARD-I',
-'ID_ACCOUNT-B',
-'ID_ACCOUNT-I',
-'ID_INUM-B',
-'ID_INUM-I',
-'SS_LENGTH-B',
-'SS_LENGTH-I',
-'SS_BIRTH-B',
-'SS_BIRTH-I',
-'SS_BRAND-B',
-'SS_BRAND-I',
-]
-
 def get_device(pred_config):
     return "cuda" if torch.cuda.is_available() and not pred_config.no_cuda else "cpu"
 
@@ -220,7 +187,7 @@ def predict(pred_config):
             token_probs = []
             for i, token_pred in enumerate(sentence_pred):
                 if 0 < i < len(tokens):
-                    tmp = [[label_list[i], round(e * 100, 2)] for i, e in enumerate(token_pred)]
+                    tmp = [[label_lst[i], round(e * 100, 2)] for i, e in enumerate(token_pred)]
                     tmp.sort(key=lambda x: x[1],reverse=True)
                     prob_file.write(f"{tmp[:4]}\n")
                     token_probs.append(tmp[:4])

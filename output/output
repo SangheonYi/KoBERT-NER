@@ -1,152 +1,154 @@
-[이:SS_NAME-B] [##택:SS_NAME-I] [##길:SS_NAME-I] ( [65:SS_AGE-B] [##세:SS_AGE-I] ) 주민 ##과 ##장 2017 [.:ID_INUM-I] [5:ID_INUM-I] [.:ID_INUM-I] [12:ID_INUM-I] . [김:SS_NAME-B] [##군:SS_NAME-I] [##호:SS_NAME-I] ( [32:SS_AGE-B] )
+[이:SS_NAME-B] [##택:SS_NAME-I] [##길:SS_NAME-I] ( [65:SS_AGE-B] [##세:SS_AGE-I] ) 주민 ##과 ##장 [2017:ID_INUM-B] [.:ID_INUM-I] [5:ID_INUM-I] [.:ID_INUM-I] [12:ID_INUM-I] . [김:SS_NAME-B] [##군:SS_NAME-I] [##호:SS_NAME-I] ( [32:SS_AGE-B] )
 주무관 [김재:SS_NAME-B] [##화:SS_NAME-I] 지방 ##행정 ##사 ##무 [지진:SS_NAME-B] [##태:SS_NAME-I] 행정 ##사 ##무 ##관 [이:SS_NAME-B] [##택:SS_NAME-I] [##길:SS_NAME-I] ( [65:SS_AGE-B] [##세:SS_AGE-I] ) 주민 ##과 ##장 [2017:ID_INUM-B] [.:ID_INUM-I] [5:ID_INUM-I] [.:ID_INUM-I] [12:ID_INUM-I] . [김:SS_NAME-B] [##군:SS_NAME-I] [##호:SS_NAME-I] ( [32:SS_AGE-B] )
 협조 ##자
 시행 주민 ##과 - [132:ID_PHONE-B] [##9:ID_PHONE-I]
-우 [031:ID_PHONE-B] [##71:ID_PHONE-I] [서울:AD_METRO-B] [##특별:AD_METRO-I] [##시:AD_METRO-I] [종로구:AD_CITY-B] [세:AD_ADDRESS-B] [##증:AD_ADDRESS-I] [##대로:AD_ADDRESS-I] [209:AD_ADDRESS-I] ( [세:AD_ADDRESS-I] [##증:AD_ADDRESS-I] [##로:AD_ADDRESS-I] )
-접수 http : / / www . m ##o [##i:SS_NAME-I] . go . kr
+[우:AD_ADDRESS-B] [031:AD_ADDRESS-I] [##71:AD_ADDRESS-I] [서울:AD_METRO-B] [##특별:AD_METRO-I] [##시:AD_CITY-I] [종로구:AD_CITY-B] [세:AD_ADDRESS-B] [##증:AD_ADDRESS-I] [##대로:AD_ADDRESS-I] [209:AD_ADDRESS-I] ( [세:AD_ADDRESS-B] [##증:AD_ADDRESS-I] [##로:AD_ADDRESS-I] )
+접수 http : / / www [.:ID_PHONE-I] [m:SS_NAME-B] [##o:SS_NAME-I] [##i:SS_NAME-I] [.:SS_BRAND-I] go . kr
 전화 ##번 ##호 [02:ID_PHONE-B] [-:ID_PHONE-I] [2100:ID_PHONE-I] [-:ID_PHONE-I] [38:ID_PHONE-I] [##46:ID_PHONE-I]
-팩스 ##번 ##호 [02:ID_PHONE-B] [-:ID_PHONE-I] [2100:ID_PHONE-I] [-:ID_PHONE-I] [42:ID_PHONE-I] [##97:ID_PHONE-I] / ab ##le ##g [##uy:ID_PHONE-I] [##46:ID_PHONE-I] @ m ##o ##i . go . kr / 대국민 공개
-※ 영수증 ##이 급히 필요 ##하 ##신 분 ##은 [농협:SS_BRAND-B] [50:ID_ACCOUNT-B] [##50:ID_ACCOUNT-I] [##55:ID_ACCOUNT-I] [-:ID_ACCOUNT-I] [51:ID_ACCOUNT-I] [-:ID_ACCOUNT-I] [03:ID_ACCOUNT-I] [##90:ID_ACCOUNT-I] [##32:ID_ACCOUNT-I] ( 예금 ##주 : [푸른:SS_BRAND-B] [##꿈:SS_BRAND-I] [##고:SS_BRAND-I] ) 계좌 ##로 입금 ##해 주시 ##고 학교 ##에 ##서 확인 ##할 수 있 ##도록 학년 ##반 , 학생 ##이 ##름 ##으로 납부 바랍니다 .
+팩스 ##번 ##호 [02:ID_PHONE-B] [-:ID_PHONE-I] [2100:ID_PHONE-I] [-:ID_PHONE-I] [42:ID_PHONE-I] [##97:ID_PHONE-I] / [ab:SS_NAME-B] [##le:SS_NAME-I] [##g:SS_NAME-I] [##uy:SS_NAME-I] [##46:ID_PHONE-I] [@:ID_PHONE-I] [m:SS_NAME-B] [##o:SS_NAME-I] [##i:SS_NAME-I] . go . kr / 대국민 공개
+※ 영수증 ##이 급히 필요 ##하 ##신 분 ##은 [농협:SS_BRAND-B] [50:ID_CARD-B] [##50:ID_ACCOUNT-I] [##55:ID_ACCOUNT-I] [-:ID_ACCOUNT-I] [51:ID_ACCOUNT-I] [-:ID_ACCOUNT-I] [03:ID_ACCOUNT-I] [##90:ID_ACCOUNT-I] [##32:ID_ACCOUNT-I] ( 예금 ##주 : [푸른:SS_BRAND-B] [##꿈:SS_BRAND-I] [##고:SS_BRAND-I] ) 계좌 ##로 입금 ##해 주시 ##고 학교 ##에 ##서 확인 ##할 수 있 ##도록 학년 ##반 , 학생 ##이 ##름 ##으로 납부 바랍니다 .
 납부 후 행정 ##실 ( ☎ [##0:ID_PHONE-B] [##63:ID_PHONE-I] [-:ID_PHONE-I] [32:ID_PHONE-I] [##3:ID_PHONE-I] [-:ID_PHONE-I] [225:ID_PHONE-I] [##8:ID_PHONE-I] ) 으로 연락 주시 ##면 입금 ##확 ##인 후 영수증 ##을 발행 ##해 드립니다 .
-나 . 납부 ##방 ##법 : 스쿨 [##뱅:SS_BRAND-I] ##킹 계좌 또는 학교 ##계 ##좌 입금
-( [농협:SS_BRAND-B] [35:ID_ACCOUNT-B] [##5:ID_ACCOUNT-I] [-:ID_ACCOUNT-I] [000:ID_ACCOUNT-I] [##4:ID_ACCOUNT-I] [-:ID_ACCOUNT-I] [71:ID_ACCOUNT-I] [##23:ID_ACCOUNT-I] [-:ID_ACCOUNT-I] [53:ID_ACCOUNT-I] 예금 ##주 : [가평:SS_BRAND-B] [##중:SS_BRAND-I] [##학교:SS_BRAND-I] [3:ID_ACCOUNT-B] [-:ID_ACCOUNT-I] [1:ID_ACCOUNT-I] 홍길동 ##으로 입금 )
-• 기타 궁금 ##한 사항 ##은 교육 ##행정 ##식 ( ☎ [##58:ID_PHONE-B] [##0:ID_PHONE-I] [-:ID_PHONE-I] [300:ID_PHONE-I] [##6:ID_PHONE-I] ) 로 문의 ##하시 ##길 바랍니다 .
-[최정:SS_NAME-B] [##숙:SS_NAME-I] [국민:SS_BRAND-B] [88:ID_INUM-B] [##57:ID_INUM-I] [##0:ID_INUM-I] [##10:ID_INUM-I] [##000:ID_INUM-I] [##75:ID_INUM-I] [##20:ID_INUM-I]
-[이성:SS_NAME-B] [##환:SS_NAME-I] [국민:SS_BRAND-B] [92:ID_INUM-B] [##16:ID_INUM-I] [##0:ID_INUM-I] [##20:ID_INUM-I] [##12:ID_INUM-I] [##89:ID_INUM-I] [##72:ID_INUM-I] [##1:ID_INUM-I]
-[김영:SS_NAME-B] [##숙:SS_NAME-I] [하나:SS_BRAND-B] [29:ID_ACCOUNT-B] [##3:ID_ACCOUNT-I] [-:ID_ACCOUNT-I] [91:ID_ACCOUNT-I] [##0:ID_ACCOUNT-I] [##2:ID_ACCOUNT-I] [-:ID_ACCOUNT-I] [37:ID_ACCOUNT-I] [##80:ID_ACCOUNT-I] [##7:ID_ACCOUNT-I]
+나 . 납부 ##방 ##법 : 스쿨 ##뱅 ##킹 계좌 또는 학교 ##계 ##좌 입금
+( [농협:SS_BRAND-B] [35:ID_PHONE-B] [##5:ID_ACCOUNT-I] [-:ID_ACCOUNT-I] [000:ID_ACCOUNT-I] [##4:ID_ACCOUNT-I] [-:ID_ACCOUNT-I] [71:ID_ACCOUNT-I] [##23:ID_ACCOUNT-I] [-:ID_ACCOUNT-I] [53:ID_ACCOUNT-I] 예금 ##주 : [가평:SS_BRAND-B] [##중:SS_BRAND-I] [##학교:SS_BRAND-I] [3:ID_PHONE-B] [-:ID_ACCOUNT-I] [1:AD_DETAIL-I] 홍길동 ##으로 입금 )
+• 기타 궁금 ##한 사항 ##은 교육 ##행정 ##식 ( ☎ [##58:ID_PHONE-I] [##0:ID_PHONE-I] [-:ID_PHONE-I] [300:ID_PHONE-I] [##6:ID_PHONE-I] ) 로 문의 ##하시 ##길 바랍니다 .
+[최정:SS_NAME-B] [##숙:SS_NAME-I] 국민 [88:ID_INUM-B] [##57:ID_INUM-I] [##0:ID_INUM-I] [##10:ID_INUM-I] [##000:ID_INUM-I] [##75:ID_INUM-I] [##20:ID_INUM-I]
+[이성:SS_NAME-B] [##환:SS_NAME-I] 국민 [92:ID_INUM-B] [##16:ID_INUM-I] [##0:ID_INUM-I] [##20:ID_INUM-I] [##12:ID_INUM-I] [##89:ID_INUM-I] [##72:ID_INUM-I] [##1:ID_INUM-I]
+[김영:SS_NAME-B] [##숙:SS_NAME-I] [하나:ID_PHONE-B] [29:ID_PHONE-B] [##3:ID_ACCOUNT-I] [-:ID_ACCOUNT-I] [91:ID_ACCOUNT-I] [##0:ID_ACCOUNT-I] [##2:ID_ACCOUNT-I] [-:ID_ACCOUNT-I] [37:ID_ACCOUNT-I] [##80:ID_ACCOUNT-I] [##7:ID_ACCOUNT-I]
 나 애기 짱 ##허 ##니 [UNK]
 나 애기 짱 ##허 ##니 [일곱:SS_AGE-B] [##살:SS_AGE-I]
 나 애기 짱 ##허 ##니 [일곱:SS_AGE-B]
 나 애기 짱 ##허 ##니 정신 ##연 ##령 일곱
 나 애기 짱 ##허 ##니 정신 ##연 ##령 [열:SS_AGE-B] [##일:SS_AGE-I] [##곱:SS_AGE-I]
-나 애기 [짱:SS_NAME-B] [##헌:SS_NAME-I] 일곱 ##짤
+나 애기 짱 [##헌:SS_NAME-I] 일곱 ##짤
 나 애기 [짱:SS_NAME-B] [##헌:SS_NAME-I] ##이 일곱 ##짤
-일곱 ##짤 [짱:SS_NAME-B] ##헌 ##니 배고 ##빠
-[짱:SS_NAME-B] [##헌:SS_NAME-I] ##니 [배고:SS_NAME-B] ##빠
+일곱 ##짤 짱 ##헌 ##니 배고 ##빠
+[짱:SS_NAME-B] [##헌:SS_NAME-I] ##니 배고 ##빠
 [짱:SS_NAME-B] [##헌:SS_NAME-I] ##니 배고파
-[짱:SS_NAME-B] [##허:SS_NAME-I] [##니:SS_NAME-I] ##는 [배고:SS_NAME-B] ##빠
+짱 ##허 ##니 ##는 배고 ##빠
 짱 ##허 ##니 헝 ##그리
-너 [102:SS_LENGTH-B] ##였 ##다가 [190:SS_LENGTH-B] ##된 ##거 ##야 ?
-너 [102:SS_WEIGHT-B] [##키:SS_WEIGHT-I] [##로:SS_WEIGHT-I] ##였 ##다가 [190:SS_LENGTH-B] ##된 ##거 ##야 ?
+너 [102:SS_AGE-B] ##였 ##다가 [190:SS_LENGTH-B] ##된 ##거 ##야 ?
+너 [102:SS_WEIGHT-B] [##키:SS_WEIGHT-I] [##로:SS_WEIGHT-I] ##였 ##다가 [190:SS_WEIGHT-B] ##된 ##거 ##야 ?
 너 [102:SS_WEIGHT-B] [##키:SS_WEIGHT-I] [##로:SS_WEIGHT-I] ##였 ##다가 [190:SS_WEIGHT-B] [##키:SS_WEIGHT-I] [##로:SS_WEIGHT-I] ##된 ##거 ##야 ?
-너 [102:SS_LENGTH-B] [##센:SS_LENGTH-I] [##치:SS_LENGTH-I] ##였 ##다가 [190:SS_LENGTH-B] ##된 ##거 ##야 ?
-너 키 [##10:SS_LENGTH-B] [##2:SS_LENGTH-I] ##였 ##다가 [190:SS_LENGTH-B] ##된 ##거 ##야 ?
+너 [102:SS_LENGTH-B] [##센:SS_WEIGHT-I] [##치:SS_WEIGHT-I] ##였 ##다가 [190:SS_LENGTH-B] ##된 ##거 ##야 ?
+너 키 [##10:SS_WEIGHT-B] [##2:SS_WEIGHT-I] ##였 ##다가 [190:SS_LENGTH-B] ##된 ##거 ##야 ?
 ㄴ
 [02:ID_PHONE-B] [38:ID_PHONE-I] [##72:ID_PHONE-I] [52:ID_PHONE-I] [##7:ID_PHONE-I]
 [01:ID_PHONE-B] [##2:ID_PHONE-I] [38:ID_PHONE-I] [##7:ID_PHONE-I] [52:ID_PHONE-I] [##7:ID_PHONE-I]
 [01:ID_PHONE-B] [##2:ID_PHONE-I] [38:ID_PHONE-I] [##7:ID_PHONE-I] [52:ID_PHONE-I] [##71:ID_PHONE-I]
 [01:ID_PHONE-B] [##12:ID_PHONE-I] [38:ID_PHONE-I] [##7:ID_PHONE-I] [52:ID_PHONE-I] [##71:ID_PHONE-I]
 ㄴ
-[02:ID_PHONE-B] [33:ID_PHONE-I] [##87:ID_PHONE-I] [##에:ID_PHONE-I] [5:ID_PHONE-I] [##하나:ID_PHONE-I] [##78:ID_PHONE-I]
+[02:ID_PHONE-B] [33:ID_PHONE-I] [##87:ID_PHONE-I] [##에:ID_PHONE-I] [5:ID_PHONE-B] [##하나:ID_PHONE-I] [##78:ID_PHONE-I]
 [010:ID_PHONE-B] [9:ID_PHONE-I] [##둘:ID_PHONE-I] [##둘:ID_PHONE-I] [##둘:ID_PHONE-I] [228:ID_PHONE-I] [##3:ID_PHONE-I]
-[010:ID_PHONE-B] [1:ID_PHONE-I] [##둘:SS_BRAND-I] [##셋:SS_BRAND-I] [##넷:SS_BRAND-I] [56:ID_PHONE-I] [##78:ID_PHONE-I]
+[010:ID_PHONE-B] [1:ID_PHONE-I] [##둘:ID_PHONE-I] [##셋:SS_BRAND-I] [##넷:ID_PHONE-I] [56:ID_PHONE-I] [##78:ID_PHONE-I]
 [010:ID_PHONE-B] [하나:ID_PHONE-I] [##23:ID_PHONE-I] [##4:ID_PHONE-I] [56:ID_PHONE-I] [##78:ID_PHONE-I]
 ㄴ
-[02:ID_PHONE-B] [33:ID_PHONE-I] [##87:ID_PHONE-I] [##에:ID_ACCOUNT-I] [5:ID_ACCOUNT-I] [##일:ID_ACCOUNT-I] [##78:ID_ACCOUNT-I]
+[02:ID_PHONE-B] [33:ID_PHONE-I] [##87:ID_PHONE-I] ##에 5 [##일:SS_BIRTH-I] [##78:ID_PHONE-I]
 [010:ID_PHONE-B] [9:ID_PHONE-I] ##이 ##이 ##이 [228:ID_PHONE-B] [##3:ID_PHONE-I]
-[010:ID_PHONE-B] [1:ID_PHONE-I] [##이:ID_PHONE-I] [##삼:SS_BRAND-I] [##사:SS_BRAND-I] [56:ID_PHONE-I] [##78:ID_PHONE-I]
+[010:ID_PHONE-B] [1:ID_PHONE-I] [##이:ID_PHONE-I] [##삼:ID_PHONE-I] [##사:ID_PHONE-I] [56:ID_PHONE-I] [##78:ID_PHONE-I]
 [010:ID_PHONE-B] [일:ID_PHONE-I] [##23:ID_PHONE-I] [##4:ID_PHONE-I] [56:ID_PHONE-I] [##78:ID_PHONE-I]
-[공:SS_BRAND-B] [##일:SS_BRAND-I] [##공:SS_BRAND-I] [33:ID_PHONE-B] [##87:ID_PHONE-I] [51:ID_PHONE-I] [##78:ID_PHONE-I]
-[공:SS_NAME-B] [##일:SS_NAME-I] [##공:SS_NAME-I] [삼:ID_ACCOUNT-B] [##삼:ID_ACCOUNT-I] [##팔:ID_ACCOUNT-I] [##칠:ID_ACCOUNT-I] [오일:ID_ACCOUNT-I] [##칠:ID_ACCOUNT-I] [##팔:ID_ACCOUNT-I]
-[영일:SS_NAME-B] [##영:SS_NAME-I] [33:ID_PHONE-B] [##87:ID_PHONE-I] [51:ID_PHONE-I] [##78:ID_PHONE-I]
-[영일:SS_NAME-B] [##영:SS_NAME-I] [삼:ID_ACCOUNT-B] [##삼:ID_ACCOUNT-I] [##팔:ID_ACCOUNT-I] [##칠:ID_ACCOUNT-I] [오일:ID_ACCOUNT-I] [##칠:ID_ACCOUNT-I] [##팔:ID_ACCOUNT-I]
+[공:SS_BRAND-B] [##일:SS_BRAND-I] [##공:SS_BRAND-I] [33:ID_PHONE-B] [##87:ID_ACCOUNT-I] [51:ID_ACCOUNT-I] [##78:ID_ACCOUNT-I]
+[공:SS_NAME-B] [##일:SS_NAME-I] [##공:SS_NAME-I] [삼:ID_INUM-B] [##삼:ID_INUM-I] [##팔:ID_INUM-I] [##칠:ID_INUM-I] [오일:ID_INUM-I] [##칠:ID_INUM-I] [##팔:ID_INUM-I]
+[영일:SS_NAME-B] [##영:SS_NAME-I] [33:ID_PHONE-B] [##87:ID_ACCOUNT-I] [51:ID_ACCOUNT-I] [##78:ID_ACCOUNT-I]
+[영일:SS_NAME-B] [##영:SS_NAME-I] [삼:ID_INUM-B] [##삼:ID_INUM-I] [##팔:ID_INUM-I] [##칠:ID_INUM-I] [오일:ID_INUM-I] [##칠:ID_INUM-I] [##팔:ID_INUM-I]
 [010:ID_PHONE-B] [##에:ID_PHONE-I] [92:ID_PHONE-I] [##92:ID_PHONE-I] 뒷 ##자리 ##는 [이이:SS_NAME-B] [##팔:SS_NAME-I] [##삼:SS_NAME-I]
 ㄴ
 [010:ID_PHONE-B] [3:ID_PHONE-I] [227:ID_PHONE-I] [88:ID_PHONE-I] [##33:ID_PHONE-I]
 [010:ID_PHONE-B] [3:ID_PHONE-I] [227:ID_PHONE-I] [88:ID_PHONE-I] [##3:ID_PHONE-I] [3:ID_PHONE-I]
 [010:ID_PHONE-B] [32:ID_PHONE-I] [##27:ID_PHONE-I] [88:ID_PHONE-I] [##3:ID_PHONE-I] [3:ID_PHONE-I]
 [010:ID_PHONE-B] [32:ID_PHONE-I] [27:ID_PHONE-I] [88:ID_PHONE-I] [33:ID_PHONE-I]
-[02:ID_ACCOUNT-B] [32:ID_ACCOUNT-I] [27:ID_ACCOUNT-I] [88:ID_ACCOUNT-I] [33:ID_ACCOUNT-I]
-[053:ID_ACCOUNT-B] [32:ID_ACCOUNT-I] [27:ID_ACCOUNT-I] [88:ID_ACCOUNT-I] [33:ID_ACCOUNT-I]
-[010:ID_INUM-B] [##20:ID_INUM-I] [##20:ID_INUM-I] [##12:ID_INUM-I] [##18:ID_INUM-I]
+[02:ID_PHONE-B] [32:ID_CARD-I] [27:ID_CARD-I] [88:ID_CARD-I] [33:ID_CARD-I]
+[053:ID_CARD-B] [32:ID_CARD-I] [27:ID_CARD-I] [88:ID_CARD-I] [33:ID_CARD-I]
+[010:ID_PHONE-B] [##20:ID_PHONE-I] [##20:ID_PHONE-I] [##12:ID_PHONE-I] [##18:ID_PHONE-I]
 ㄴ
-[02:ID_ACCOUNT-B] [##3:ID_ACCOUNT-I] 잠시 ##만 ##요 [32:ID_ACCOUNT-B] [##에:ID_ACCOUNT-I] [27:ID_ACCOUNT-I] 어 [88:ID_ACCOUNT-I] [33:ID_ACCOUNT-I]
+[02:ID_PHONE-B] [##3:ID_PHONE-I] 잠시 ##만 ##요 [32:ID_PHONE-B] [##에:ID_PHONE-I] [27:ID_PHONE-I] [어:ID_PHONE-I] [88:ID_PHONE-I] [33:ID_PHONE-I]
 [010:ID_PHONE-B] [##에:ID_PHONE-I] [92:ID_PHONE-I] [##92:ID_PHONE-I] 뒷 ##자리 ##는 [228:ID_PHONE-B] [##3:ID_PHONE-I]
-[010:ID_PHONE-B] [##에:ID_PHONE-I] [92:ID_PHONE-I] [##92:ID_PHONE-I] 뒷 ##자리 ##는 [둘:ID_PHONE-B] [##둘:ID_PHONE-I] [##83:ID_PHONE-I]
-[010:ID_PHONE-B] [32:ID_PHONE-I] [##에:ID_PHONE-I] [27:ID_PHONE-I] 그 뒤 ##에 ##가 [88:ID_ACCOUNT-B] [33:ID_PHONE-I]
-[02:ID_ACCOUNT-B] [##3:ID_ACCOUNT-I] [9:ID_ACCOUNT-I] [4:ID_ACCOUNT-I] [번:ID_ACCOUNT-I] [234:ID_ACCOUNT-I] [##5:ID_ACCOUNT-I]
+[010:ID_PHONE-B] [##에:ID_PHONE-I] [92:ID_PHONE-I] [##92:ID_PHONE-I] 뒷 ##자리 ##는 [둘:SS_NAME-B] [##둘:SS_NAME-I] [##83:ID_PHONE-I]
+[010:ID_PHONE-B] [32:ID_PHONE-I] [##에:ID_PHONE-I] [27:ID_PHONE-I] 그 뒤 ##에 ##가 [88:ID_PHONE-I] [33:ID_PHONE-I]
+[02:ID_PHONE-B] [##3:ID_CARD-I] [9:ID_CARD-I] [4:ID_CARD-I] [번:ID_CARD-I] [234:ID_CARD-I] [##5:ID_CARD-I]
 [053:ID_PHONE-B] [9:ID_PHONE-I] 네 번 [223:ID_PHONE-B] [##4:ID_PHONE-I]
-[8:SS_WEIGHT-B] 아니 ##고 [3:SS_WEIGHT-B] ##이 ##요 .
-[8:ID_PHONE-B] 아니 ##고 3 ##이 ##요 . [32:ID_PHONE-B] [##27:ID_PHONE-I]
+[8:SS_AGE-B] 아니 ##고 [3:SS_AGE-B] ##이 ##요 .
+8 아니 ##고 [3:SS_AGE-B] ##이 ##요 . [32:ID_PHONE-B] [##27:ID_PHONE-I]
 ㄴ
-[0:ID_PHONE-B] [##둘:ID_PHONE-I] [##3:ID_PHONE-I] 잠시 ##만 ##요 [3:ID_ACCOUNT-B] [##하나:ID_PHONE-I] [27:ID_PHONE-I] 어 [88:SS_WEIGHT-B] 마지막 두 자리 ##가 삼 두 개요
-[010:ID_PHONE-B] [32:ID_PHONE-I] [##27:ID_PHONE-I] [3:ID_PHONE-I] ##다 ##음 ##에 2 ##가 두 번이 ##고 칠 그 뒤 ##가 [88:ID_PHONE-B] [##33:ID_PHONE-I]
+0 ##둘 ##3 잠시 ##만 ##요 [3:SS_WEIGHT-B] [##하나:SS_WEIGHT-I] [27:ID_INUM-I] 어 [88:SS_LENGTH-B] 마지막 두 자리 ##가 삼 두 개요
+[010:ID_PHONE-B] [32:ID_PHONE-I] [##27:ID_PHONE-I] [3:ID_PHONE-I] ##다 ##음 ##에 2 ##가 두 번이 ##고 칠 그 뒤 ##가 [88:ID_PHONE-I] [##33:ID_PHONE-I]
 ㄴ
-어 네 제 전화 ##번 ##호 ##는 [010:ID_INUM-B] [##20:ID_INUM-I] [##20:ID_INUM-I] [##12:ID_INUM-I] [##18:ID_INUM-I] ##이 ##에 ##요 어 집 주소 ##는 [서울시:AD_METRO-B] [서초:AD_CITY-B] [서초동:AD_ADDRESS-I] [43:AD_ADDRESS-I] [##2:AD_ADDRESS-I] [21:AD_DETAIL-B] [##층:AD_DETAIL-I] [130:AD_DETAIL-I] [##2:AD_DETAIL-I] [##호:AD_DETAIL-I] ##이 ##고 ##요 이제 됐 ##나 ##요
-아 네 뭐 그렇 ##다면 믿 ##어 ##볼 ##게요 어차피 주문 ##하 ##려고 전화 ##한 건 저 ##니까 ##요 나이 ##는 음 [1925:ID_INUM-B] [##년:ID_INUM-I] [##생:SS_AGE-I] [12:ID_INUM-B] [##월:ID_INUM-I] [21:ID_INUM-I] [##일:ID_INUM-I] [##일:ID_INUM-I] ##생 ##이 ##고 ##요
-이 ##택 ##길 ( 65 ##세 ) 주민 ##과 ##장 2017 . 5 . 12 . 김 ##군 ##호 ( 32 )	SS_NAME-B SS_NAME-I SS_NAME-I O SS_AGE-B SS_AGE-I O O O O O ID_INUM-I ID_INUM-I ID_INUM-I ID_INUM-I O SS_NAME-B SS_NAME-I SS_NAME-I O SS_AGE-B O
+어 네 제 전화 ##번 ##호 ##는 [010:ID_PHONE-B] [##20:ID_PHONE-I] [##20:ID_PHONE-I] [##12:ID_PHONE-I] [##18:ID_PHONE-I] ##이 ##에 ##요 어 집 주소 ##는 [서울시:AD_METRO-B] [서초:AD_CITY-B] [서초동:AD_ADDRESS-I] [43:AD_ADDRESS-I] [##2:AD_ADDRESS-I] [21:AD_DETAIL-I] [##층:AD_DETAIL-I] [130:AD_DETAIL-I] [##2:AD_DETAIL-I] [##호:AD_DETAIL-I] ##이 ##고 ##요 이제 됐 ##나 ##요
+아 네 뭐 그렇 ##다면 믿 ##어 ##볼 ##게요 어차피 주문 ##하 ##려고 전화 ##한 건 저 ##니까 ##요 나이 ##는 음 [1925:SS_AGE-B] [##년:ID_INUM-I] [##생:SS_AGE-I] [12:ID_INUM-I] [##월:ID_INUM-I] [21:ID_INUM-I] [##일:ID_INUM-I] [##일:ID_INUM-I] [##생:SS_AGE-I] ##이 ##고 ##요
+특히 둘째 출산 후 몸무게 ##가 [63:SS_WEIGHT-B] [##k:SS_WEIGHT-I] [##g:SS_WEIGHT-I] ##까 ##지 치솟 ##았 ##다고 밝혔 ##지만 체중 증가 ##가 무색 ##할 정도 ##로 변함없 ##는 비주얼 ##을 자랑 ##해 감탄 ##을 안겼 ##다 .
+이 ##택 ##길 ( 65 ##세 ) 주민 ##과 ##장 2017 . 5 . 12 . 김 ##군 ##호 ( 32 )	SS_NAME-B SS_NAME-I SS_NAME-I O SS_AGE-B SS_AGE-I O O O O ID_INUM-B ID_INUM-I ID_INUM-I ID_INUM-I ID_INUM-I O SS_NAME-B SS_NAME-I SS_NAME-I O SS_AGE-B O
 주무관 김재 ##화 지방 ##행정 ##사 ##무 지진 ##태 행정 ##사 ##무 ##관 이 ##택 ##길 ( 65 ##세 ) 주민 ##과 ##장 2017 . 5 . 12 . 김 ##군 ##호 ( 32 )	O SS_NAME-B SS_NAME-I O O O O SS_NAME-B SS_NAME-I O O O O SS_NAME-B SS_NAME-I SS_NAME-I O SS_AGE-B SS_AGE-I O O O O ID_INUM-B ID_INUM-I ID_INUM-I ID_INUM-I ID_INUM-I O SS_NAME-B SS_NAME-I SS_NAME-I O SS_AGE-B O
 협조 ##자	O O
 시행 주민 ##과 - 132 ##9	O O O O ID_PHONE-B ID_PHONE-I
-우 031 ##71 서울 ##특별 ##시 종로구 세 ##증 ##대로 209 ( 세 ##증 ##로 )	O ID_PHONE-B ID_PHONE-I AD_METRO-B AD_METRO-I AD_METRO-I AD_CITY-B AD_ADDRESS-B AD_ADDRESS-I AD_ADDRESS-I AD_ADDRESS-I O AD_ADDRESS-I AD_ADDRESS-I AD_ADDRESS-I O
-접수 http : / / www . m ##o ##i . go . kr	O O O O O O O O O SS_NAME-I O O O O
+우 031 ##71 서울 ##특별 ##시 종로구 세 ##증 ##대로 209 ( 세 ##증 ##로 )	AD_ADDRESS-B AD_ADDRESS-I AD_ADDRESS-I AD_METRO-B AD_METRO-I AD_CITY-I AD_CITY-B AD_ADDRESS-B AD_ADDRESS-I AD_ADDRESS-I AD_ADDRESS-I O AD_ADDRESS-B AD_ADDRESS-I AD_ADDRESS-I O
+접수 http : / / www . m ##o ##i . go . kr	O O O O O O ID_PHONE-I SS_NAME-B SS_NAME-I SS_NAME-I SS_BRAND-I O O O
 전화 ##번 ##호 02 - 2100 - 38 ##46	O O O ID_PHONE-B ID_PHONE-I ID_PHONE-I ID_PHONE-I ID_PHONE-I ID_PHONE-I
-팩스 ##번 ##호 02 - 2100 - 42 ##97 / ab ##le ##g ##uy ##46 @ m ##o ##i . go . kr / 대국민 공개	O O O ID_PHONE-B ID_PHONE-I ID_PHONE-I ID_PHONE-I ID_PHONE-I ID_PHONE-I O O O O ID_PHONE-I ID_PHONE-I O O O O O O O O O O O
-※ 영수증 ##이 급히 필요 ##하 ##신 분 ##은 농협 50 ##50 ##55 - 51 - 03 ##90 ##32 ( 예금 ##주 : 푸른 ##꿈 ##고 ) 계좌 ##로 입금 ##해 주시 ##고 학교 ##에 ##서 확인 ##할 수 있 ##도록 학년 ##반 , 학생 ##이 ##름 ##으로 납부 바랍니다 .	O O O O O O O O O SS_BRAND-B ID_ACCOUNT-B ID_ACCOUNT-I ID_ACCOUNT-I ID_ACCOUNT-I ID_ACCOUNT-I ID_ACCOUNT-I ID_ACCOUNT-I ID_ACCOUNT-I ID_ACCOUNT-I O O O O SS_BRAND-B SS_BRAND-I SS_BRAND-I O O O O O O O O O O O O O O O O O O O O O O O O O
+팩스 ##번 ##호 02 - 2100 - 42 ##97 / ab ##le ##g ##uy ##46 @ m ##o ##i . go . kr / 대국민 공개	O O O ID_PHONE-B ID_PHONE-I ID_PHONE-I ID_PHONE-I ID_PHONE-I ID_PHONE-I O SS_NAME-B SS_NAME-I SS_NAME-I SS_NAME-I ID_PHONE-I ID_PHONE-I SS_NAME-B SS_NAME-I SS_NAME-I O O O O O O O
+※ 영수증 ##이 급히 필요 ##하 ##신 분 ##은 농협 50 ##50 ##55 - 51 - 03 ##90 ##32 ( 예금 ##주 : 푸른 ##꿈 ##고 ) 계좌 ##로 입금 ##해 주시 ##고 학교 ##에 ##서 확인 ##할 수 있 ##도록 학년 ##반 , 학생 ##이 ##름 ##으로 납부 바랍니다 .	O O O O O O O O O SS_BRAND-B ID_CARD-B ID_ACCOUNT-I ID_ACCOUNT-I ID_ACCOUNT-I ID_ACCOUNT-I ID_ACCOUNT-I ID_ACCOUNT-I ID_ACCOUNT-I ID_ACCOUNT-I O O O O SS_BRAND-B SS_BRAND-I SS_BRAND-I O O O O O O O O O O O O O O O O O O O O O O O O O
 납부 후 행정 ##실 ( ☎ ##0 ##63 - 32 ##3 - 225 ##8 ) 으로 연락 주시 ##면 입금 ##확 ##인 후 영수증 ##을 발행 ##해 드립니다 .	O O O O O O ID_PHONE-B ID_PHONE-I ID_PHONE-I ID_PHONE-I ID_PHONE-I ID_PHONE-I ID_PHONE-I ID_PHONE-I O O O O O O O O O O O O O O O
-나 . 납부 ##방 ##법 : 스쿨 ##뱅 ##킹 계좌 또는 학교 ##계 ##좌 입금	O O O O O O O SS_BRAND-I O O O O O O O
-( 농협 35 ##5 - 000 ##4 - 71 ##23 - 53 예금 ##주 : 가평 ##중 ##학교 3 - 1 홍길동 ##으로 입금 )	O SS_BRAND-B ID_ACCOUNT-B ID_ACCOUNT-I ID_ACCOUNT-I ID_ACCOUNT-I ID_ACCOUNT-I ID_ACCOUNT-I ID_ACCOUNT-I ID_ACCOUNT-I ID_ACCOUNT-I ID_ACCOUNT-I O O O SS_BRAND-B SS_BRAND-I SS_BRAND-I ID_ACCOUNT-B ID_ACCOUNT-I ID_ACCOUNT-I O O O O
-• 기타 궁금 ##한 사항 ##은 교육 ##행정 ##식 ( ☎ ##58 ##0 - 300 ##6 ) 로 문의 ##하시 ##길 바랍니다 .	O O O O O O O O O O O ID_PHONE-B ID_PHONE-I ID_PHONE-I ID_PHONE-I ID_PHONE-I O O O O O O O
-최정 ##숙 국민 88 ##57 ##0 ##10 ##000 ##75 ##20	SS_NAME-B SS_NAME-I SS_BRAND-B ID_INUM-B ID_INUM-I ID_INUM-I ID_INUM-I ID_INUM-I ID_INUM-I ID_INUM-I
-이성 ##환 국민 92 ##16 ##0 ##20 ##12 ##89 ##72 ##1	SS_NAME-B SS_NAME-I SS_BRAND-B ID_INUM-B ID_INUM-I ID_INUM-I ID_INUM-I ID_INUM-I ID_INUM-I ID_INUM-I ID_INUM-I
-김영 ##숙 하나 29 ##3 - 91 ##0 ##2 - 37 ##80 ##7	SS_NAME-B SS_NAME-I SS_BRAND-B ID_ACCOUNT-B ID_ACCOUNT-I ID_ACCOUNT-I ID_ACCOUNT-I ID_ACCOUNT-I ID_ACCOUNT-I ID_ACCOUNT-I ID_ACCOUNT-I ID_ACCOUNT-I ID_ACCOUNT-I
+나 . 납부 ##방 ##법 : 스쿨 ##뱅 ##킹 계좌 또는 학교 ##계 ##좌 입금	O O O O O O O O O O O O O O O
+( 농협 35 ##5 - 000 ##4 - 71 ##23 - 53 예금 ##주 : 가평 ##중 ##학교 3 - 1 홍길동 ##으로 입금 )	O SS_BRAND-B ID_PHONE-B ID_ACCOUNT-I ID_ACCOUNT-I ID_ACCOUNT-I ID_ACCOUNT-I ID_ACCOUNT-I ID_ACCOUNT-I ID_ACCOUNT-I ID_ACCOUNT-I ID_ACCOUNT-I O O O SS_BRAND-B SS_BRAND-I SS_BRAND-I ID_PHONE-B ID_ACCOUNT-I AD_DETAIL-I O O O O
+• 기타 궁금 ##한 사항 ##은 교육 ##행정 ##식 ( ☎ ##58 ##0 - 300 ##6 ) 로 문의 ##하시 ##길 바랍니다 .	O O O O O O O O O O O ID_PHONE-I ID_PHONE-I ID_PHONE-I ID_PHONE-I ID_PHONE-I O O O O O O O
+최정 ##숙 국민 88 ##57 ##0 ##10 ##000 ##75 ##20	SS_NAME-B SS_NAME-I O ID_INUM-B ID_INUM-I ID_INUM-I ID_INUM-I ID_INUM-I ID_INUM-I ID_INUM-I
+이성 ##환 국민 92 ##16 ##0 ##20 ##12 ##89 ##72 ##1	SS_NAME-B SS_NAME-I O ID_INUM-B ID_INUM-I ID_INUM-I ID_INUM-I ID_INUM-I ID_INUM-I ID_INUM-I ID_INUM-I
+김영 ##숙 하나 29 ##3 - 91 ##0 ##2 - 37 ##80 ##7	SS_NAME-B SS_NAME-I ID_PHONE-B ID_PHONE-B ID_ACCOUNT-I ID_ACCOUNT-I ID_ACCOUNT-I ID_ACCOUNT-I ID_ACCOUNT-I ID_ACCOUNT-I ID_ACCOUNT-I ID_ACCOUNT-I ID_ACCOUNT-I
 나 애기 짱 ##허 ##니 [UNK]	O O O O O O
 나 애기 짱 ##허 ##니 일곱 ##살	O O O O O SS_AGE-B SS_AGE-I
 나 애기 짱 ##허 ##니 일곱	O O O O O SS_AGE-B
 나 애기 짱 ##허 ##니 정신 ##연 ##령 일곱	O O O O O O O O O
 나 애기 짱 ##허 ##니 정신 ##연 ##령 열 ##일 ##곱	O O O O O O O O SS_AGE-B SS_AGE-I SS_AGE-I
-나 애기 짱 ##헌 일곱 ##짤	O O SS_NAME-B SS_NAME-I O O
+나 애기 짱 ##헌 일곱 ##짤	O O O SS_NAME-I O O
 나 애기 짱 ##헌 ##이 일곱 ##짤	O O SS_NAME-B SS_NAME-I O O O
-일곱 ##짤 짱 ##헌 ##니 배고 ##빠	O O SS_NAME-B O O O O
-짱 ##헌 ##니 배고 ##빠	SS_NAME-B SS_NAME-I O SS_NAME-B O
+일곱 ##짤 짱 ##헌 ##니 배고 ##빠	O O O O O O O
+짱 ##헌 ##니 배고 ##빠	SS_NAME-B SS_NAME-I O O O
 짱 ##헌 ##니 배고파	SS_NAME-B SS_NAME-I O O
-짱 ##허 ##니 ##는 배고 ##빠	SS_NAME-B SS_NAME-I SS_NAME-I O SS_NAME-B O
+짱 ##허 ##니 ##는 배고 ##빠	O O O O O O
 짱 ##허 ##니 헝 ##그리	O O O O O
-너 102 ##였 ##다가 190 ##된 ##거 ##야 ?	O SS_LENGTH-B O O SS_LENGTH-B O O O O
-너 102 ##키 ##로 ##였 ##다가 190 ##된 ##거 ##야 ?	O SS_WEIGHT-B SS_WEIGHT-I SS_WEIGHT-I O O SS_LENGTH-B O O O O
+너 102 ##였 ##다가 190 ##된 ##거 ##야 ?	O SS_AGE-B O O SS_LENGTH-B O O O O
+너 102 ##키 ##로 ##였 ##다가 190 ##된 ##거 ##야 ?	O SS_WEIGHT-B SS_WEIGHT-I SS_WEIGHT-I O O SS_WEIGHT-B O O O O
 너 102 ##키 ##로 ##였 ##다가 190 ##키 ##로 ##된 ##거 ##야 ?	O SS_WEIGHT-B SS_WEIGHT-I SS_WEIGHT-I O O SS_WEIGHT-B SS_WEIGHT-I SS_WEIGHT-I O O O O
-너 102 ##센 ##치 ##였 ##다가 190 ##된 ##거 ##야 ?	O SS_LENGTH-B SS_LENGTH-I SS_LENGTH-I O O SS_LENGTH-B O O O O
-너 키 ##10 ##2 ##였 ##다가 190 ##된 ##거 ##야 ?	O O SS_LENGTH-B SS_LENGTH-I O O SS_LENGTH-B O O O O
+너 102 ##센 ##치 ##였 ##다가 190 ##된 ##거 ##야 ?	O SS_LENGTH-B SS_WEIGHT-I SS_WEIGHT-I O O SS_LENGTH-B O O O O
+너 키 ##10 ##2 ##였 ##다가 190 ##된 ##거 ##야 ?	O O SS_WEIGHT-B SS_WEIGHT-I O O SS_LENGTH-B O O O O
 ㄴ	O
 02 38 ##72 52 ##7	ID_PHONE-B ID_PHONE-I ID_PHONE-I ID_PHONE-I ID_PHONE-I
 01 ##2 38 ##7 52 ##7	ID_PHONE-B ID_PHONE-I ID_PHONE-I ID_PHONE-I ID_PHONE-I ID_PHONE-I
 01 ##2 38 ##7 52 ##71	ID_PHONE-B ID_PHONE-I ID_PHONE-I ID_PHONE-I ID_PHONE-I ID_PHONE-I
 01 ##12 38 ##7 52 ##71	ID_PHONE-B ID_PHONE-I ID_PHONE-I ID_PHONE-I ID_PHONE-I ID_PHONE-I
 ㄴ	O
-02 33 ##87 ##에 5 ##하나 ##78	ID_PHONE-B ID_PHONE-I ID_PHONE-I ID_PHONE-I ID_PHONE-I ID_PHONE-I ID_PHONE-I
+02 33 ##87 ##에 5 ##하나 ##78	ID_PHONE-B ID_PHONE-I ID_PHONE-I ID_PHONE-I ID_PHONE-B ID_PHONE-I ID_PHONE-I
 010 9 ##둘 ##둘 ##둘 228 ##3	ID_PHONE-B ID_PHONE-I ID_PHONE-I ID_PHONE-I ID_PHONE-I ID_PHONE-I ID_PHONE-I
-010 1 ##둘 ##셋 ##넷 56 ##78	ID_PHONE-B ID_PHONE-I SS_BRAND-I SS_BRAND-I SS_BRAND-I ID_PHONE-I ID_PHONE-I
+010 1 ##둘 ##셋 ##넷 56 ##78	ID_PHONE-B ID_PHONE-I ID_PHONE-I SS_BRAND-I ID_PHONE-I ID_PHONE-I ID_PHONE-I
 010 하나 ##23 ##4 56 ##78	ID_PHONE-B ID_PHONE-I ID_PHONE-I ID_PHONE-I ID_PHONE-I ID_PHONE-I
 ㄴ	O
-02 33 ##87 ##에 5 ##일 ##78	ID_PHONE-B ID_PHONE-I ID_PHONE-I ID_ACCOUNT-I ID_ACCOUNT-I ID_ACCOUNT-I ID_ACCOUNT-I
+02 33 ##87 ##에 5 ##일 ##78	ID_PHONE-B ID_PHONE-I ID_PHONE-I O O SS_BIRTH-I ID_PHONE-I
 010 9 ##이 ##이 ##이 228 ##3	ID_PHONE-B ID_PHONE-I O O O ID_PHONE-B ID_PHONE-I
-010 1 ##이 ##삼 ##사 56 ##78	ID_PHONE-B ID_PHONE-I ID_PHONE-I SS_BRAND-I SS_BRAND-I ID_PHONE-I ID_PHONE-I
+010 1 ##이 ##삼 ##사 56 ##78	ID_PHONE-B ID_PHONE-I ID_PHONE-I ID_PHONE-I ID_PHONE-I ID_PHONE-I ID_PHONE-I
 010 일 ##23 ##4 56 ##78	ID_PHONE-B ID_PHONE-I ID_PHONE-I ID_PHONE-I ID_PHONE-I ID_PHONE-I
-공 ##일 ##공 33 ##87 51 ##78	SS_BRAND-B SS_BRAND-I SS_BRAND-I ID_PHONE-B ID_PHONE-I ID_PHONE-I ID_PHONE-I
-공 ##일 ##공 삼 ##삼 ##팔 ##칠 오일 ##칠 ##팔	SS_NAME-B SS_NAME-I SS_NAME-I ID_ACCOUNT-B ID_ACCOUNT-I ID_ACCOUNT-I ID_ACCOUNT-I ID_ACCOUNT-I ID_ACCOUNT-I ID_ACCOUNT-I
-영일 ##영 33 ##87 51 ##78	SS_NAME-B SS_NAME-I ID_PHONE-B ID_PHONE-I ID_PHONE-I ID_PHONE-I
-영일 ##영 삼 ##삼 ##팔 ##칠 오일 ##칠 ##팔	SS_NAME-B SS_NAME-I ID_ACCOUNT-B ID_ACCOUNT-I ID_ACCOUNT-I ID_ACCOUNT-I ID_ACCOUNT-I ID_ACCOUNT-I ID_ACCOUNT-I
+공 ##일 ##공 33 ##87 51 ##78	SS_BRAND-B SS_BRAND-I SS_BRAND-I ID_PHONE-B ID_ACCOUNT-I ID_ACCOUNT-I ID_ACCOUNT-I
+공 ##일 ##공 삼 ##삼 ##팔 ##칠 오일 ##칠 ##팔	SS_NAME-B SS_NAME-I SS_NAME-I ID_INUM-B ID_INUM-I ID_INUM-I ID_INUM-I ID_INUM-I ID_INUM-I ID_INUM-I
+영일 ##영 33 ##87 51 ##78	SS_NAME-B SS_NAME-I ID_PHONE-B ID_ACCOUNT-I ID_ACCOUNT-I ID_ACCOUNT-I
+영일 ##영 삼 ##삼 ##팔 ##칠 오일 ##칠 ##팔	SS_NAME-B SS_NAME-I ID_INUM-B ID_INUM-I ID_INUM-I ID_INUM-I ID_INUM-I ID_INUM-I ID_INUM-I
 010 ##에 92 ##92 뒷 ##자리 ##는 이이 ##팔 ##삼	ID_PHONE-B ID_PHONE-I ID_PHONE-I ID_PHONE-I O O O SS_NAME-B SS_NAME-I SS_NAME-I
 ㄴ	O
 010 3 227 88 ##33	ID_PHONE-B ID_PHONE-I ID_PHONE-I ID_PHONE-I ID_PHONE-I
 010 3 227 88 ##3 3	ID_PHONE-B ID_PHONE-I ID_PHONE-I ID_PHONE-I ID_PHONE-I ID_PHONE-I
 010 32 ##27 88 ##3 3	ID_PHONE-B ID_PHONE-I ID_PHONE-I ID_PHONE-I ID_PHONE-I ID_PHONE-I
 010 32 27 88 33	ID_PHONE-B ID_PHONE-I ID_PHONE-I ID_PHONE-I ID_PHONE-I
-02 32 27 88 33	ID_ACCOUNT-B ID_ACCOUNT-I ID_ACCOUNT-I ID_ACCOUNT-I ID_ACCOUNT-I
-053 32 27 88 33	ID_ACCOUNT-B ID_ACCOUNT-I ID_ACCOUNT-I ID_ACCOUNT-I ID_ACCOUNT-I
-010 ##20 ##20 ##12 ##18	ID_INUM-B ID_INUM-I ID_INUM-I ID_INUM-I ID_INUM-I
+02 32 27 88 33	ID_PHONE-B ID_CARD-I ID_CARD-I ID_CARD-I ID_CARD-I
+053 32 27 88 33	ID_CARD-B ID_CARD-I ID_CARD-I ID_CARD-I ID_CARD-I
+010 ##20 ##20 ##12 ##18	ID_PHONE-B ID_PHONE-I ID_PHONE-I ID_PHONE-I ID_PHONE-I
 ㄴ	O
-02 ##3 잠시 ##만 ##요 32 ##에 27 어 88 33	ID_ACCOUNT-B ID_ACCOUNT-I O O O ID_ACCOUNT-B ID_ACCOUNT-I ID_ACCOUNT-I O ID_ACCOUNT-I ID_ACCOUNT-I
+02 ##3 잠시 ##만 ##요 32 ##에 27 어 88 33	ID_PHONE-B ID_PHONE-I O O O ID_PHONE-B ID_PHONE-I ID_PHONE-I ID_PHONE-I ID_PHONE-I ID_PHONE-I
 010 ##에 92 ##92 뒷 ##자리 ##는 228 ##3	ID_PHONE-B ID_PHONE-I ID_PHONE-I ID_PHONE-I O O O ID_PHONE-B ID_PHONE-I
-010 ##에 92 ##92 뒷 ##자리 ##는 둘 ##둘 ##83	ID_PHONE-B ID_PHONE-I ID_PHONE-I ID_PHONE-I O O O ID_PHONE-B ID_PHONE-I ID_PHONE-I
-010 32 ##에 27 그 뒤 ##에 ##가 88 33	ID_PHONE-B ID_PHONE-I ID_PHONE-I ID_PHONE-I O O O O ID_ACCOUNT-B ID_PHONE-I
-02 ##3 9 4 번 234 ##5	ID_ACCOUNT-B ID_ACCOUNT-I ID_ACCOUNT-I ID_ACCOUNT-I ID_ACCOUNT-I ID_ACCOUNT-I ID_ACCOUNT-I
+010 ##에 92 ##92 뒷 ##자리 ##는 둘 ##둘 ##83	ID_PHONE-B ID_PHONE-I ID_PHONE-I ID_PHONE-I O O O SS_NAME-B SS_NAME-I ID_PHONE-I
+010 32 ##에 27 그 뒤 ##에 ##가 88 33	ID_PHONE-B ID_PHONE-I ID_PHONE-I ID_PHONE-I O O O O ID_PHONE-I ID_PHONE-I
+02 ##3 9 4 번 234 ##5	ID_PHONE-B ID_CARD-I ID_CARD-I ID_CARD-I ID_CARD-I ID_CARD-I ID_CARD-I
 053 9 네 번 223 ##4	ID_PHONE-B ID_PHONE-I O O ID_PHONE-B ID_PHONE-I
-8 아니 ##고 3 ##이 ##요 .	SS_WEIGHT-B O O SS_WEIGHT-B O O O
-8 아니 ##고 3 ##이 ##요 . 32 ##27	ID_PHONE-B O O O O O O ID_PHONE-B ID_PHONE-I
+8 아니 ##고 3 ##이 ##요 .	SS_AGE-B O O SS_AGE-B O O O
+8 아니 ##고 3 ##이 ##요 . 32 ##27	O O O SS_AGE-B O O O ID_PHONE-B ID_PHONE-I
 ㄴ	O
-0 ##둘 ##3 잠시 ##만 ##요 3 ##하나 27 어 88 마지막 두 자리 ##가 삼 두 개요	ID_PHONE-B ID_PHONE-I ID_PHONE-I O O O ID_ACCOUNT-B ID_PHONE-I ID_PHONE-I O SS_WEIGHT-B O O O O O O O
-010 32 ##27 3 ##다 ##음 ##에 2 ##가 두 번이 ##고 칠 그 뒤 ##가 88 ##33	ID_PHONE-B ID_PHONE-I ID_PHONE-I ID_PHONE-I O O O O O O O O O O O O ID_PHONE-B ID_PHONE-I
+0 ##둘 ##3 잠시 ##만 ##요 3 ##하나 27 어 88 마지막 두 자리 ##가 삼 두 개요	O O O O O O SS_WEIGHT-B SS_WEIGHT-I ID_INUM-I O SS_LENGTH-B O O O O O O O
+010 32 ##27 3 ##다 ##음 ##에 2 ##가 두 번이 ##고 칠 그 뒤 ##가 88 ##33	ID_PHONE-B ID_PHONE-I ID_PHONE-I ID_PHONE-I O O O O O O O O O O O O ID_PHONE-I ID_PHONE-I
 ㄴ	O
-어 네 제 전화 ##번 ##호 ##는 010 ##20 ##20 ##12 ##18 ##이 ##에 ##요 어 집 주소 ##는 서울시 서초 서초동 43 ##2 21 ##층 130 ##2 ##호 ##이 ##고 ##요 이제 됐 ##나 ##요	O O O O O O O ID_INUM-B ID_INUM-I ID_INUM-I ID_INUM-I ID_INUM-I O O O O O O O AD_METRO-B AD_CITY-B AD_ADDRESS-I AD_ADDRESS-I AD_ADDRESS-I AD_DETAIL-B AD_DETAIL-I AD_DETAIL-I AD_DETAIL-I AD_DETAIL-I O O O O O O O
-아 네 뭐 그렇 ##다면 믿 ##어 ##볼 ##게요 어차피 주문 ##하 ##려고 전화 ##한 건 저 ##니까 ##요 나이 ##는 음 1925 ##년 ##생 12 ##월 21 ##일 ##일 ##생 ##이 ##고 ##요	O O O O O O O O O O O O O O O O O O O O O O ID_INUM-B ID_INUM-I SS_AGE-I ID_INUM-B ID_INUM-I ID_INUM-I ID_INUM-I ID_INUM-I O O O O
+어 네 제 전화 ##번 ##호 ##는 010 ##20 ##20 ##12 ##18 ##이 ##에 ##요 어 집 주소 ##는 서울시 서초 서초동 43 ##2 21 ##층 130 ##2 ##호 ##이 ##고 ##요 이제 됐 ##나 ##요	O O O O O O O ID_PHONE-B ID_PHONE-I ID_PHONE-I ID_PHONE-I ID_PHONE-I O O O O O O O AD_METRO-B AD_CITY-B AD_ADDRESS-I AD_ADDRESS-I AD_ADDRESS-I AD_DETAIL-I AD_DETAIL-I AD_DETAIL-I AD_DETAIL-I AD_DETAIL-I O O O O O O O
+아 네 뭐 그렇 ##다면 믿 ##어 ##볼 ##게요 어차피 주문 ##하 ##려고 전화 ##한 건 저 ##니까 ##요 나이 ##는 음 1925 ##년 ##생 12 ##월 21 ##일 ##일 ##생 ##이 ##고 ##요	O O O O O O O O O O O O O O O O O O O O O O SS_AGE-B ID_INUM-I SS_AGE-I ID_INUM-I ID_INUM-I ID_INUM-I ID_INUM-I ID_INUM-I SS_AGE-I O O O
+특히 둘째 출산 후 몸무게 ##가 63 ##k ##g ##까 ##지 치솟 ##았 ##다고 밝혔 ##지만 체중 증가 ##가 무색 ##할 정도 ##로 변함없 ##는 비주얼 ##을 자랑 ##해 감탄 ##을 안겼 ##다 .	O O O O O O SS_WEIGHT-B SS_WEIGHT-I SS_WEIGHT-I O O O O O O O O O O O O O O O O O O O O O O O O O

@@ -31,12 +31,14 @@ def check_answer(output_line, solution_line, probs):
             solution_labels[i] = f"{OKGREEN}{solution_labels[i]}{ENDC}"
             detected_probs.append(probs[i])
             is_wrong = True
+    solution_tokens = [f"{OKBLUE}{i}{ENDC}{e}" for i, e in enumerate(solution_tokens)]
+    print_line = [f"{' '.join(output_tokens)}\t{' '.join(output_labels)}", f"{' '.join(solution_tokens)}\t{' '.join(solution_labels)}"]
     if is_wrong:
-        return True, [f"{' '.join(output_tokens)}\t{' '.join(output_labels)}", f"{' '.join(solution_tokens)}\t{' '.join(solution_labels)}"], detected_probs
-    return False, [f"{' '.join(output_tokens)}\t{' '.join(output_labels)}", f"{' '.join(solution_tokens)}\t{' '.join(solution_labels)}"], detected_probs
+        return True, print_line, detected_probs
+    return False, print_line, detected_probs
 
-def answer_diff(output_tsv_form, prob_matrix, mode=WRONG):
-    with open('res/answer.tsv', 'r', newline='', encoding='UTF-8') as solution_file:
+def answer_diff(output_tsv_form, prob_matrix, mode=WRONG, answer_path='answer/answer.tsv'):
+    with open(answer_path, 'r', newline='', encoding='UTF-8') as solution_file:
         output_lines = output_tsv_form
         solution_lines = solution_file.readlines()
         i = 0
@@ -57,7 +59,7 @@ def answer_diff(output_tsv_form, prob_matrix, mode=WRONG):
                 print(f"predited:{print_line[0]}")
                 print(f"answer:\t{print_line[1]}")
             for prob_i, detected in enumerate(probs):
-                print(f"{HEADER}{detected}{ENDC}")
+                print(f"{prob_i}{HEADER}{detected}{ENDC}")
                 if prob_i == len(probs) - 1:
                     print('')
         print(f"wrong line count: {cnt}")

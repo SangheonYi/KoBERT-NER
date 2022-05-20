@@ -2671,12 +2671,10 @@
 [CLS] 근데 김현 ##중 ##이 ##랑 슈퍼주니어 [UNK] . [SEP]	-100 O SS_NAME-B SS_NAME-I O O SS_BRAND-B O O -100
 [CLS] 티아라 ##에 ##서 류 ##화 ##영 ##이 ##란 멤버 ##가 있 ##었 ##어 ? [SEP]	-100 SS_BRAND-B O O SS_NAME-B SS_NAME-I SS_NAME-I O O O O O O O O -100
 [CLS] 나 오늘 첨 알 ##았 ##네 [SEP]	-100 O O O O O O -100
-[CLS] - _ - ; ; [SEP]	-100 O O O O O -100
 [CLS] 오 ##드리 토 ##투 주연 ##의 < 시작 ##은 키스 > 와 [SEP]	-100 SS_NAME-B SS_NAME-I SS_NAME-I SS_NAME-I O O O O O O O O -100
 [CLS] 홍상 ##수 감독 ##의 < 다른 나라 ##에 ##서 > . [SEP]	-100 SS_NAME-B SS_NAME-I O O O O O O O O O -100
 [CLS] 거기 ##에 정말 [UNK] 언니 오시 ##나 ##용 ? [SEP]	-100 O O O O O O O O O -100
 [CLS] 정재 ##승 , 진중 ##권 ##이 다시 뭉 ##쳤 ##다 ! [SEP]	-100 SS_NAME-B SS_NAME-I O SS_NAME-B SS_NAME-I O O O O O O -100
-[CLS] : ) [SEP]	-100 O O -100
 [CLS] 조지 ##오 ##웰 ##의 원작 ! [SEP]	-100 SS_NAME-B SS_NAME-I SS_NAME-I O O O -100
 [CLS] 장 ##국 ##영 10 ##주 ##기 기념 아비 ##장 ##전 보 ##러 ##ㅡ [SEP]	-100 SS_NAME-B SS_NAME-I SS_NAME-I O O O O O O O O O O -100
 [CLS] 그토록 기다렸 ##던 레오 까 ##락 ##스 감독 ##의 < 홀리 모터스 > 를 . ♡ [SEP]	-100 O O O SS_NAME-B SS_NAME-I SS_NAME-I SS_NAME-I O O O O O O O O O -100

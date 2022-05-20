@@ -11,8 +11,6 @@ from output_analysis import ALL, answer_diff
 
 from utils import init_logger, load_tokenizer, get_labels
 
-from kss import split_sentences
-
 logger = logging.getLogger(__name__)
 
 def get_device(pred_config):
@@ -221,7 +219,7 @@ def predict(pred_config):
             f.write("{}\n".format(line.strip()))
         for tsv_line in output_tsv_form:
             f.write(f"{tsv_line}\n")
-        answer_diff(output_tsv_form, prob_matrix)
+        answer_diff(output_tsv_form, prob_matrix, ALL)
   
     logger.info("Prediction Done!")
 

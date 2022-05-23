@@ -9,7 +9,7 @@ from torch.utils.data import TensorDataset, DataLoader, SequentialSampler
 from transformers import AutoModelForTokenClassification
 from output_analysis import ALL, answer_diff
 
-from utils import init_logger, load_tokenizer, get_labels
+from utils import load_tokenizer, get_labels
 
 logger = logging.getLogger(__name__)
 
@@ -41,8 +41,6 @@ def read_input_file(pred_config):
     lines = []
     with open(pred_config.input_file, "r", encoding="utf-8") as f:
         for line in f:
-            # sentences = split_sentences(line)
-            # for sentence in sentences:
             stripped = line.strip()
             words = stripped.split()
             lines.append(words)
@@ -80,9 +78,6 @@ def convert_input_file_to_tensor_dataset(lines,
             if not word_tokens:
                 word_tokens = [unk_token]  # For handling the bad-encoded word
             tokens.extend(word_tokens)
-            
-            # Use the real label id for the first token of the word, and padding ids for the remaining tokens
-            # slot_label_mask.extend([0] + [pad_token_label_id] * (len(word_tokens) - 1))
             
             # use the real label id for all tokens of the word
             slot_label_mask.extend([0] * (len(word_tokens)))
@@ -135,8 +130,7 @@ def convert_input_file_to_tensor_dataset(lines,
 
     return dataset, all_input_tokens
 
-
-def predict(pred_config):
+def predict(pred_config, lines):
     # load model and args
     args = get_args(pred_config)
     device = get_device(pred_config)
@@ -148,7 +142,6 @@ def predict(pred_config):
     # Convert input file to TensorDataset
     pad_token_label_id = torch.nn.CrossEntropyLoss().ignore_index
     tokenizer = load_tokenizer(args)
-    lines = read_input_file(pred_config)
     dataset, all_input_tokens = convert_input_file_to_tensor_dataset(lines, pred_config, args, tokenizer, pad_token_label_id)
 
     # Predict
@@ -176,22 +169,6 @@ def predict(pred_config):
                 preds = np.append(preds, logits.detach().cpu().numpy(), axis=0)
                 all_slot_label_mask = np.append(all_slot_label_mask, batch[3].detach().cpu().numpy(), axis=0)
 
-    # for pred in preds:
-    i = 0
-    prob_matrix = []
-    with open('res/logit_prob.py', 'w', newline='', encoding='UTF-8') as prob_file:
-        for sentence_pred, tokens in zip(torch.softmax(input=torch.tensor(preds), dim=2).numpy(), all_input_tokens):
-            prob_file.write(f"👩{' '.join(tokens)}\n")
-            token_probs = []
-            for i, token_pred in enumerate(sentence_pred):
-                if 0 < i < len(tokens):
-                    tmp = [[label_lst[i], round(e * 100, 2)] for i, e in enumerate(token_pred)]
-                    tmp.sort(key=lambda x: x[1],reverse=True)
-                    prob_file.write(f"{tmp[:4]}\n")
-                    token_probs.append(tmp[:4])
-            prob_matrix.append(token_probs)
-        i += 1
-
     preds = np.argmax(preds, axis=2)
 
     slot_label_map = {i: label for i, label in enumerate(label_lst)}
@@ -206,34 +183,19 @@ def predict(pred_config):
 
     ################# per token
     # Write to output file
-    with open(pred_config.output_file, "w", encoding="utf-8") as f:
-        output_tsv_form = []
-        for words, preds in zip(all_input_tokens, preds_list):
-            line = ""
-            for word, pred in zip(words, preds):
-                if pred == 'O':
-                    line = line + word + " "
-                else:
-                    line = line + "[{}:{}] ".format(word, pred)
-            output_tsv_form.append(f"{' '.join(words[:-1])}\t{' '.join(preds)}")
-            f.write("{}\n".format(line.strip()))
-        for tsv_line in output_tsv_form:
-            f.write(f"{tsv_line}\n")
-        answer_diff(output_tsv_form, prob_matrix, ALL)
-  
+    output_lines = []
+    for words, preds in zip(all_input_tokens, preds_list):
+        line = ""
+        for word, pred in zip(words, preds):
+            if pred == 'O':
+                line = line + word + " "
+            else:
+                line = line + "[{}:{}] ".format(word, pred)
+        print(f"{' '.join(words[:-1])}\t{' '.join(preds)}")
+        # output_tsv_form.append(f"{' '.join(words[:-1])}\t{' '.join(preds)}")
+        #     f.write("{}\n".format(line.strip()))
+        # for tsv_line in output_tsv_form:
+        #     f.write(f"{tsv_line}\n")
+        # answer_diff(output_tsv_form, prob_matrix, ALL)
     logger.info("Prediction Done!")
-
-
-if __name__ == "__main__":
-    init_logger()
-    parser = argparse.ArgumentParser()
-
-    parser.add_argument("--input_file", default="sample_pred_in.txt", type=str, help="Input file for prediction")
-    parser.add_argument("--output_file", default="sample_pred_out.txt", type=str, help="Output file for prediction")
-    parser.add_argument("--model_dir", default="./model", type=str, help="Path to save, load model")
-
-    parser.add_argument("--batch_size", default=32, type=int, help="Batch size for prediction")
-    parser.add_argument("--no_cuda", action="store_true", help="Avoid using CUDA when available")
-
-    pred_config = parser.parse_args()
-    predict(pred_config)
+    return "ddd"

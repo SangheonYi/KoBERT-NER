@@ -1,0 +1,6 @@
+POST http://localhost:5000/pii_demo HTTP/1.1
+content-type: application/json
+
+{
+    "lines": "특히 둘째 출산 후 몸무게가 63kg까지 치솟았다고 밝혔지만 체중 증가가 무색할 정도로 변함없는 비주얼을 자랑해 감탄을 안겼다.\n"
+}

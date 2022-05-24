@@ -55,5 +55,4 @@ def pii_demo():
 
 if __name__ == '__main__':
     server = init_server()
-    print("main start", is_one_time)
     app.run(debug=True)

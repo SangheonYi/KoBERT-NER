@@ -1,28 +1,28 @@
 import os
 import logging
-import argparse
-from tqdm import tqdm, trange
+from tqdm import tqdm
 
 import numpy as np
 import torch
 from torch.utils.data import TensorDataset, DataLoader, SequentialSampler
 from transformers import AutoModelForTokenClassification
-from output_analysis import ALL, answer_diff
 
-from utils import load_tokenizer, get_labels
+from collections import deque
 
 logger = logging.getLogger(__name__)
+is_one_time = 0
 
 def get_device(pred_config):
     return "cuda" if torch.cuda.is_available() and not pred_config.no_cuda else "cpu"
 
-
 def get_args(pred_config):
     return torch.load(os.path.join(pred_config.model_dir, 'training_args.bin'))
 
-
 def load_model(pred_config, args, device):
     # Check whether model exists
+    global is_one_time
+    is_one_time += 1
+    print(is_one_time)
     if not os.path.exists(pred_config.model_dir):
         raise Exception("Model doesn't exists! Train first!")
 
@@ -36,17 +36,15 @@ def load_model(pred_config, args, device):
 
     return model
 
+def read_input_file(lines):
+    new_lines = []
 
-def read_input_file(pred_config):
-    lines = []
-    with open(pred_config.input_file, "r", encoding="utf-8") as f:
-        for line in f:
-            stripped = line.strip()
-            words = stripped.split()
-            lines.append(words)
+    for line in lines:
+        stripped = line.strip()
+        words = stripped.split()
+        new_lines.append(words)
 
-    return lines
-
+    return new_lines
 
 def convert_input_file_to_tensor_dataset(lines,
                                          pred_config,
@@ -130,18 +128,41 @@ def convert_input_file_to_tensor_dataset(lines,
 
     return dataset, all_input_tokens
 
-def predict(pred_config, lines):
-    # load model and args
-    args = get_args(pred_config)
-    device = get_device(pred_config)
+def get_pii_meta(raw, tokens, labels):
+    count = 0
+    tokens = deque(tokens)
+    labels = deque(labels)
+    pii_meta = []
 
-    model = load_model(pred_config, args, device)
-    label_lst = get_labels(args)
-    logger.info(args)
+    for e in raw:
+        e_size = len(e)
+        token_size_sum = 0
+        while tokens and token_size_sum != e_size:
+            token = tokens.popleft()
+            label = labels.popleft()
+            if label != 'O':
+                pii_meta.append({
+                    'token' : token, 
+                    'label' : label, 
+                    'start' : count, 
+                    'end' : count + len(token)
+                })
+            count += len(token)
+            token_size_sum += len(token)
+        count += 1
+    return pii_meta
+
+def predict(lines, 
+    pred_config=None, 
+    args=None, 
+    device=None,
+    model=None,
+    label_lst=None,
+    pad_token_label_id=None,
+    tokenizer=None):
 
     # Convert input file to TensorDataset
-    pad_token_label_id = torch.nn.CrossEntropyLoss().ignore_index
-    tokenizer = load_tokenizer(args)
+    lines = read_input_file(lines)
     dataset, all_input_tokens = convert_input_file_to_tensor_dataset(lines, pred_config, args, tokenizer, pad_token_label_id)
 
     # Predict
@@ -181,21 +202,11 @@ def predict(pred_config, lines):
             if all_slot_label_mask[i, j] != pad_token_label_id:
                 preds_list[i].append(slot_label_map[preds[i][j]])
 
-    ################# per token
-    # Write to output file
-    output_lines = []
-    for words, preds in zip(all_input_tokens, preds_list):
-        line = ""
-        for word, pred in zip(words, preds):
-            if pred == 'O':
-                line = line + word + " "
-            else:
-                line = line + "[{}:{}] ".format(word, pred)
-        print(f"{' '.join(words[:-1])}\t{' '.join(preds)}")
-        # output_tsv_form.append(f"{' '.join(words[:-1])}\t{' '.join(preds)}")
-        #     f.write("{}\n".format(line.strip()))
-        # for tsv_line in output_tsv_form:
-        #     f.write(f"{tsv_line}\n")
-        # answer_diff(output_tsv_form, prob_matrix, ALL)
+    # make response
+    response = []
+    for raw, words, preds in zip(lines, all_input_tokens, preds_list):
+        words = list(map(lambda word: word.lstrip('##'), words))
+        pii_meta = get_pii_meta(raw, words, preds)
+        response.append(pii_meta)
     logger.info("Prediction Done!")
-    return "ddd"
+    return response

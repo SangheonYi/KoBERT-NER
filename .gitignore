@@ -126,9 +126,13 @@ venv.bak/
 ####################
 .vscode/
 .idea/
+
+#### model directory
 model/
 model_split/
 model_all/
+test/
+
 
 .DS_Store
 
@@ -136,3 +140,6 @@ preds/
 
 sample_pred_out.txt
 cached*
+
+#################### virtual env
+electra/

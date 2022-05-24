@@ -63,7 +63,6 @@ def convert_input_file_to_tensor_dataset(lines,
     all_slot_label_mask = []
 
     all_input_tokens = []
-
     for words in lines:
         tokens = []
         slot_label_mask = []
@@ -75,6 +74,7 @@ def convert_input_file_to_tensor_dataset(lines,
             
             # use the real label id for all tokens of the word
             slot_label_mask.extend([0] * (len(word_tokens)))
+
 
         all_input_tokens.append(tokens)
 
@@ -93,6 +93,7 @@ def convert_input_file_to_tensor_dataset(lines,
         tokens = [cls_token] + tokens
         token_type_ids = [cls_token_segment_id] + token_type_ids
         slot_label_mask = [pad_token_label_id] + slot_label_mask
+
 
         input_ids = tokenizer.convert_tokens_to_ids(tokens)
 
@@ -118,7 +119,6 @@ def convert_input_file_to_tensor_dataset(lines,
     all_attention_mask = torch.tensor(all_attention_mask, dtype=torch.long)
     all_token_type_ids = torch.tensor(all_token_type_ids, dtype=torch.long)
     all_slot_label_mask = torch.tensor(all_slot_label_mask, dtype=torch.long)
-
 
     dataset = TensorDataset(all_input_ids, all_attention_mask, all_token_type_ids, all_slot_label_mask)
 

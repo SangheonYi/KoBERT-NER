@@ -10,7 +10,6 @@ from transformers import AutoModelForTokenClassification
 from collections import deque
 
 logger = logging.getLogger(__name__)
-is_one_time = 0
 
 def get_device(pred_config):
     return "cuda" if torch.cuda.is_available() and not pred_config.no_cuda else "cpu"
@@ -20,9 +19,6 @@ def get_args(pred_config):
 
 def load_model(pred_config, args, device):
     # Check whether model exists
-    global is_one_time
-    is_one_time += 1
-    print(is_one_time)
     if not os.path.exists(pred_config.model_dir):
         raise Exception("Model doesn't exists! Train first!")
 

@@ -49,10 +49,8 @@ def pii_demo():
     for line, result in zip(lines, pii_metas):
         for meta in result:
             line = line.replace(meta["token"], f'[{meta["token"]}:{meta["label"]}]', meta["start"])
-        print(line)
     return jsonify({'result' : pii_metas})
     
-
 if __name__ == '__main__':
     server = init_server()
     app.run(debug=True)

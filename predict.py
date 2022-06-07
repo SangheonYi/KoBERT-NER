@@ -43,7 +43,6 @@ def read_input_file(lines):
     return new_lines
 
 def convert_input_file_to_tensor_dataset(lines,
-                                         pred_config,
                                          args,
                                          tokenizer,
                                          pad_token_label_id,
@@ -204,5 +203,4 @@ def predict(lines,
         words = list(map(lambda word: word.lstrip('##'), words))
         pii_meta = get_pii_meta(raw, words, preds)
         response.append(pii_meta)
-    logger.info("Prediction Done!")
     return response

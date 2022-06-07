@@ -8,7 +8,7 @@ from torch.utils.data import TensorDataset, DataLoader, SequentialSampler
 from transformers import AutoModelForTokenClassification
 
 from collections import deque
-
+import onnxruntime
 logger = logging.getLogger(__name__)
 
 def get_device(pred_config):
@@ -175,9 +175,12 @@ def predict(lines,
                       "labels": None}
             if args.model_type != "distilkobert":
                 inputs["token_type_ids"] = batch[2]
-            outputs = model(**inputs)
-            logits = outputs[0]
+            # outputs = model(**inputs)
+            ort_session = onnxruntime.InferenceSession('model/exported.onnx')
+            outputs = ort_session.run(output_names=["logits"], input_feed=dict(inputs))
 
+            logits = outputs[0]
+            print('logits', logits)
             if preds is None:
                 preds = logits.detach().cpu().numpy()
                 all_slot_label_mask = batch[3].detach().cpu().numpy()
@@ -186,6 +189,7 @@ def predict(lines,
                 all_slot_label_mask = np.append(all_slot_label_mask, batch[3].detach().cpu().numpy(), axis=0)
 
     preds = np.argmax(preds, axis=2)
+    print('preds', preds)
 
     slot_label_map = {i: label for i, label in enumerate(label_lst)}
     preds_list = [[] for _ in range(preds.shape[0])] # [[]*batch 수] 

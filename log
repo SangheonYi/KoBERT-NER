@@ -1,0 +1,16 @@
+Traceback (most recent call last):
+  File "exportTuto.py", line 29, in <module>
+    onnx_inputs = export(tokenizer, base_model, onnx_config, onnx_config.default_onnx_opset, onnx_path)
+  File "/home/sayi/workspace/pii/pii_venv/lib/python3.8/site-packages/transformers/onnx/convert.py", line 133, in export
+    export(
+  File "/home/sayi/workspace/pii/pii_venv/lib/python3.8/site-packages/torch/onnx/__init__.py", line 305, in export
+    return utils.export(model, args, f, export_params, verbose, training,
+  File "/home/sayi/workspace/pii/pii_venv/lib/python3.8/site-packages/torch/onnx/utils.py", line 118, in export
+    _export(model, args, f, export_params, verbose, training, input_names, output_names,
+  File "/home/sayi/workspace/pii/pii_venv/lib/python3.8/site-packages/torch/onnx/utils.py", line 749, in _export
+    with torch.serialization._open_file_like(f, "wb") as opened_file:
+  File "/home/sayi/workspace/pii/pii_venv/lib/python3.8/site-packages/torch/serialization.py", line 231, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "/home/sayi/workspace/pii/pii_venv/lib/python3.8/site-packages/torch/serialization.py", line 212, in __init__
+    super(_open_file, self).__init__(open(name, mode))
+FileNotFoundError: [Errno 2] No such file or directory: 'monologg/koelectra-base-v3-discriminator'

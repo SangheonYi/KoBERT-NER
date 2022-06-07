@@ -15,7 +15,6 @@ class PIIELECTRAConfig(OnnxConfig):
                 ("input_ids", {0: "batch", 1: "sequence"}),
                 ("token_type_ids", {0: "batch", 1: "sequence"}),
                 ("attention_mask", {0: "batch", 1: "sequence"}),
-                ("labels", {0: "batch", 1: "sequence"}),
             ]
         )
     @property
@@ -34,5 +33,6 @@ if __name__ == '__main__':
     base_model = AutoModelForTokenClassification.from_pretrained('model/')
     onnx_config = PIIELECTRAConfig(ElectraConfig.from_pretrained('model/'))
     out_path = Path("model/exported.onnx")
-    onnx_inputs = export(tokenizer, base_model, onnx_config, onnx_config.default_onnx_opset, out_path)
+    onnx_inputs, onnx_outputs  = export(tokenizer, base_model, onnx_config, onnx_config.default_onnx_opset, out_path)
+    print(onnx_inputs, onnx_outputs)
 

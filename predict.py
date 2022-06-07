@@ -5,7 +5,7 @@ from tqdm import tqdm
 import numpy as np
 import torch
 from torch.utils.data import TensorDataset, DataLoader, SequentialSampler
-from transformers import AutoModelForTokenClassification
+from transformers import AutoModelForTokenClassification, ElectraTokenizer
 
 from collections import deque
 import onnxruntime
@@ -151,14 +151,14 @@ def predict(lines,
     pred_config=None, 
     args=None, 
     device=None,
-    model=None,
+    ort_session=None,
     label_lst=None,
     pad_token_label_id=None,
     tokenizer=None):
 
     # Convert input file to TensorDataset
     lines = read_input_file(lines)
-    dataset, all_input_tokens = convert_input_file_to_tensor_dataset(lines, pred_config, args, tokenizer, pad_token_label_id)
+    dataset, all_input_tokens = convert_input_file_to_tensor_dataset(lines, args, tokenizer, pad_token_label_id)
 
     # Predict
     sampler = SequentialSampler(dataset)
@@ -170,17 +170,14 @@ def predict(lines,
     for batch in tqdm(data_loader, desc="Predicting"):
         batch = tuple(t.to(device) for t in batch)
         with torch.no_grad():
-            inputs = {"input_ids": batch[0],
-                      "attention_mask": batch[1],
-                      "labels": None}
+            inputs = {"input_ids": batch[0].numpy(),
+                      "attention_mask": batch[1].numpy()}
             if args.model_type != "distilkobert":
-                inputs["token_type_ids"] = batch[2]
-            # outputs = model(**inputs)
-            ort_session = onnxruntime.InferenceSession('model/exported.onnx')
+                inputs["token_type_ids"] = batch[2].numpy()
+            
             outputs = ort_session.run(output_names=["logits"], input_feed=dict(inputs))
 
-            logits = outputs[0]
-            print('logits', logits)
+            logits = torch.tensor(outputs[0])
             if preds is None:
                 preds = logits.detach().cpu().numpy()
                 all_slot_label_mask = batch[3].detach().cpu().numpy()
@@ -189,7 +186,6 @@ def predict(lines,
                 all_slot_label_mask = np.append(all_slot_label_mask, batch[3].detach().cpu().numpy(), axis=0)
 
     preds = np.argmax(preds, axis=2)
-    print('preds', preds)
 
     slot_label_map = {i: label for i, label in enumerate(label_lst)}
     preds_list = [[] for _ in range(preds.shape[0])] # [[]*batch 수] 

@@ -21,7 +21,8 @@ def init_server():
     args = get_args(pred_config)
     device = get_device(pred_config)
 
-    model = load_model(pred_config, args, device)
+    # model = load_model(pred_config, args, device)
+    ort_session = onnxruntime.InferenceSession('model/exported.onnx')
     label_lst = get_labels(args)
     logger.info(args)
 
@@ -32,7 +33,7 @@ def init_server():
         "pred_config" : pred_config, 
         "args" : args, 
         "device" : device,
-        "model" : model,
+        "ort_session" : ort_session,
         "label_lst" : label_lst,
         "pad_token_label_id" : pad_token_label_id,
         "tokenizer" : tokenizer,

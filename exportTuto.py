@@ -17,22 +17,17 @@ class PIIELECTRAConfig(OnnxConfig):
                 ("attention_mask", {0: "batch", 1: "sequence"}),
             ]
         )
-    @property
-    def outputs(self) -> Mapping[str, Mapping[int, str]]:
-        return OrderedDict(
-            [
-                ("logits", {0: "batch", 1: "sequence"}),
-            ]
-        )
-
-
                 
 if __name__ == '__main__':
+    # 학습된 모델과 tokenizer load
     onnx_path = Path('monologg/koelectra-base-v3-discriminator')
     tokenizer = ElectraTokenizer.from_pretrained(onnx_path)
     base_model = AutoModelForTokenClassification.from_pretrained('model/')
+    # OnnxConfig를 학습된 모델의 Configuration에 맞게 재정의 한 class를 초기화
     onnx_config = PIIELECTRAConfig(ElectraConfig.from_pretrained('model/'))
+    # ONNX 생성 경로 설정
     out_path = Path("model/exported.onnx")
+    # 위에서 불러온 instance와 경로를 기반으로 ONNX 생성
     onnx_inputs, onnx_outputs  = export(tokenizer, base_model, onnx_config, onnx_config.default_onnx_opset, out_path)
     print(onnx_inputs, onnx_outputs)
 

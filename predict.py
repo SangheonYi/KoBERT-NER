@@ -5,10 +5,11 @@ from tqdm import tqdm
 import numpy as np
 import torch
 from torch.utils.data import TensorDataset, DataLoader, SequentialSampler
-from transformers import AutoModelForTokenClassification, ElectraTokenizer
 
 from collections import deque
-import onnxruntime
+
+import time
+
 logger = logging.getLogger(__name__)
 
 def get_device(pred_config):
@@ -17,22 +18,7 @@ def get_device(pred_config):
 def get_args(pred_config):
     return torch.load(os.path.join(pred_config.model_dir, 'training_args.bin'))
 
-def load_model(pred_config, args, device):
-    # Check whether model exists
-    if not os.path.exists(pred_config.model_dir):
-        raise Exception("Model doesn't exists! Train first!")
-
-    try:
-        model = AutoModelForTokenClassification.from_pretrained(args.model_dir)  # Config will be automatically loaded from model_dir
-        model.to(device)
-        model.eval()
-        logger.info("***** Model Loaded *****")
-    except:
-        raise Exception("Some model files might be missing...")
-
-    return model
-
-def read_input_file(lines):
+def parse_request_lines(lines):
     new_lines = []
 
     for line in lines:
@@ -120,7 +106,6 @@ def convert_input_file_to_tensor_dataset(lines,
     all_slot_label_mask = torch.tensor(all_slot_label_mask, dtype=torch.long)
 
     dataset = TensorDataset(all_input_ids, all_attention_mask, all_token_type_ids, all_slot_label_mask)
-
     return dataset, all_input_tokens
 
 def get_pii_meta(raw, tokens, labels):
@@ -156,8 +141,9 @@ def predict(lines,
     pad_token_label_id=None,
     tokenizer=None):
 
+    start = time.time()
     # Convert input file to TensorDataset
-    lines = read_input_file(lines)
+    lines = parse_request_lines(lines)
     dataset, all_input_tokens = convert_input_file_to_tensor_dataset(lines, args, tokenizer, pad_token_label_id)
 
     # Predict
@@ -171,9 +157,9 @@ def predict(lines,
         batch = tuple(t.to(device) for t in batch)
         with torch.no_grad():
             inputs = {"input_ids": batch[0].numpy(),
-                      "attention_mask": batch[1].numpy()}
-            if args.model_type != "distilkobert":
-                inputs["token_type_ids"] = batch[2].numpy()
+                      "attention_mask": batch[1].numpy(),
+                      "token_type_ids": batch[2].numpy()
+                      }
             
             outputs = ort_session.run(output_names=["logits"], input_feed=dict(inputs))
 
@@ -203,4 +189,5 @@ def predict(lines,
         words = list(map(lambda word: word.lstrip('##'), words))
         pii_meta = get_pii_meta(raw, words, preds)
         response.append(pii_meta)
+    print(round(time.time() - start, 3))
     return response

@@ -3,6 +3,7 @@ from predict import *
 import argparse
 
 from utils import load_tokenizer, get_labels, init_logger
+import onnxruntime
 
 app = Flask(__name__)
 server = None

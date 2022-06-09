@@ -1,61 +1,38 @@
 from flask import Flask, request, jsonify
-from predict import *
-import argparse
 
-from utils import load_tokenizer, get_labels, init_logger
-import onnxruntime
-
+from transformers import ElectraTokenizerFast, ElectraForTokenClassification
+from transformers import TokenClassificationPipeline
+import time
 app = Flask(__name__)
-server = None
+pipeline = None
 
-def init_server():
+def init_pipeline():
     # init config
-    init_logger()
-    parser = argparse.ArgumentParser()
-    parser.add_argument("--model_dir", default="model", type=str, help="Path to save, load model")
+    tokenizer = ElectraTokenizerFast.from_pretrained('monologg/koelectra-base-v3-discriminator')
+    model = ElectraForTokenClassification.from_pretrained("model")
+    pipeline = TokenClassificationPipeline(task="ner", model=model, tokenizer=tokenizer)
 
-    parser.add_argument("--batch_size", default=32, type=int, help="Batch size for prediction")
-    parser.add_argument("--no_cuda", action="store_true", help="Avoid using CUDA when available")
-    pred_config = parser.parse_args()
-
-    # load model, tokenizer and args
-    args = get_args(pred_config)
-    device = get_device(pred_config)
-
-    # model = load_model(pred_config, args, device)
-    ort_session = onnxruntime.InferenceSession('model/exported.onnx')
-    label_lst = get_labels(args)
-    logger.info(args)
-
-    pad_token_label_id = torch.nn.CrossEntropyLoss().ignore_index
-    tokenizer = load_tokenizer(args)
-
-    return {
-        "pred_config" : pred_config, 
-        "args" : args, 
-        "device" : device,
-        "ort_session" : ort_session,
-        "label_lst" : label_lst,
-        "pad_token_label_id" : pad_token_label_id,
-        "tokenizer" : tokenizer,
-    }
+    return pipeline
 
 @app.route('/pii_demo', methods=['POST'])
 def pii_demo():
-    if server == None:
-        return "Model config isn't loaded"
+    if pipeline == None:
+        return "Server not ready"
     lines = request.get_json()["lines"]
     if not lines:
-        return "Empty strings requested"
-    pii_metas = predict(lines, **server)
-    for line, result in zip(lines, pii_metas):
-        for meta in result:
-            line = line.replace(meta["token"], f'[{meta["token"]}:{meta["label"]}]', meta["start"])
+        return "Empty sentences requested"
+    start = time.time()
+    pii_metas = pipeline(lines)
+    print(time.time() - start)
+    print(pii_metas)
     json_data = jsonify({"result" : pii_metas})
+    # for line, result in zip(lines, pii_metas):
+    #     for meta in result:
+    #         line = line.replace(meta["token"], f'[{meta["token"]}:{meta["label"]}]', meta["start"])
     # print(json_data.json)
     return json_data
     
 if __name__ == '__main__':
-    server = init_server()
+    pipeline = init_pipeline()
     app.config['JSON_AS_ASCII'] = False
     app.run(debug=True)

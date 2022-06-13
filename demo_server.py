@@ -1,11 +1,12 @@
 from flask import Flask, request, jsonify
-from transformers import ElectraTokenizerFast, ElectraForTokenClassification
+from transformers import ElectraTokenizerFast, ElectraForTokenClassification, ElectraTokenizer
 from transformers import TokenClassificationPipeline
 import torch
 import time
 import os, psutil
 process = psutil.Process(os.getpid())
-
+count = 0
+spent_sum = 0
 app = Flask(__name__)
 pipeline = None
 
@@ -19,17 +20,23 @@ def init_pipeline():
 @app.route('/pii_demo', methods=['POST'])
 def pii_demo():
     global pipeline
+    global spent_sum
+    global count
+    
     if pipeline == None:
         return "Server not ready"
+    
     lines = request.get_json()["lines"]
     if not lines:
         return "Empty sentences requested"
     with torch.no_grad():
-        # start = time.time()
+        count += 1
+        start = time.time()
         sentence_metas = pipeline(lines)
-        # pipeline("dkkkkddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd")
-        # print(type(sentence_metas))
-        # print(time.time() - start, flush=True)
+        spent = time.time() - start 
+        spent_sum += spent
+        print("spent", spent)
+        print("spent_avg", round(spent_sum / count, 2))
 
         # respo = [
         #     [
@@ -40,10 +47,10 @@ def pii_demo():
         #         for sentence_meta in sentence_metas
         #     ]
         # json_data = jsonify({"result" : respo})
-        print(len(lines), process.memory_info().rss / 1024 ** 2)
+        print("memory usages:", process.memory_info().rss / 1024 ** 2)
         return "json_data"
     
 if __name__ == '__main__':
     init_pipeline()
     app.config['JSON_AS_ASCII'] = False
-    app.run(debug=False)
+    app.run(debug=True)

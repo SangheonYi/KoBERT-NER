@@ -26,16 +26,16 @@ def pii_demo():
     global count
     global start_memory
     
-    if pipeline == None:
-        return "Server not ready"
-    
-    lines = request.get_json()["lines"]
-    if not lines:
-        return "Empty sentences requested"
     with torch.no_grad():
         count += 1
         start = time.time()
-        pipeline(lines, batch_size=32)
+        lines = request.get_json()["lines"]
+        if pipeline == None:
+            return "Server not ready"
+    
+        if not lines:
+            return "Empty sentences requested"
+        metas = pipeline(lines * 10, batch_size=32)
         spent = round(time.time() - start, 3)
         spent_sum += spent
         print("spent", spent)

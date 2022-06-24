@@ -21,7 +21,12 @@ def init_pipeline():
 
 @app.route('/process_memory', methods=['GET'])
 def get_process_memory():
-    return f'{round(process.memory_info().rss / 1024 ** 2, 3)}'
+    memory = round(process.memory_info().rss / 1024 ** 2, 3)
+    if count == 1:
+        start_memory = memory
+    print("memory usages:", memory)
+    print("memory start, end, differencies:", start_memory, memory, round(memory - start_memory, 3))
+    return str(memory)
 
 @app.route('/pii_demo', methods=['POST'])
 def pii_demo():
@@ -44,13 +49,7 @@ def pii_demo():
         spent_sum += spent
         print("spent", spent)
         print("spent_avg", round(spent_sum / count, 2))
-        memory = round(process.memory_info().rss / 1024 ** 2, 3)
-        if count == 1:
-            start_memory = memory
-        print("memory usages:", memory)
-        print("memory start, end, differencies:", start_memory, memory, round(memory - start_memory, 3))
         return {
-            "memory": memory,
             "spent": spent
         }
     

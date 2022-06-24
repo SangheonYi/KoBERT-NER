@@ -19,6 +19,10 @@ def init_pipeline():
     model = ElectraForTokenClassification.from_pretrained("model")
     pipeline = TokenClassificationPipeline(model=model, tokenizer=tokenizer, framework='pt')
 
+@app.route('/process_memory', methods=['GET'])
+def get_process_memory():
+    return f'{round(process.memory_info().rss / 1024 ** 2, 3)}'
+
 @app.route('/pii_demo', methods=['POST'])
 def pii_demo():
     global pipeline
@@ -35,7 +39,7 @@ def pii_demo():
     
         if not lines:
             return "Empty sentences requested"
-        metas = pipeline(lines * 10, batch_size=32)
+        metas = pipeline(lines, batch_size=32)
         spent = round(time.time() - start, 3)
         spent_sum += spent
         print("spent", spent)
